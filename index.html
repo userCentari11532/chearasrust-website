@@ -543,6 +543,29 @@
 
         <div class="updates-section">
             <h2>Latest Updates</h2>
+
+            <div class="update-card">
+                <div class="update-date">Feb 15, 2026</div>
+                <div class="update-title">A Face Smashing Update</div>
+                <div class="update-content collapsible" id="update-1">
+                    First, SkillTree. We are still experiencing occasional issues where players may be kicked due to tick rate spikes related to image handling. I am actively working on converting all of our images over to proper skinIDs instead of hosted images. Once that transition is complete, these tick-related kicks should no longer happen.<br><br>
+                    
+                    Second, the item deletion issue. We are dealing with what I believe is a host-side problem where certain items are randomly flagged as duplicates and then removed from the save file during reboot. I have disabled what I believe was triggering that behavior, so it should no longer occur. That said, it is extremely difficult to properly test because the server has to reboot in order for the issue to even attempt to trigger. If it does happen again, please let us know. As always, we are more than happy to replace anything you have lost due to this issue.<br><br>
+                    
+                    Aside from those two [admittedly big] things, the server is in a pretty good spot. That said, we are extremely entity heavy right now. Like, absurdly heavy. We are going to be looking at ways to pare that down and improve overall performance.<br><br>
+                    
+                    Because of the save issue, I am not completely confident that we will be able to keep this current map. There is a decent chance that we wipe everything and start fresh on Thursday just to ensure a clean state. If we do switch maps, it will be a procedurally generated one. Nothing wild. My hope is that once things stabilize, we can return to the normal cycle of our custom maps, probably starting with Atlanta. We will make that call once soft wipe is fully sorted out.<br><br>
+                    
+                    Looking ahead, since we are likely done purchasing custom maps unless something truly exceptional comes along, I am planning to implement a voting system so players can help decide which maps we run. It probably will not ever be fully automated because most custom maps have unique monuments that require different NPC profiles, but at least this way the community will have a say.<br><br>
+                    
+                    I am also exploring ways to allow players to design Boss Monsters and Legendary items. The Boss Monster creator is already finished, but I am still deciding how to roll it out. No promises that every idea will be implemented, but I want to open the door for more community-driven content.<br><br>
+                    
+                    For now, I am just trying to keep my head above water while we work through these weird edge-case issues that seem to pop up daily. I appreciate everyone’s patience while we get things locked down.<br><br>
+                    
+                    As always, thank you for sticking with ClearAsRust ❤️
+                </div>
+                <span class="read-more-btn" onclick="toggleUpdate('update-1', this)">Read More ▼</span>
+            </div>            
             
             <div class="update-card">
                 <div class="update-date">Feb 9, 2026</div>
