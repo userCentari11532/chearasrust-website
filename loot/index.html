@@ -340,6 +340,10 @@
         }
 
         function initializeTables() {
+            lootData.bradley = transformLootData(lootData.bradley);
+            lootData.heli = transformLootData(lootData.heli);
+            lootData.main = transformLootData(lootData.main);
+            
             populateTable('bradley');
             populateTable('heli');
             populateTable('main');
@@ -347,6 +351,32 @@
 
         function getDisplayName(shortname) {
             return displayNames[shortname] || shortname;
+        }
+
+        // Transform Alpha Loot export format to our format
+        function transformLootData(alphaLootData) {
+            const transformed = {};
+            
+            // Get the crate key (e.g., "bradley_crate", "heli_crate", "main_crate")
+            const crateKey = Object.keys(alphaLootData)[0];
+            const crateData = alphaLootData[crateKey];
+            
+            if (!crateData || !crateData.Probabilities || !crateData.Amounts) {
+                console.error('Invalid Alpha Loot format:', alphaLootData);
+                return {};
+            }
+            
+            // Build our format from the export
+            Object.entries(crateData.Probabilities).forEach(([itemName, prob]) => {
+                const amounts = crateData.Amounts[itemName] || { Min: 1, Max: 1 };
+                transformed[itemName] = {
+                    prob: prob,
+                    min: amounts.Min || 1,
+                    max: amounts.Max || 1
+                };
+            });
+            
+            return transformed;
         }
 
         function populateTable(crate) {
