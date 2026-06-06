@@ -313,21 +313,24 @@
             heli: {},
             main: {}
         };
+        let displayNames = {};
 
         let currentSort = { table: null, column: null, ascending: true };
 
         // Load loot data from JSON files
         async function loadLootData() {
             try {
-                const [bradleyRes, heliRes, mainRes] = await Promise.all([
+                const [bradleyRes, heliRes, mainRes, namesRes] = await Promise.all([
                     fetch('/loot/data/bradley.json'),
                     fetch('/loot/data/heli.json'),
-                    fetch('/loot/data/main.json')
+                    fetch('/loot/data/main.json'),
+                    fetch('/loot/data/displayNames.json')
                 ]);
 
                 lootData.bradley = await bradleyRes.json();
                 lootData.heli = await heliRes.json();
                 lootData.main = await mainRes.json();
+                displayNames = await namesRes.json();
 
                 initializeTables();
             } catch (error) {
@@ -342,6 +345,10 @@
             populateTable('main');
         }
 
+        function getDisplayName(shortname) {
+            return displayNames[shortname] || shortname;
+        }
+
         function populateTable(crate) {
             const tableId = crate + 'Table';
             const table = document.getElementById(tableId);
@@ -353,6 +360,7 @@
             const items = Object.entries(data)
                 .map(([name, info]) => ({
                     name,
+                    displayName: getDisplayName(name),
                     prob: info.prob,
                     min: info.min,
                     max: info.max
@@ -365,7 +373,7 @@
                 const percentage = (item.prob / maxProb) * 100;
 
                 row.innerHTML = `
-                    <td class="item-name">${item.name}</td>
+                    <td class="item-name">${item.displayName}</td>
                     <td>
                         <div class="probability-cell">
                             <div class="probability-bar">
