@@ -127,6 +127,60 @@
             to { opacity: 1; }
         }
 
+        /* Crate selector dropdown */
+        .crate-selector-wrap {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .crate-selector-label {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
+            color: #00d9ff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .crate-selector {
+            flex: 1;
+            max-width: 400px;
+            padding: 10px 16px;
+            background: rgba(10, 14, 39, 0.8);
+            border: 2px solid #00d9ff;
+            border-radius: 4px;
+            color: #e8eef5;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2300d9ff' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            padding-right: 36px;
+        }
+
+        .crate-selector:focus {
+            outline: none;
+            box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+        }
+
+        .crate-selector option {
+            background: #1a1f3a;
+            color: #e8eef5;
+        }
+
+        .crate-count {
+            font-size: 13px;
+            color: #a0aec0;
+            white-space: nowrap;
+        }
+
         .loot-table {
             width: 100%;
             border-collapse: collapse;
@@ -244,6 +298,10 @@
             .search-box {
                 max-width: 100%;
             }
+
+            .crate-selector {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -259,9 +317,9 @@
         </div>
 
         <div class="tabs">
-            <button class="tab-btn active" onclick="switchTab('bradley')">Bradley Crate</button>
-            <button class="tab-btn" onclick="switchTab('heli')">Heli Crate</button>
-            <button class="tab-btn" onclick="switchTab('main')">Main Crate</button>
+            <button class="tab-btn active" onclick="switchTab('bradley', this)">Bradley Crate</button>
+            <button class="tab-btn" onclick="switchTab('heli', this)">Heli Crate</button>
+            <button class="tab-btn" onclick="switchTab('main', this)">Main Crate</button>
         </div>
 
         <div class="content">
@@ -292,6 +350,13 @@
             </div>
 
             <div id="main" class="tab-content">
+                <div class="crate-selector-wrap">
+                    <span class="crate-selector-label">Crate:</span>
+                    <select class="crate-selector" id="crateSelect" onchange="onCrateChange()">
+                        <option value="">Loading...</option>
+                    </select>
+                    <span class="crate-count" id="crateCount"></span>
+                </div>
                 <table class="loot-table" id="mainTable">
                     <thead>
                         <tr>
@@ -307,85 +372,143 @@
     </div>
 
     <script>
-        // Loot data will be loaded from JSON files
         let lootData = {
             bradley: {},
             heli: {},
-            main: {}
+            main: {}  // raw: keyed by crate name
         };
         let displayNames = {};
-
+        let crateFilters = { mode: 'blacklist', hidden: [] };
+        let availableCrates = [];   // filtered list of crate keys
+        let currentCrate = null;
         let currentSort = { table: null, column: null, ascending: true };
 
-        // Load loot data from JSON files
         async function loadLootData() {
             try {
-                const [bradleyRes, heliRes, mainRes, namesRes] = await Promise.all([
+                const [bradleyRes, heliRes, mainRes, namesRes, filtersRes] = await Promise.all([
                     fetch('./data/bradley.json'),
                     fetch('./data/heli.json'),
                     fetch('./data/main.json'),
-                    fetch('./data/displayNames.json')
+                    fetch('./data/displayNames.json'),
+                    fetch('./data/crate-filters.json').catch(() => null)
                 ]);
 
-                lootData.bradley = await bradleyRes.json();
-                lootData.heli = await heliRes.json();
-                lootData.main = await mainRes.json();
-                displayNames = await namesRes.json();
+                const bradleyRaw = await bradleyRes.json();
+                const heliRaw    = await heliRes.json();
+                const mainRaw    = await mainRes.json();
+                displayNames     = await namesRes.json();
 
-                initializeTables();
+                if (filtersRes) {
+                    crateFilters = await filtersRes.json();
+                }
+
+                lootData.bradley = transformSingleCrate(bradleyRaw);
+                lootData.heli    = transformSingleCrate(heliRaw);
+                lootData.main    = mainRaw; // keep raw multi-crate object
+
+                populateTable('bradley');
+                populateTable('heli');
+                buildCrateDropdown();
+
             } catch (error) {
                 console.error('Error loading loot data:', error);
-                document.querySelector('.content').innerHTML = '<p style="color: #ff6b35; padding: 20px;">Error loading loot tables. Make sure JSON files are in /loot/data/</p>';
+                document.querySelector('.content').innerHTML =
+                    '<p style="color: #ff6b35; padding: 20px;">Error loading loot tables. Make sure JSON files are in /loot/data/</p>';
             }
         }
 
-        function initializeTables() {
-            lootData.bradley = transformLootData(lootData.bradley);
-            lootData.heli = transformLootData(lootData.heli);
-            lootData.main = transformLootData(lootData.main);
-            
-            populateTable('bradley');
-            populateTable('heli');
-            populateTable('main');
+        // For bradley/heli which are single-crate files
+        function transformSingleCrate(raw) {
+            const crateKey  = Object.keys(raw)[0];
+            const crateData = raw[crateKey];
+            if (!crateData || !crateData.Probabilities) return {};
+            return flattenCrate(crateData);
+        }
+
+        // Turn Probabilities+Amounts into { itemName: { prob, min, max } }
+        function flattenCrate(crateData) {
+            const out = {};
+            Object.entries(crateData.Probabilities).forEach(([item, prob]) => {
+                if (prob <= 0) return; // skip zero-probability entries
+                const amounts = crateData.Amounts[item] || { Min: 1, Max: 1 };
+                out[item] = { prob, min: amounts.Min || 1, max: amounts.Max || 1 };
+            });
+            return out;
+        }
+
+        function isHidden(crateName) {
+            if (crateFilters.mode === 'blacklist') {
+                return crateFilters.hidden.includes(crateName);
+            }
+            if (crateFilters.mode === 'whitelist') {
+                return !crateFilters.hidden.includes(crateName);
+            }
+            return false;
+        }
+
+        function buildCrateDropdown() {
+            const select = document.getElementById('crateSelect');
+            const allCrates = Object.keys(lootData.main);
+
+            availableCrates = allCrates.filter(name => !isHidden(name));
+            availableCrates.sort();
+
+            select.innerHTML = '';
+            availableCrates.forEach(name => {
+                const opt = document.createElement('option');
+                opt.value = name;
+                opt.textContent = formatCrateName(name);
+                select.appendChild(opt);
+            });
+
+            document.getElementById('crateCount').textContent =
+                availableCrates.length + ' crates';
+
+            if (availableCrates.length > 0) {
+                currentCrate = availableCrates[0];
+                select.value = currentCrate;
+                populateMainTable(currentCrate);
+            }
+        }
+
+        // Make internal names more readable
+        function formatCrateName(name) {
+            return name
+                .replace(/_/g, ' ')
+                .replace(/\./g, ' ')
+                .replace(/\b\w/g, c => c.toUpperCase());
+        }
+
+        function onCrateChange() {
+            const select = document.getElementById('crateSelect');
+            currentCrate = select.value;
+            populateMainTable(currentCrate);
+            // Re-apply any active search
+            const searchTerm = document.getElementById('searchInput').value;
+            if (searchTerm) filterTable('main');
+        }
+
+        function populateMainTable(crateName) {
+            const raw = lootData.main[crateName];
+            if (!raw) return;
+            const flat = flattenCrate(raw);
+            populateTableFromData('mainTable', flat);
         }
 
         function getDisplayName(shortname) {
             return displayNames[shortname] || shortname;
         }
 
-        // Transform Alpha Loot export format to our format
-        function transformLootData(alphaLootData) {
-            const transformed = {};
-            
-            // Get the crate key (e.g., "bradley_crate", "heli_crate", "main_crate")
-            const crateKey = Object.keys(alphaLootData)[0];
-            const crateData = alphaLootData[crateKey];
-            
-            if (!crateData || !crateData.Probabilities || !crateData.Amounts) {
-                console.error('Invalid Alpha Loot format:', alphaLootData);
-                return {};
-            }
-            
-            // Build our format from the export
-            Object.entries(crateData.Probabilities).forEach(([itemName, prob]) => {
-                const amounts = crateData.Amounts[itemName] || { Min: 1, Max: 1 };
-                transformed[itemName] = {
-                    prob: prob,
-                    min: amounts.Min || 1,
-                    max: amounts.Max || 1
-                };
-            });
-            
-            return transformed;
+        function populateTable(crate) {
+            populateTableFromData(crate + 'Table', lootData[crate]);
         }
 
-        function populateTable(crate) {
-            const tableId = crate + 'Table';
-            const table = document.getElementById(tableId);
-            const tbody = table.querySelector('tbody');
-            const data = lootData[crate];
-
+        function populateTableFromData(tableId, data) {
+            const table  = document.getElementById(tableId);
+            const tbody  = table.querySelector('tbody');
             tbody.innerHTML = '';
+
+            const maxProb = Math.max(...Object.values(data).map(i => i.prob));
 
             const items = Object.entries(data)
                 .map(([name, info]) => ({
@@ -398,78 +521,69 @@
                 .sort((a, b) => b.prob - a.prob);
 
             items.forEach(item => {
+                const pct = (item.prob / maxProb) * 100;
                 const row = document.createElement('tr');
-                const maxProb = Math.max(...Object.values(data).map(i => i.prob));
-                const percentage = (item.prob / maxProb) * 100;
-
                 row.innerHTML = `
                     <td class="item-name">${item.displayName}</td>
                     <td>
                         <div class="probability-cell">
                             <div class="probability-bar">
-                                <div class="probability-fill" style="width: ${percentage}%">
+                                <div class="probability-fill" style="width: ${pct}%">
                                     ${item.prob.toFixed(1)}%
                                 </div>
                             </div>
                             <span class="probability-value">${item.prob.toFixed(1)}%</span>
                         </div>
                     </td>
-                    <td class="amount-range">${item.min === item.max ? item.min : item.min + '-' + item.max}</td>
+                    <td class="amount-range">${item.min === item.max ? item.min : item.min + '–' + item.max}</td>
                 `;
                 tbody.appendChild(row);
             });
         }
 
-        function switchTab(tab) {
-            // Hide all tabs
+        function switchTab(tab, btn) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-
-            // Show selected tab
             document.getElementById(tab).classList.add('active');
-            event.target.classList.add('active');
-
+            btn.classList.add('active');
             filterTable(tab);
         }
 
         function filterTable(crate) {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const table = document.getElementById(crate + 'Table');
-            const rows = table.querySelectorAll('tbody tr');
+            const rows  = table.querySelectorAll('tbody tr:not(.no-results)');
+            let anyVisible = false;
 
             rows.forEach(row => {
-                const itemName = row.querySelector('.item-name').textContent.toLowerCase();
-                if (itemName.includes(searchTerm)) {
-                    row.style.display = '';
-                } else {
-                    row.style.display = 'none';
-                }
+                const itemName = row.querySelector('.item-name')?.textContent.toLowerCase() || '';
+                const show = itemName.includes(searchTerm);
+                row.style.display = show ? '' : 'none';
+                if (show) anyVisible = true;
             });
 
-            if (rows.length > 0 && [...rows].every(r => r.style.display === 'none')) {
-                if (!table.querySelector('.no-results')) {
+            const existing = table.querySelector('.no-results');
+            if (!anyVisible && searchTerm) {
+                if (!existing) {
                     const noResults = document.createElement('tr');
                     noResults.className = 'no-results';
-                    noResults.innerHTML = '<td colspan="3">No items found matching "' + searchTerm + '"</td>';
+                    noResults.innerHTML = `<td colspan="3">No items found matching "${searchTerm}"</td>`;
                     table.querySelector('tbody').appendChild(noResults);
                 }
-            } else {
-                const noResults = table.querySelector('.no-results');
-                if (noResults) noResults.remove();
+            } else if (existing) {
+                existing.remove();
             }
         }
 
-        document.getElementById('searchInput').addEventListener('input', (e) => {
+        document.getElementById('searchInput').addEventListener('input', () => {
             const activeTab = document.querySelector('.tab-content.active').id;
             filterTable(activeTab);
         });
 
         function sortTable(crate, column) {
-            // Implementation for sorting if needed
             console.log('Sort:', crate, column);
         }
 
-        // Initialize on page load
         document.addEventListener('DOMContentLoaded', loadLootData);
     </script>
 </body>
