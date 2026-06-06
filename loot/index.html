@@ -307,74 +307,34 @@
     </div>
 
     <script>
-        // Loot data embedded directly
-        const lootData = {
-            bradley: {
-                "rifle.l96": { prob: 9.0, min: 1, max: 1 },
-                "weapon.mod.8x.scope": { prob: 9.0, min: 1, max: 1 },
-                "ammo.rifle": { prob: 37.0, min: 16, max: 240 },
-                "lmg.m249": { prob: 8.5, min: 1, max: 1 },
-                "weapon.mod.holosight": { prob: 8.5, min: 1, max: 1 },
-                "rifle.ak": { prob: 2.0, min: 1, max: 1 },
-                "rifle.bolt": { prob: 2.0, min: 1, max: 1 },
-                "rifle.lr300": { prob: 1.0, min: 1, max: 1 },
-                "smg.mp5": { prob: 2.0, min: 1, max: 1 },
-                "ammo.pistol": { prob: 2.0, min: 60, max: 60 },
-                "rifle.m39": { prob: 1.0, min: 1, max: 1 },
-                "weapon.mod.lasersight": { prob: 50.0, min: 1, max: 1 },
-                "weapon.mod.small.scope": { prob: 50.0, min: 1, max: 1 },
-                "weapon.mod.burstmodule": { prob: 50.0, min: 1, max: 1 },
-                "weapon.mod.extendedmags": { prob: 50.0, min: 1, max: 1 },
-                "ammo.rocket.fire": { prob: 13.5, min: 2, max: 10 },
-                "ammo.rocket.hv": { prob: 13.5, min: 2, max: 6 },
-                "ammo.rocket.mlrs": { prob: 113.5, min: 2, max: 4 },
-                "ammo.rifle.incendiary": { prob: 13.5, min: 40, max: 120 },
-                "ammo.rifle.explosive": { prob: 13.5, min: 20, max: 60 },
-                "ammo.rifle.hv": { prob: 13.5, min: 20, max: 80 },
-                "explosive.timed": { prob: 13.5, min: 1, max: 2 },
-                "techparts": { prob: 25.0, min: 6, max: 24 },
-                "door.double.hinged.toptier": { prob: 37.5, min: 1, max: 1 },
-                "door.hinged.toptier": { prob: 37.5, min: 1, max: 1 },
-                "targeting.computer": { prob: 55.0, min: 2, max: 2 },
-                "cctv.camera": { prob: 45.0, min: 2, max: 2 }
-            },
-            heli: {
-                "ammo.rifle": { prob: 55.5, min: 16, max: 240 },
-                "ammo.rifle.incendiary": { prob: 16.0, min: 40, max: 120 },
-                "ammo.rifle.explosive": { prob: 16.0, min: 20, max: 60 },
-                "ammo.rifle.hv": { prob: 16.0, min: 20, max: 80 },
-                "ammo.rocket.fire": { prob: 16.0, min: 2, max: 10 },
-                "ammo.rocket.hv": { prob: 16.0, min: 2, max: 6 },
-                "ammo.rocket.mlrs": { prob: 16.0, min: 2, max: 4 },
-                "explosive.timed": { prob: 28.0, min: 1, max: 3 },
-                "ammo.rocket.basic": { prob: 27.0, min: 2, max: 6 },
-                "rifle.ak": { prob: 12.0, min: 1, max: 1 },
-                "rifle.bolt": { prob: 11.5, min: 1, max: 1 },
-                "rifle.lr300": { prob: 2.5, min: 1, max: 1 },
-                "rifle.l96": { prob: 2.0, min: 1, max: 1 },
-                "weapon.mod.8x.scope": { prob: 2.0, min: 1, max: 1 },
-                "rifle.m39": { prob: 2.5, min: 1, max: 1 },
-                "lmg.m249": { prob: 11.0, min: 1, max: 1 },
-                "weapon.mod.holosight": { prob: 11.0, min: 1, max: 1 },
-                "door.double.hinged.toptier": { prob: 13.5, min: 1, max: 1 },
-                "door.hinged.toptier": { prob: 13.5, min: 1, max: 1 },
-                "wall.window.bars.toptier": { prob: 1.0, min: 1, max: 1 },
-                "metal.facemask": { prob: 1.0, min: 1, max: 1 },
-                "metal.plate.torso": { prob: 1.0, min: 1, max: 1 },
-                "explosives": { prob: 1.0, min: 2, max: 2 },
-                "weapon.mod.small.scope": { prob: 7.0, min: 1, max: 1 },
-                "hmlmg": { prob: 1.0, min: 1, max: 1 },
-                "bdu.pants": { prob: 0.5, min: 1, max: 1 },
-                "bdu.shirt": { prob: 0.5, min: 1, max: 1 }
-            },
-            main: {
-                "rifle.ak": { prob: 12.0, min: 1, max: 1 },
-                "ammo.rifle": { prob: 55.5, min: 16, max: 240 },
-                "explosive.timed": { prob: 28.0, min: 1, max: 3 }
-            }
+        // Loot data will be loaded from JSON files
+        let lootData = {
+            bradley: {},
+            heli: {},
+            main: {}
         };
 
         let currentSort = { table: null, column: null, ascending: true };
+
+        // Load loot data from JSON files
+        async function loadLootData() {
+            try {
+                const [bradleyRes, heliRes, mainRes] = await Promise.all([
+                    fetch('/loot/data/bradley.json'),
+                    fetch('/loot/data/heli.json'),
+                    fetch('/loot/data/main.json')
+                ]);
+
+                lootData.bradley = await bradleyRes.json();
+                lootData.heli = await heliRes.json();
+                lootData.main = await mainRes.json();
+
+                initializeTables();
+            } catch (error) {
+                console.error('Error loading loot data:', error);
+                document.querySelector('.content').innerHTML = '<p style="color: #ff6b35; padding: 20px;">Error loading loot tables. Make sure JSON files are in /loot/data/</p>';
+            }
+        }
 
         function initializeTables() {
             populateTable('bradley');
@@ -472,7 +432,7 @@
         }
 
         // Initialize on page load
-        document.addEventListener('DOMContentLoaded', initializeTables);
+        document.addEventListener('DOMContentLoaded', loadLootData);
     </script>
 </body>
 </html>
