@@ -61,6 +61,11 @@
         "tacklebox",
         "deepseatreasuremission_box",
         "rhib.deepsea|rhib_storage_drybox",
-        "ptboat.deepsea|rhib_storage_drybox"
+        "ptboat.deepsea|rhib_storage_drybox",
+        "codelockedhackablecrate_no_build_radius",
+        "crate_shore",
+        "codelockedhackablecrate_min_build_radius",
+        "crate_cannons",
+        "codelockedhackablecrate_ghostship"
     ]
 }
