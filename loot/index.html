@@ -321,10 +321,10 @@
         async function loadLootData() {
             try {
                 const [bradleyRes, heliRes, mainRes, namesRes] = await Promise.all([
-                    fetch('/loot/data/bradley.json'),
-                    fetch('/loot/data/heli.json'),
-                    fetch('/loot/data/main.json'),
-                    fetch('/loot/data/displayNames.json')
+                    fetch('./data/bradley.json'),
+                    fetch('./data/heli.json'),
+                    fetch('./data/main.json'),
+                    fetch('./data/displayNames.json')
                 ]);
 
                 lootData.bradley = await bradleyRes.json();
