@@ -68,6 +68,11 @@
         "crate_cannons",
         "codelockedhackablecrate_ghostship",
         "loot-barrel-1",
-        "loot-barrel-2"
+        "loot-barrel-2",
+        "vehicle_parts",
+        "wagon_crate_normal",
+        "wagon_crate_normal_2",
+        "wagon_crate_normal_2_food",
+        "wagon_crate_normal_2_medical"
     ]
 }
