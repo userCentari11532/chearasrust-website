@@ -66,6 +66,8 @@
         "crate_shore",
         "codelockedhackablecrate_min_build_radius",
         "crate_cannons",
-        "codelockedhackablecrate_ghostship"
+        "codelockedhackablecrate_ghostship",
+        "loot-barrel-1",
+        "loot-barrel-2",
     ]
 }
