@@ -386,9 +386,9 @@
         async function loadLootData() {
             try {
                 const [bradleyRes, heliRes, mainRes, namesRes, filtersRes] = await Promise.all([
-                    fetch('./data/bradley.json'),
-                    fetch('./data/heli.json'),
-                    fetch('./data/main.json'),
+                    fetch('./data/fullwipedbradley_aggregated_probability.json'),
+                    fetch('./data/fullwipedheli_aggregated_probability.json'),
+                    fetch('./data/fullwipedmain_aggregated_probability.json'),
                     fetch('./data/displayNames.json'),
                     fetch('./data/crate-filters.json').catch(() => null)
                 ]);
