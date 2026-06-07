@@ -514,11 +514,11 @@
                 </div>
                 <div class="info-item">
                     <div class="info-label">Current Map</div>
-                    <div class="info-value" id="mapName">Procedurally Generated</div>
+                    <div class="info-value" id="mapName">Decay: The Last Haven by Shemov</div>
                 </div>
                 <div class="info-item">
                     <div class="info-label">Last Wiped</div>
-                    <div class="info-value">Mar 5, 2026</div>
+                    <div class="info-value">June 4, 2026</div>
                 </div>
             </div>
 
@@ -543,6 +543,27 @@
 
         <div class="updates-section">
             <h2>Latest Updates</h2>
+
+        <div class="update-card">
+            <div class="update-date">Jun 5, 2026</div>
+            <div class="update-title">A Look Back — What We've Been Building</div>
+            <div class="update-content collapsible" id="update-4">
+                The past month or so has been one of the busiest stretches we have had since launching CaR, and I wanted to take a moment to recap everything we have been working on behind the scenes.<br><br>
+        
+                <b>NPC Overhaul</b><br><br>
+        
+                We completed a full rework of our NPC configuration across every monument on the server. Every NPC preset was renamed from cryptic hash strings to a clean Location-Weapon convention like Harbor-Python or Airfield-Spas12, making the whole system dramatically easier to manage and tune going forward. Along the way we standardized damage scaling and made sure the right enemies are showing up in the right [or often times, new] places.<br><br>
+        
+                <b>Plugin Compatibility</b><br><br>
+        
+                Facepunch pushed an API change that converted a number of string types to a new StringView format which broke several [40 or so] of our plugins simultaneously. Luckily the authors were pretty on the ball about this patch and shipped updates pretty quickly. I only had to manually patch ten or so plugins which while annoying, wasn't the end of the world.<br><br>
+        
+                <b>The Rough Patch — May 28</b><br><br>
+        
+                I would be remiss not to address the crashes. Starting May 28, the server began going down every couple of hours due to a memory leak that took a few days to fully identify and patch. What a time to be alive. Thankfully, our host was able to patch their side a day or so before FacePunch pushed a patch for it but yeah, woof that was bad. Thankfully we haven't had any issues since then! Let's keep our fingers crossed!<br><br>
+            </div>
+            <span class="read-more-btn" onclick="toggleUpdate('update-4', this)">Read More ▼</span>
+        </div>             
 
             <div class="update-card">
                 <div class="update-date">Mar 5, 2026</div>
