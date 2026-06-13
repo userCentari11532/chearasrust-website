@@ -386,6 +386,7 @@ const F_LOOT_ITEMS = "Items that can drop from this source [profile name: drop w
 let itemProfiles = {};
 let lootProfiles = [];
 let dropMap = {};
+let skinImages = {};
 
 function buildDropMap() {
   const map = {};
@@ -451,10 +452,19 @@ function renderGrid() {
     const card = document.createElement('div');
     card.className = 'card';
 
-    const img = document.createElement('div');
-    img.className = 'card-image';
-    img.textContent = 'No image';
-    card.appendChild(img);
+    const imgBox = document.createElement('div');
+    imgBox.className = 'card-image';
+    const imgUrl = skin ? skinImages[String(skin)] : null;
+    if (imgUrl) {
+      const imgEl = document.createElement('img');
+      imgEl.src = imgUrl;
+      imgEl.alt = name;
+      imgEl.loading = 'lazy';
+      imgBox.appendChild(imgEl);
+    } else {
+      imgBox.textContent = 'No image';
+    }
+    card.appendChild(imgBox);
 
     const title = document.createElement('div');
     title.className = 'card-title';
@@ -536,6 +546,12 @@ async function init() {
     const res = await fetch('./legendaries-data.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
+
+    // skinImages.json is optional — page works without it, just shows "No image"
+    try {
+      const skinRes = await fetch('./skinImages.json');
+      if (skinRes.ok) skinImages = await skinRes.json();
+    } catch (_) {}
 
     itemProfiles = data["Item profiles"] || {};
     lootProfiles = data["Loot profiles"] || [];
