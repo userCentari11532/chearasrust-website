@@ -514,14 +514,31 @@ function renderGrid() {
     const imgBox = document.createElement('div');
     imgBox.className = 'card-image';
     const imgUrl = skin ? skinImages[String(skin)] : null;
+    const iconFile = shortname.replace(/ /g, '_') + '.png';
     if (imgUrl) {
       const imgEl = document.createElement('img');
       imgEl.src = imgUrl;
       imgEl.alt = name;
       imgEl.loading = 'lazy';
+      // Fall back to default item icon if the skin image fails to load
+      imgEl.onerror = function() {
+        this.onerror = function() {
+          imgBox.textContent = 'No image';
+          imgBox.removeChild(this);
+        };
+        this.src = './icons/' + iconFile;
+      };
       imgBox.appendChild(imgEl);
     } else {
-      imgBox.textContent = 'No image';
+      const imgEl = document.createElement('img');
+      imgEl.src = './icons/' + iconFile;
+      imgEl.alt = friendlyBase;
+      imgEl.loading = 'lazy';
+      imgEl.onerror = function() {
+        imgBox.textContent = 'No image';
+        imgBox.removeChild(this);
+      };
+      imgBox.appendChild(imgEl);
     }
     card.appendChild(imgBox);
 
