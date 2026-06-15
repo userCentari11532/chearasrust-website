@@ -446,6 +446,11 @@ let itemProfiles = {};
 let lootProfiles = [];
 let dropMap = {};
 let skinImages = {};
+let sourceLabels = {};
+
+function friendlySource(rawLabel) {
+  return sourceLabels[rawLabel] || rawLabel;
+}
 
 function buildDropMap() {
   const map = {};
@@ -503,7 +508,7 @@ function renderGrid() {
 
     const friendlyBase = displayName(shortname);
     const perkText = Object.entries(perks).map(([k,v]) => formatPerk(k,v).toLowerCase()).join(' ');
-    const sourceText = drops.map(d => d.source).join(' ').toLowerCase();
+    const sourceText = drops.map(d => friendlySource(d.source)).join(' ').toLowerCase();
     const haystack = (name + ' ' + shortname + ' ' + friendlyBase + ' ' + desc + ' ' + perkText + ' ' + sourceText).toLowerCase();
     if (query && !haystack.includes(query)) continue;
 
@@ -549,7 +554,7 @@ function renderGrid() {
 
     const sub = document.createElement('div');
     sub.className = 'card-sub';
-    sub.textContent = friendlyBase + (skin ? ' \u00b7 skin ' + skin : '') + (slots ? ' \u00b7 ' + slots + ' slot' + (slots > 1 ? 's' : '') : '');
+    sub.textContent = friendlyBase + (slots ? ' \u00b7 ' + slots + ' slot' + (slots > 1 ? 's' : '') : '');
     card.appendChild(sub);
 
     const perksBlock = document.createElement('div');
@@ -588,7 +593,7 @@ function renderGrid() {
         const row = document.createElement('tr');
         const tdName = document.createElement('td');
         tdName.className = 'source';
-        tdName.textContent = d.source;
+        tdName.textContent = friendlySource(d.source);
         const tdPct = document.createElement('td');
         tdPct.className = 'pct';
         tdPct.textContent = formatPct(d.overallPct);
@@ -640,24 +645,32 @@ async function init() {
       if (skinRes.ok) skinImages = await skinRes.json();
     } catch (_) {}
 
+    // sourceLabels.json is optional — editable friendly-name overrides for drop sources
+    try {
+      const labelRes = await fetch('./sourceLabels.json');
+      if (labelRes.ok) sourceLabels = await labelRes.json();
+    } catch (_) {}
+
     itemProfiles = data["Item profiles"] || {};
     lootProfiles = data["Loot profiles"] || [];
     dropMap = buildDropMap();
 
-    // Populate source filter with unique source labels, sorted alphabetically
-    const sourceLabels = new Set();
+    // Populate source filter with unique source labels, sorted by friendly name
+    const rawLabels = new Set();
     for (const profile of lootProfiles) {
       let label = profile[F_LOOT_SOURCE] || "Unknown";
       const prefab = profile[F_LOOT_PREFAB];
       if (prefab) label += " (" + prefab + ")";
-      sourceLabels.add(label);
+      rawLabels.add(label);
     }
-    [...sourceLabels].sort().forEach(label => {
-      const opt = document.createElement('option');
-      opt.value = label;
-      opt.textContent = label;
-      sourceFilter.appendChild(opt);
-    });
+    [...rawLabels]
+      .sort((a, b) => friendlySource(a).localeCompare(friendlySource(b)))
+      .forEach(label => {
+        const opt = document.createElement('option');
+        opt.value = label;
+        opt.textContent = friendlySource(label);
+        sourceFilter.appendChild(opt);
+      });
 
     loading.style.display = 'none';
     document.getElementById('search').addEventListener('input', renderGrid);
