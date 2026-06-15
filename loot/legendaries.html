@@ -370,6 +370,65 @@ const weaponPerkLabels = {
 };
 
 // ---------------------------------------------------------------------
+// Perk descriptions (shown as tooltip on hover)
+// ---------------------------------------------------------------------
+const perkDescriptions = {
+  Prospector: "Increases your mining yield when mining stone, metal and sulfur nodes.",
+  Lumberjack: "Increases your woodcutting yield when chopping living or dead trees.",
+  Butcher: "Increases the resources gained from skinning humans and animals.",
+  Horticulture: "Increases the amount of resources gained when harvesting grown plants.",
+  Forager: "Increases the amount of resources gained when picking up map generated collectibles.",
+  Angler: "Increases the amount of fish you receive upon a successful catch.",
+  BeastBane: "Increases the damage dealt to animals.",
+  ScientistBane: "Increases the damage dealt to scientists.",
+  FlakJacket: "Reduces the damage received from explosions.",
+  Elemental: "Reduces damage received from cold and heat sources.",
+  Scavenger: "Provides a chance to find additional scrap from crates and barrels.",
+  Manufacture: "Increases the speed of your crafting.",
+  Durable: "Reduces the durability damage of all equipped items.",
+  BeastWard: "Reduces the damage received from animals.",
+  ScientistWard: "Reduces the damage received from scientists.",
+  Builder: "Provides a chance for your building upgrades to be free.",
+  Thrifty: "Provides a chance for your crafting components to be refunded upon a successful craft.",
+  Fabricate: "Provides a chance to duplicate an item upon a successful craft.",
+  Pharmaceutical: "Increases the amount of healing received from all sources.",
+  MeleeWard: "Reduces the damage received from melee weapons.",
+  Academic: "Provides a chance to receive a scrap refund when researching an item at the research bench.",
+  FallDamage: "Reduces the impact damage received from falling.",
+  Lead: "Reduces the damage from radiation.",
+  Smasher: "Provides a chance to instantly destroy barrels with any amount of damage.",
+  Environmentalist: "Increases the speed of recyclers that you activate.",
+  Smelter: "Increases the smelting speed of furnaces you activate.",
+  Paramedic: "Provides players that you revive with additional health.",
+  Prepper: "Provides a chance to not consume food when eating.",
+  Regeneration: "Passively regenerates your health.",
+  SharkWard: "Reduces the amount of damage received from sharks.",
+  SharkBane: "Increases the amount of damage dealt to sharks.",
+  Deforest: "Provides a chance to cut down nearby trees when successfully cutting a tree down.",
+  BlastMine: "Provides a chance to mine out nearby nodes when successfully mining out a node.",
+  Tanner: "Provides a chance to skin nearby corpses when successfully skinning out a corpse.",
+  Vampiric: "Heals you for a percentage of the damage dealt to certain enemies.",
+  Reinforced: "Reduces the amount of damage that your vehicles receive when mounted.",
+  ComponentLuck: "Provides a chance to receive additional components when looting barrels and crates.",
+  ElectronicsLuck: "Provides a chance to receive additional electronics when looting barrels and crates.",
+  UncannyDodge: "Provides a chance to dodge incoming damage, reducing it to 0.",
+  LineStrength: "Increases the tensile strength of your fishing line.",
+  HealShare: "Shares healing effects with nearby players.",
+  Attractive: "Provides a chance to automatically pick up components when destroying barrels.",
+  WoodcuttingLuck: "Provides a chance to find a random item when you cut down a tree.",
+  MiningLuck: "Provides a chance to find a random item when you mine out a node.",
+  SkinningLuck: "Provides a chance to find a random item when you skin out a corpse.",
+  FishingLuck: "Provides a chance to find a random item when you catch a fish.",
+  Sated: "Increases the amount of calories and hydration you receive from food and water sources.",
+  IronStomach: "Provides a chance to negate negative effects when consuming food.",
+  TreePlanter: "Provides a chance for a tree to instantly regrow when cut down.",
+  RockCycler: "Provides a chance for a node to instantly respawn when mined out.",
+  BradleyDamage: "Increases the damage dealt to Bradley Tanks.",
+  HeliDamage: "Increases the damage dealt to Patrol Helicopters.",
+  Thorns: "Reflects a % of the damage done back to the attacker."
+};
+
+// ---------------------------------------------------------------------
 // Field name constants matching the raw plugin config
 // ---------------------------------------------------------------------
 const F_SHORTNAME = "Item shortname";
@@ -482,7 +541,18 @@ function renderGrid() {
       const row = document.createElement('div');
       row.className = 'perk-row';
       const valDisplay = v < 1 ? '+' + Math.round(v*100) + '%' : '+' + v + 'x';
-      row.innerHTML = '<span>' + (weaponPerkLabels[k] || k) + '</span><span class="val">' + valDisplay + '</span>';
+      const label = document.createElement('span');
+      label.textContent = weaponPerkLabels[k] || k;
+      if (perkDescriptions[k]) {
+        label.title = perkDescriptions[k];
+        label.style.cursor = 'help';
+        label.style.borderBottom = '1px dotted currentColor';
+      }
+      const val = document.createElement('span');
+      val.className = 'val';
+      val.textContent = valDisplay;
+      row.appendChild(label);
+      row.appendChild(val);
       perksBlock.appendChild(row);
     }
     card.appendChild(perksBlock);
