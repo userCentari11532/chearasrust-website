@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CaR Loot Tables</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg-dark: #0a0e14;
+            --bg-card: #151b24;
+            --teal: #00d9ff;
+            --teal-dim: #008fa3;
+            --text-primary: #e8edf2;
+            --text-secondary: #8a95a3;
+            --accent-orange: #ff6b35;
+            --border: #1f2937;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -14,43 +27,124 @@
 
         body {
             font-family: 'Rajdhani', sans-serif;
-            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-            color: #e8eef5;
+            background: var(--bg-dark);
+            color: var(--text-primary);
             min-height: 100vh;
             padding: 20px;
+            /* Matching animated background grid from main site */
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 0;
+            animation: gridScroll 20s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes gridScroll {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.05), transparent 50%);
+            z-index: 0;
+            pointer-events: none;
         }
 
         .container {
             max-width: 1400px;
             margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
 
+        /* ── Back nav ── */
+        .back-nav {
+            margin-bottom: 24px;
+        }
+
+        .back-nav a {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s ease;
+        }
+
+        .back-nav a:hover {
+            color: var(--teal);
+        }
+
+        .back-nav a::before {
+            content: '◂ ';
+        }
+
+        /* ── Header ── */
         header {
             text-align: center;
-            margin-bottom: 50px;
-            border-bottom: 3px solid #00d9ff;
+            margin-bottom: 40px;
             padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--teal), transparent);
         }
 
         h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 48px;
-            color: #00d9ff;
-            margin-bottom: 10px;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 8px;
             text-transform: uppercase;
             letter-spacing: 3px;
+            background: linear-gradient(135deg, var(--teal) 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .subtitle {
-            color: #ff6b35;
-            font-size: 16px;
-            letter-spacing: 1px;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 300;
         }
 
+        /* ── Controls ── */
         .controls {
             display: flex;
             gap: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -58,59 +152,80 @@
         .search-box {
             flex: 1;
             min-width: 250px;
-            padding: 12px 20px;
-            background: rgba(10, 14, 39, 0.8);
-            border: 2px solid #00d9ff;
-            border-radius: 4px;
-            color: #e8eef5;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 14px;
             max-width: 400px;
+            padding: 12px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
         }
 
         .search-box::placeholder {
-            color: rgba(232, 238, 245, 0.4);
+            color: var(--text-secondary);
         }
 
+        .search-box:focus {
+            outline: none;
+            border-color: var(--teal);
+            box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.1);
+        }
+
+        /* ── Tabs ── */
         .tabs {
             display: flex;
             gap: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
             flex-wrap: wrap;
             justify-content: center;
         }
 
         .tab-btn {
             padding: 12px 30px;
-            background: rgba(10, 14, 39, 0.8);
-            border: 2px solid #00d9ff;
-            color: #00d9ff;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
             font-family: 'Orbitron', sans-serif;
-            font-size: 14px;
+            font-size: 0.8rem;
             cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: all 0.3s ease;
-            border-radius: 4px;
+            transition: all 0.2s ease;
+            border-radius: 6px;
         }
 
         .tab-btn:hover {
-            background: rgba(0, 217, 255, 0.1);
-            box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+            border-color: var(--teal);
+            color: var(--teal);
         }
 
         .tab-btn.active {
-            background: #00d9ff;
-            color: #0a0e27;
-            box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+            background: rgba(0, 217, 255, 0.1);
+            border-color: var(--teal);
+            color: var(--teal);
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.15);
         }
 
+        /* ── Content panel ── */
         .content {
-            background: rgba(10, 14, 39, 0.5);
-            border: 2px solid #00d9ff;
-            border-radius: 4px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
             padding: 30px;
-            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--teal), transparent);
         }
 
         .tab-content {
@@ -119,15 +234,15 @@
 
         .tab-content.active {
             display: block;
-            animation: fadeIn 0.3s ease-in;
+            animation: fadeIn 0.25s ease-in;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
 
-        /* Crate selector dropdown */
+        /* ── Crate selector ── */
         .crate-selector-wrap {
             display: flex;
             align-items: center;
@@ -138,8 +253,8 @@
 
         .crate-selector-label {
             font-family: 'Orbitron', sans-serif;
-            font-size: 12px;
-            color: #00d9ff;
+            font-size: 0.75rem;
+            color: var(--teal);
             text-transform: uppercase;
             letter-spacing: 1px;
             white-space: nowrap;
@@ -148,13 +263,13 @@
         .crate-selector {
             flex: 1;
             max-width: 400px;
-            padding: 10px 16px;
-            background: rgba(10, 14, 39, 0.8);
-            border: 2px solid #00d9ff;
-            border-radius: 4px;
-            color: #e8eef5;
+            padding: 10px 36px 10px 16px;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-primary);
             font-family: 'Rajdhani', sans-serif;
-            font-size: 15px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             appearance: none;
@@ -162,106 +277,109 @@
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2300d9ff' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-position: right 14px center;
-            padding-right: 36px;
+            transition: border-color 0.2s ease;
         }
 
         .crate-selector:focus {
             outline: none;
-            box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+            border-color: var(--teal);
+            box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.1);
         }
 
         .crate-selector option {
-            background: #1a1f3a;
-            color: #e8eef5;
+            background: var(--bg-card);
+            color: var(--text-primary);
         }
 
         .crate-count {
-            font-size: 13px;
-            color: #a0aec0;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
             white-space: nowrap;
         }
 
+        /* ── Table ── */
         .loot-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .loot-table th {
-            background: rgba(0, 217, 255, 0.1);
-            padding: 15px;
+            background: rgba(0, 217, 255, 0.06);
+            padding: 14px 16px;
             text-align: left;
             font-family: 'Orbitron', sans-serif;
-            color: #00d9ff;
-            border-bottom: 2px solid #00d9ff;
+            color: var(--teal);
+            border-bottom: 1px solid var(--border);
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 0.7rem;
             letter-spacing: 1px;
         }
 
         .loot-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(31, 41, 55, 0.6);
         }
 
-        .loot-table tr:hover {
-            background: rgba(0, 217, 255, 0.05);
+        .loot-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .loot-table tr:hover td {
+            background: rgba(0, 217, 255, 0.03);
         }
 
         .item-name {
-            color: #e8eef5;
-            font-weight: 500;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1rem;
         }
 
         .probability-cell {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
         .probability-bar {
             flex: 1;
-            height: 20px;
-            background: rgba(10, 14, 39, 0.8);
+            height: 18px;
+            background: rgba(0, 0, 0, 0.3);
             border-radius: 3px;
             overflow: hidden;
-            border: 1px solid #00d9ff;
+            border: 1px solid var(--border);
         }
 
         .probability-fill {
             height: 100%;
-            background: linear-gradient(90deg, #00d9ff 0%, #ff6b35 100%);
-            transition: width 0.3s ease;
+            background: linear-gradient(90deg, var(--teal) 0%, var(--accent-orange) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 11px;
-            color: #0a0e27;
-            font-weight: 600;
+            font-size: 10px;
+            color: var(--bg-dark);
+            font-weight: 700;
+            min-width: 1%;
         }
 
         .probability-value {
-            color: #ff6b35;
-            font-weight: 600;
-            min-width: 50px;
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 0.95rem;
+            min-width: 52px;
+            text-align: right;
         }
 
         .amount-range {
-            color: #a0aec0;
-            font-size: 13px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
 
         .no-results {
             text-align: center;
             padding: 40px;
-            color: #a0aec0;
-            font-size: 16px;
-        }
-
-        .sort-indicator {
-            display: inline-block;
-            margin-left: 5px;
-            color: #ff6b35;
+            color: var(--text-secondary);
+            font-size: 1rem;
         }
 
         .table-header {
@@ -270,35 +388,40 @@
         }
 
         .table-header:hover {
-            color: #ff6b35;
+            color: var(--accent-orange);
+        }
+
+        .sort-indicator {
+            display: inline-block;
+            margin-left: 4px;
+            color: var(--accent-orange);
+        }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 32px;
-            }
-
             .content {
-                padding: 15px;
-            }
-
-            .loot-table {
-                font-size: 12px;
+                padding: 16px;
             }
 
             .loot-table th,
             .loot-table td {
-                padding: 8px;
+                padding: 10px 10px;
             }
 
-            .probability-bar {
-                height: 15px;
+            .loot-table {
+                font-size: 0.9rem;
             }
 
-            .search-box {
-                max-width: 100%;
-            }
-
+            .search-box,
             .crate-selector {
                 max-width: 100%;
             }
@@ -307,8 +430,12 @@
 </head>
 <body>
     <div class="container">
+        <div class="back-nav">
+            <a href="/">Clear as Rust</a>
+        </div>
+
         <header>
-            <h1>CaR Loot Tables</h1>
+            <h1>Loot Tables</h1>
             <p class="subtitle">Alpha Loot Probability Reference</p>
         </header>
 
@@ -369,17 +496,21 @@
                 </table>
             </div>
         </div>
+
+        <footer>
+            <p>&copy; 2026 Clear as Rust. All rights reserved.</p>
+        </footer>
     </div>
 
     <script>
         let lootData = {
             bradley: {},
             heli: {},
-            main: {}  // raw: keyed by crate name
+            main: {}
         };
         let displayNames = {};
         let crateFilters = { mode: 'blacklist', hidden: [] };
-        let availableCrates = [];   // filtered list of crate keys
+        let availableCrates = [];
         let currentCrate = null;
         let currentSort = { table: null, column: null, ascending: true };
 
@@ -404,7 +535,7 @@
 
                 lootData.bradley = transformSingleCrate(bradleyRaw);
                 lootData.heli    = transformSingleCrate(heliRaw);
-                lootData.main    = mainRaw; // keep raw multi-crate object
+                lootData.main    = mainRaw;
 
                 populateTable('bradley');
                 populateTable('heli');
@@ -413,11 +544,10 @@
             } catch (error) {
                 console.error('Error loading loot data:', error);
                 document.querySelector('.content').innerHTML =
-                    '<p style="color: #ff6b35; padding: 20px;">Error loading loot tables. Make sure JSON files are in /loot/data/</p>';
+                    '<p style="color: var(--accent-orange); padding: 20px;">Error loading loot tables. Make sure JSON files are in /loot/data/</p>';
             }
         }
 
-        // For bradley/heli which are single-crate files
         function transformSingleCrate(raw) {
             const crateKey  = Object.keys(raw)[0];
             const crateData = raw[crateKey];
@@ -425,11 +555,10 @@
             return flattenCrate(crateData);
         }
 
-        // Turn Probabilities+Amounts into { itemName: { prob, min, max } }
         function flattenCrate(crateData) {
             const out = {};
             Object.entries(crateData.Probabilities).forEach(([item, prob]) => {
-                if (prob <= 0) return; // skip zero-probability entries
+                if (prob <= 0) return;
                 const amounts = crateData.Amounts[item] || { Min: 1, Max: 1 };
                 out[item] = { prob, min: amounts.Min || 1, max: amounts.Max || 1 };
             });
@@ -437,12 +566,8 @@
         }
 
         function isHidden(crateName) {
-            if (crateFilters.mode === 'blacklist') {
-                return crateFilters.hidden.includes(crateName);
-            }
-            if (crateFilters.mode === 'whitelist') {
-                return !crateFilters.hidden.includes(crateName);
-            }
+            if (crateFilters.mode === 'blacklist') return crateFilters.hidden.includes(crateName);
+            if (crateFilters.mode === 'whitelist') return !crateFilters.hidden.includes(crateName);
             return false;
         }
 
@@ -461,8 +586,7 @@
                 select.appendChild(opt);
             });
 
-            document.getElementById('crateCount').textContent =
-                availableCrates.length + ' crates';
+            document.getElementById('crateCount').textContent = availableCrates.length + ' crates';
 
             if (availableCrates.length > 0) {
                 currentCrate = availableCrates[0];
@@ -471,7 +595,6 @@
             }
         }
 
-        // Make internal names more readable
         function formatCrateName(name) {
             return name
                 .replace(/_/g, ' ')
@@ -483,7 +606,6 @@
             const select = document.getElementById('crateSelect');
             currentCrate = select.value;
             populateMainTable(currentCrate);
-            // Re-apply any active search
             const searchTerm = document.getElementById('searchInput').value;
             if (searchTerm) filterTable('main');
         }
@@ -504,8 +626,8 @@
         }
 
         function populateTableFromData(tableId, data) {
-            const table  = document.getElementById(tableId);
-            const tbody  = table.querySelector('tbody');
+            const table = document.getElementById(tableId);
+            const tbody = table.querySelector('tbody');
             tbody.innerHTML = '';
 
             const maxProb = Math.max(...Object.values(data).map(i => i.prob));
