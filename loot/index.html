@@ -539,6 +539,7 @@
                     const labelRes = await fetch('./sourceLabels.json');
                     if (labelRes.ok) sourceLabels = await labelRes.json();
                 } catch (_) {}
+                crateLabelMap = buildParenLookup();
 
                 lootData.bradley = transformSingleCrate(bradleyRaw);
                 lootData.heli    = transformSingleCrate(heliRaw);
@@ -602,10 +603,24 @@
             }
         }
 
-        // Use sourceLabels.json friendly name if available, otherwise humanise the slug
+        // Build a secondary lookup from sourceLabels keyed by the shortname inside
+        // the parens, e.g. "Crate (crate_normal)" -> { "crate_normal": "Military Crate" }.
+        // This lets us match raw data keys against the same sourceLabels.json that
+        // legendaries uses, without changing that file's structure.
+        function buildParenLookup() {
+            const map = {};
+            for (const [key, label] of Object.entries(sourceLabels)) {
+                const m = key.match(/\((.+)\)$/);
+                if (m) map[m[1]] = label;
+                else map[key] = label; // bare keys like "Barrel", "Fishing" etc.
+            }
+            return map;
+        }
+
+        let crateLabelMap = {};
+
         function formatCrateName(name) {
-            if (sourceLabels[name]) return sourceLabels[name];
-            return name
+            return crateLabelMap[name] || name
                 .replace(/_/g, ' ')
                 .replace(/\./g, ' ')
                 .replace(/\b\w/g, c => c.toUpperCase());
