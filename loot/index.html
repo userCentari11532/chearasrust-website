@@ -509,6 +509,7 @@
             main: {}
         };
         let displayNames = {};
+        let sourceLabels = {};
         let crateFilters = { mode: 'blacklist', hidden: [] };
         let availableCrates = [];
         let currentCrate = null;
@@ -532,6 +533,12 @@
                 if (filtersRes) {
                     crateFilters = await filtersRes.json();
                 }
+
+                // sourceLabels.json is optional — same file legendaries uses
+                try {
+                    const labelRes = await fetch('./sourceLabels.json');
+                    if (labelRes.ok) sourceLabels = await labelRes.json();
+                } catch (_) {}
 
                 lootData.bradley = transformSingleCrate(bradleyRaw);
                 lootData.heli    = transformSingleCrate(heliRaw);
@@ -595,7 +602,9 @@
             }
         }
 
+        // Use sourceLabels.json friendly name if available, otherwise humanise the slug
         function formatCrateName(name) {
+            if (sourceLabels[name]) return sourceLabels[name];
             return name
                 .replace(/_/g, ' ')
                 .replace(/\./g, ' ')
