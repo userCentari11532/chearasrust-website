@@ -769,7 +769,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It is dangerous to go alone! Take this. Power, wisdom, courage…",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
+    },    
     "Heli? Bet.": {
       "Item shortname": "pistol.semiauto",
       "Item skin": 1109657124,
@@ -1644,16 +1644,50 @@
       "Loot source": "Crafting",
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.02,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Identifiers to exclude from consideration [List - null if not required]": [
+        "ammo.pistol",
+        "ammo.pistol.fire",
+        "ammo.pistol.hv",
+        "ammo.rifle",
+        "ammo.rifle.explosive",
+        "ammo.rifle.incendiary",
+        "ammo.rifle.hv",
+        "ammo.shotgun",
+        "ammo.shotgun.fire",
+        "ammo.shotgun.slug",
+        "ammo.shotgun.handmade",
+        "ammo.grenadelauncher.he",
+        "ammo.grenadelauncher.buckshot",
+        "ammo.grenadelauncher.smoke",
+        "ammo.rocket.basic",
+        "ammo.rocket.hv",
+        "ammo.rocket.fire",
+        "ammo.rocket.smoke",
+        "ammo.rocket.sam",
+        "ammo.rocket.mlrs",
+        "ammo.rocket.seeker",
+        "arrow.wooden",
+        "arrow.fire",
+        "arrow.hv",
+        "spears.wooden",
+        "spears.stone",
+        "gunpowder",
+        "explosives",
+        "grenade.beancan",
+        "grenade.f1"
+      ],
+      "Drop chance [%]": 0.05,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Master Crafter": 100,
+        "Frostfire Garb": 45,
+        "Golden Mule": 5,
         "Engineers Pipe Tool": 100,
         "Warlords Remains": 50,
         "Wallaces War Kilt": 25,
         "BR55 Halo Battle Rifle": 55,
         "Get The Ban Hammer": 20,
-        "Adventurers Pack": 5
+        "Adventurers Pack": 5        
       }
     },
     {
@@ -1661,15 +1695,20 @@
       "Prefab shortname, boss profile, event name [null if not required]": "roadsign.kilt",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.02,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 0.05,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Kilt of Production": 100,
+        "Mask of the Satisfied": 50,
+        "Steel Resolve": 25,
+        "Emberguard Harness": 45,
+        "Golden Mule": 5,
         "Engineers Pipe Tool": 100,
         "Warlords Remains": 50,
         "Wallaces War Kilt": 25,
         "BR55 Halo Battle Rifle": 55,
         "Get The Ban Hammer": 20,
-        "Adventurers Pack": 5
+        "Adventurers Pack": 5        
       }
     },
     {
@@ -1677,9 +1716,18 @@
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 0.05,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Woodcutter's Pride": 100,
+        "Evergreen Blessing": 5,
+        "Forester's Edge": 40,
+        "Chainsaw of Destruction": 10,
+        "Dirty Harry": 55,
+        "Iron Bastion": 25,
+        "Mask of the Satisfied": 80,
+        "Divine Mythryl": 12,
+        "Frostfire Garb": 55,
         "Patrick Batemans Axe": 100,
         "Evil Dead Chainsaw": 10,
         "Battle Royale King": 5,
@@ -1690,7 +1738,7 @@
         "New Founding Fathers Facemask": 25,
         "Wallaces War Kilt": 40,
         "Nightslayer Boots": 13,
-        "Magnum Force": 55
+        "Magnum Force": 55        
       }
     },
     {
@@ -1698,9 +1746,18 @@
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 0.05,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Miner's Treasure": 100,
+        "Explosive Pickaxe": 65,
+        "Turbo Jacky": 35,
+        "Emberguard Harness": 55,
+        "Divine Mythryl": 5,
+        "Iron Bastion": 20,
+        "Mask of the Satisfied": 65,
+        "Can Opener": 20,
+        "Snapple's Jackhammer of Destruction": 50,
         "Urban Shadow Hoodie": 12,
         "New Founding Fathers Facemask": 65,
         "Diamond Pickaxe": 75,
@@ -1710,7 +1767,7 @@
         "BR55 Halo Battle Rifle": 60,
         "Wallaces War Kilt": 40,
         "HELLFIRE": 15,
-        "Nightslayer Boots": 15
+        "Nightslayer Boots": 15        
       }
     },
     {
@@ -1720,9 +1777,19 @@
       "Identifiers to exclude from consideration [List - null if not required]": [
         "player_corpse"
       ],
-      "Drop chance [%]": 3.0,
+      "Drop chance [%]": 3.5,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Silent Hunter": 15,
+        "Beastmaster's Bow": 75,
+        "Bloodharvest Blade": 100,
+        "Iron Bastion": 15,
+        "Divine Mythryl": 10,
+        "Infernal Fang": 25,
+        "Medic's Remedy": 65,
+        "Slice of Life (Gloves)": 50,
+        "Frostfire Garb": 70,
+        "Torch of Survival": 45,
         "Primlocked": 15,
         "Dragonbone Knee Breaker": 75,
         "New Founding Fathers Facemask": 15,
@@ -1736,7 +1803,7 @@
         "Continental Trousers": 65,
         "Road Warrior Jacket": 70,
         "Perditions Blade": 100,
-        "Mincecraft Torch": 90
+        "Mincecraft Torch": 90            
       }
     },
     {
@@ -1745,8 +1812,16 @@
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
       "Drop chance [%]": 10.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Angler's Fortune": 100,
+        "Ghost Weave": 50,
+        "Triton's Resilience": 85,
+        "Iron Bastion": 10,
+        "Sea Reaver": 65,
+        "Tenrai Tsubasa": 80,
+        "Tidebringer's Trousers": 70,
+        "Hydrorubber Ducky": 90,
         "Arcanite Fishing Pole": 100,
         "Hazmat Heisenberg": 50,
         "Cabelas Fishing Suit": 85,
@@ -1757,18 +1832,7 @@
         "BR55 Halo Battle Rifle": 65,
         "Shadowcraft Gloves": 40,
         "Big Daddy Diver": 90,
-        "Continental Trousers": 75
-      }
-    },
-    {
-      "Loot source": "Farming",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.02,
-      "Should we consider loot chance modifiers that the player may have?": false,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Villagers Wrath": 100
+        "Continental Trousers": 75    
       }
     },
     {
@@ -1776,9 +1840,16 @@
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 3.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 2.5,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Mask of the Satisfied": 65,
+        "Can Opener": 100,
+        "Beastmaster's Bow": 75,
+        "Farmer's Friend": 50,
+        "Miner's Treasure": 10,
+        "Woodcutter's Pride": 10,
+        "Forester's Edge": 5,
         "Outlaw Bandana": 65,
         "Nightslayer Boots": 15,
         "Dragonbone Knee Breaker": 75,
@@ -1787,28 +1858,7 @@
         "Diamond Pickaxe": 10,
         "The Iceman": 5,
         "Patrick Batemans Axe": 10,
-        "Get The Ban Hammer": 35
-      }
-    },
-    {
-      "Loot source": "ScientistNPC",
-      "Prefab shortname, boss profile, event name [null if not required]": "scientistnpc_heavy",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Magnum Force": 80,
-        "Warlords Remains": 40,
-        "Wallaces War Kilt": 40,
-        "Adventurers Pack": 25,
-        "HELLFIRE": 25,
-        "BR55 Halo Battle Rifle": 65,
-        "Nightslayer Boots": 45,
-        "MP5 Siegebreaker": 60,
-        "Noob Tube": 55,
-        "Urban Shadow Hoodie": 75,
-        "Killpocalypse": 5
+        "Get The Ban Hammer": 35                
       }
     },
     {
@@ -1817,32 +1867,16 @@
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
       "Drop chance [%]": 2.5,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Adventurers Pack": 25,
-        "Shadowcraft Gloves": 100,
-        "Outlaw Bandana": 25,
-        "HELLFIRE": 50,
-        "Noob Tube": 55,
-        "Urban Shadow Hoodie": 75,
-        "Perditions Blade": 100,
-        "Continental Trousers": 75,
-        "Mincecraft Torch": 85,
-        "Magnum Force": 80,
-        "CYBER WAIFU CRINGE": 5,
-        "Killpocalypse": 5,
-        "MP5 Siegebreaker": 60,
-        "BR55 Halo Battle Rifle": 65,
-        "Ragnaros Wrath": 5,
-        "Master Chiefs Judgment": 40,
-        "Evil Dead Boomstick": 25,
-        "Warglaive Of Azzinoth": 5,
-        "Battle Royale King": 45,
-        "Patrick Batemans Axe": 85,
-        "The Iceman": 25,
-        "Road Warrior Jacket": 40,
-        "New Founding Fathers Facemask": 20,
-        "Nightslayer Boots": 90
+        "Golden Mule": 25,
+        "Dirty Harry": 80,
+        "Can Opener": 100,
+        "Voidcaller Barrage": 5,
+        "Mask of the Satisfied": 40,
+        "Infernal Fang": 25,
+        "DragonLance": 55,
+        "Divine Mythryl": 75
       }
     },
     {
@@ -1850,31 +1884,22 @@
       "Prefab shortname, boss profile, event name [null if not required]": "npc_tunneldweller",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 5.0,
+      "Drop chance [%]": 1.0,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Magnum Force": 80,
-        "Warlords Remains": 40,
-        "Wallaces War Kilt": 40,
-        "Adventurers Pack": 25,
-        "HELLFIRE": 25,
-        "Nightslayer Boots": 45,
-        "MP5 Siegebreaker": 60,
-        "CYBER WAIFU CRINGE": 5,
-        "Undying Pharaoh": 35,
-        "Noob Tube": 55,
-        "Urban Shadow Hoodie": 75,
-        "BR55 Halo Battle Rifle": 65,
-        "Mincecraft Torch": 85,
-        "Perditions Blade": 100,
-        "Battle Royale King": 10,
-        "BRRRRRRRR Nodes Gone": 10,
-        "Evil Dead Boomstick": 25,
-        "The Boogeyman Baba Yaga": 25,
-        "Warglaive Of Azzinoth": 5,
-        "Master Chiefs Judgment": 5,
-        "Thunderfury": 5,
-        "Killpocalypse": 5
+        "Mask of the Satisfied": 100
+      }
+    },
+    {
+      "Loot source": "Farming",
+      "Prefab shortname, boss profile, event name [null if not required]": null,
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 0.1,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Farmer's Friend": 100,
+        "Villagers Wrath": 100        
       }
     },
     {
@@ -1882,9 +1907,22 @@
       "Prefab shortname, boss profile, event name [null if not required]": "heli_crate",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 3.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 2.5,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Infernal Fang": 75,
+        "Skyfire": 10,
+        "Rain of Hell": 40,
+        "Celestial Wardkeeper": 30,
+        "Divine Mythryl": 60,
+        "Goes Brrrrrrrrrrr": 15,
+        "I'll Be Back": 100,
+        "The Holy Parabellum": 65,
+        "Great Equilizer": 20,
+        "DragonLance": 45,
+        "Harbinger's Viper": 50,
+        "Annoyance Protocol - AP47": 40,
+        "MULTI PASS": 100,
         "Boneplate of the Dead": 30,
         "Master Chiefs Judgment": 50,
         "Noob Tube": 45,
@@ -1900,7 +1938,7 @@
         "AWP Dragon Lore": 5,
         "Mosin Nagant DEADEYE": 15,
         "Ragnaros Wrath": 5,
-        "Ashbringer": 10
+        "Ashbringer": 10        
       }
     },
     {
@@ -1908,9 +1946,21 @@
       "Prefab shortname, boss profile, event name [null if not required]": "bradley_crate",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 3.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 2.5,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Voidcaller Barrage": 30,
+        "Harbinger's Viper": 100,
+        "Scientist Wrath": 15,
+        "DragonLance": 85,
+        "Rain of Hell": 30,
+        "Divine Mythryl": 35,
+        "Goes Brrrrrrrrrrr": 5,
+        "I'll Be Back": 70,
+        "Dirty Harry": 75,
+        "Great Equilizer": 5,
+        "Annoyance Protocol - AP47": 65,
+        "MULTI PASS": 100,
         "Killpocalypse": 10,
         "HELLFIRE": 100,
         "Thunderfury": 20,
@@ -1926,7 +1976,7 @@
         "Mosin Nagant DEADEYE": 15,
         "Ragnaros Wrath": 5,
         "AWP Dragon Lore": 15,
-        "Ashbringer": 10
+        "Ashbringer": 10        
       }
     },
     {
@@ -1934,9 +1984,21 @@
       "Prefab shortname, boss profile, event name [null if not required]": "crate_elite",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 3.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 2.0,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Voidcaller Barrage": 10,
+        "Infernal Fang": 100,
+        "DragonLance": 15,
+        "Scientist Wrath": 20,
+        "Wrath of the Scientist": 40,
+        "Emberguard Harness": 60,
+        "Great Equilizer": 25,
+        "The Holy Parabellum": 55,
+        "Evergreen Blessing": 35,
+        "EagleEye": 30,
+        "Dirty Harry": 50,
+        "MULTI PASS": 50,
         "Killpocalypse": 10,
         "HELLFIRE": 100,
         "Noob Tube": 15,
@@ -1951,7 +2013,27 @@
         "Battle Royale King": 35,
         "Mosin Nagant DEADEYE": 15,
         "AWP Dragon Lore": 10,
-        "Magnum Force": 50
+        "Magnum Force": 50        
+      }
+    },
+    {
+      "Loot source": "Crate",
+      "Prefab shortname, boss profile, event name [null if not required]": "crate_basic",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 1.5,
+      "Should we consider loot chance modifiers that the player may have?": true,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Celestial Wardkeeper": 10,
+        "Arcane Pledge": 15,
+        "Phoenix Protector": 20,
+        "Slice of Life (Cake)": 30,
+        "Hydrorubber Ducky": 100,
+        "Ghost Weave": 75,
+        "Goes Brrrrrrrrrrr": 5,
+        "Triton's Resilience": 70,
+        "Frostfire Garb": 60,
+        "Emberguard Harness": 50
       }
     },
     {
@@ -1959,9 +2041,19 @@
       "Prefab shortname, boss profile, event name [null if not required]": "crate_normal",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 3.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 1.5,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Celestial Wardkeeper": 10,
+        "Arcane Pledge": 15,
+        "Phoenix Protector": 20,
+        "Slice of Life (Cake)": 30,
+        "Hydrorubber Ducky": 100,
+        "Ghost Weave": 75,
+        "Goes Brrrrrrrrrrr": 5,
+        "Triton's Resilience": 70,
+        "Frostfire Garb": 60,
+        "Emberguard Harness": 50,
         "Boneplate of the Dead": 10,
         "Warlords Remains": 50,
         "Paul Bunyans Jacket": 20,
@@ -1973,7 +2065,7 @@
         "Shadowcraft Gloves": 25,
         "Sashas Wrath": 5,
         "Cabelas Fishing Suit": 70,
-        "Road Warrior Jacket": 60
+        "Road Warrior Jacket": 60        
       }
     },
     {
@@ -1981,9 +2073,18 @@
       "Prefab shortname, boss profile, event name [null if not required]": "crate_normal_2",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.5,
-      "Should we consider loot chance modifiers that the player may have?": false,
+      "Drop chance [%]": 1.5,
+      "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
+        "Evergreen Blessing": 100,
+        "EagleEye": 5,
+        "Harbinger's Viper": 50,
+        "DragonLance": 25,
+        "Divine Mythryl": 60,
+        "Scientist Wrath": 10,
+        "Ghost Weave": 80,
+        "I'll Be Back": 75,
+        "Great Equilizer": 5,
         "Battle Royale King": 100,
         "Mosin Nagant DEADEYE": 15,
         "AWP Dragon Lore": 10,
@@ -1998,7 +2099,7 @@
         "Hazmat Heisenberg": 80,
         "Shadowcraft Gloves": 70,
         "Evil Dead Boomstick": 75,
-        "Warglaive Of Azzinoth": 5
+        "Warglaive Of Azzinoth": 5        
       }
     },
     {
@@ -2091,353 +2192,7 @@
         "AWP Dragon Lore": 15,
         "Mosin Nagant DEADEYE": 15
       }
-    },
-    {
-      "Loot source": "Barrel",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Patrick Batemans Axe": 20,
-        "Villagers Wrath": 70,
-        "Continental Trousers": 50,
-        "Mincecraft Torch": 90,
-        "Nightslayer Boots": 80,
-        "Undying Pharaoh": 35,
-        "CYBER WAIFU CRINGE": 5,
-        "BR55 Halo Battle Rifle": 65,
-        "MP5 Siegebreaker": 60,
-        "Diamond Pickaxe": 30,
-        "Cabelas Fishing Suit": 60,
-        "Shadowcraft Gloves": 20,
-        "Big Daddy Diver": 10
-      }
-    },
-    {
-      "Loot source": "Crafting",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [
-        "ammo.pistol",
-        "ammo.pistol.fire",
-        "ammo.pistol.hv",
-        "ammo.rifle",
-        "ammo.rifle.explosive",
-        "ammo.rifle.incendiary",
-        "ammo.rifle.hv",
-        "ammo.shotgun",
-        "ammo.shotgun.fire",
-        "ammo.shotgun.slug",
-        "ammo.shotgun.handmade",
-        "ammo.grenadelauncher.he",
-        "ammo.grenadelauncher.buckshot",
-        "ammo.grenadelauncher.smoke",
-        "ammo.rocket.basic",
-        "ammo.rocket.hv",
-        "ammo.rocket.fire",
-        "ammo.rocket.smoke",
-        "ammo.rocket.sam",
-        "ammo.rocket.mlrs",
-        "ammo.rocket.seeker",
-        "arrow.wooden",
-        "arrow.fire",
-        "arrow.hv",
-        "spears.wooden",
-        "spears.stone",
-        "gunpowder",
-        "explosives",
-        "grenade.beancan",
-        "grenade.f1"
-      ],
-      "Drop chance [%]": 0.05,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Master Crafter": 100,
-        "Kilt of Production": 50,
-        "Frostfire Garb": 45,
-        "Golden Mule": 5
-      }
-    },
-    {
-      "Loot source": "Crafting",
-      "Prefab shortname, boss profile, event name [null if not required]": "roadsign.kilt",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.05,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Kilt of Production": 100,
-        "Mask of the Satisfied": 50,
-        "Steel Resolve": 25,
-        "Emberguard Harness": 45,
-        "Golden Mule": 5
-      }
-    },
-    {
-      "Loot source": "Woodcutting",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.05,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Woodcutter's Pride": 100,
-        "Evergreen Blessing": 5,
-        "Forester's Edge": 40,
-        "Chainsaw of Destruction": 10,
-        "Dirty Harry": 55,
-        "Iron Bastion": 25,
-        "Mask of the Satisfied": 80,
-        "Divine Mythryl": 12,
-        "Frostfire Garb": 55
-      }
-    },
-    {
-      "Loot source": "Mining",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.05,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Miner's Treasure": 100,
-        "Explosive Pickaxe": 65,
-        "Turbo Jacky": 35,
-        "Emberguard Harness": 55,
-        "Divine Mythryl": 5,
-        "Iron Bastion": 20,
-        "Mask of the Satisfied": 65,
-        "Can Opener": 20,
-        "Snapple's Jackhammer of Destruction": 50
-      }
-    },
-    {
-      "Loot source": "Skinning",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [
-        "player_corpse"
-      ],
-      "Drop chance [%]": 3.5,
-      "Should we consider loot chance modifiers that the player may have?": false,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Silent Hunter": 15,
-        "Beastmaster's Bow": 75,
-        "Bloodharvest Blade": 100,
-        "Iron Bastion": 15,
-        "Divine Mythryl": 10,
-        "Infernal Fang": 25,
-        "Medic's Remedy": 65,
-        "Slice of Life (Gloves)": 50,
-        "Frostfire Garb": 70,
-        "Torch of Survival": 45
-      }
-    },
-    {
-      "Loot source": "Fishing",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 10.0,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Angler's Fortune": 100,
-        "Ghost Weave": 50,
-        "Triton's Resilience": 85,
-        "Iron Bastion": 10,
-        "Sea Reaver": 65,
-        "Tenrai Tsubasa": 80,
-        "Tidebringer's Trousers": 70,
-        "Hydrorubber Ducky": 90
-      }
-    },
-    {
-      "Loot source": "Foraging",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.5,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Mask of the Satisfied": 65,
-        "Can Opener": 100,
-        "Beastmaster's Bow": 75,
-        "Farmer's Friend": 50,
-        "Miner's Treasure": 10,
-        "Woodcutter's Pride": 10,
-        "Forester's Edge": 5,
-        "Merchant's Reaping Spade": 10,
-        "Kazamakis' Grafting Knife of Plenty": 10
-      }
-    },
-    {
-      "Loot source": "ScientistNPC",
-      "Prefab shortname, boss profile, event name [null if not required]": "scientistnpc_junkpile_pistol",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.5,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Golden Mule": 25,
-        "Dirty Harry": 80,
-        "Can Opener": 100,
-        "Voidcaller Barrage": 5,
-        "Mask of the Satisfied": 40,
-        "Infernal Fang": 25,
-        "DragonLance": 55,
-        "Divine Mythryl": 75
-      }
-    },
-    {
-      "Loot source": "HumanNPC",
-      "Prefab shortname, boss profile, event name [null if not required]": "npc_tunneldweller",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.0,
-      "Should we consider loot chance modifiers that the player may have?": false,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Mask of the Satisfied": 100
-      }
-    },
-    {
-      "Loot source": "Farming",
-      "Prefab shortname, boss profile, event name [null if not required]": null,
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.1,
-      "Should we consider loot chance modifiers that the player may have?": false,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Farmer's Friend": 100
-      }
-    },
-    {
-      "Loot source": "Crate",
-      "Prefab shortname, boss profile, event name [null if not required]": "heli_crate",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.5,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Infernal Fang": 75,
-        "Skyfire": 10,
-        "Rain of Hell": 40,
-        "Celestial Wardkeeper": 30,
-        "Divine Mythryl": 60,
-        "Goes Brrrrrrrrrrr": 15,
-        "I'll Be Back": 100,
-        "The Holy Parabellum": 65,
-        "Great Equilizer": 20,
-        "DragonLance": 45,
-        "Harbinger's Viper": 50,
-        "Annoyance Protocol - AP47": 40,
-        "MULTI PASS": 100
-      }
-    },
-    {
-      "Loot source": "Crate",
-      "Prefab shortname, boss profile, event name [null if not required]": "bradley_crate",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.5,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Voidcaller Barrage": 30,
-        "Harbinger's Viper": 100,
-        "Scientist Wrath": 15,
-        "DragonLance": 85,
-        "Rain of Hell": 30,
-        "Divine Mythryl": 35,
-        "Goes Brrrrrrrrrrr": 5,
-        "I'll Be Back": 70,
-        "Dirty Harry": 75,
-        "Great Equilizer": 5,
-        "Annoyance Protocol - AP47": 65,
-        "MULTI PASS": 100
-      }
-    },
-    {
-      "Loot source": "Crate",
-      "Prefab shortname, boss profile, event name [null if not required]": "crate_elite",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.0,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Voidcaller Barrage": 10,
-        "Infernal Fang": 100,
-        "DragonLance": 15,
-        "Scientist Wrath": 20,
-        "Wrath of the Scientist": 40,
-        "Emberguard Harness": 60,
-        "Great Equilizer": 25,
-        "The Holy Parabellum": 55,
-        "Evergreen Blessing": 35,
-        "EagleEye": 30,
-        "Dirty Harry": 50,
-        "MULTI PASS": 50
-      }
-    },
-    {
-      "Loot source": "Crate",
-      "Prefab shortname, boss profile, event name [null if not required]": "crate_basic",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.5,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Celestial Wardkeeper": 10,
-        "Arcane Pledge": 15,
-        "Phoenix Protector": 20,
-        "Slice of Life (Cake)": 30,
-        "Hydrorubber Ducky": 100,
-        "Ghost Weave": 75,
-        "Goes Brrrrrrrrrrr": 5,
-        "Triton's Resilience": 70,
-        "Frostfire Garb": 60,
-        "Emberguard Harness": 50
-      }
-    },
-    {
-      "Loot source": "Crate",
-      "Prefab shortname, boss profile, event name [null if not required]": "crate_normal",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.5,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Celestial Wardkeeper": 10,
-        "Arcane Pledge": 15,
-        "Phoenix Protector": 20,
-        "Slice of Life (Cake)": 30,
-        "Hydrorubber Ducky": 100,
-        "Ghost Weave": 75,
-        "Goes Brrrrrrrrrrr": 5,
-        "Triton's Resilience": 70,
-        "Frostfire Garb": 60,
-        "Emberguard Harness": 50
-      }
-    },
-    {
-      "Loot source": "Crate",
-      "Prefab shortname, boss profile, event name [null if not required]": "crate_normal_2",
-      "A list of required skin IDs [null if not required]": [],
-      "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.5,
-      "Should we consider loot chance modifiers that the player may have?": true,
-      "Items that can drop from this source [profile name: drop weight]": {
-        "Evergreen Blessing": 100,
-        "EagleEye": 5,
-        "Harbinger's Viper": 50,
-        "DragonLance": 25,
-        "Divine Mythryl": 60,
-        "Scientist Wrath": 10,
-        "Ghost Weave": 80,
-        "I'll Be Back": 75,
-        "Great Equilizer": 5
-      }
-    },
+    },    
     {
       "Loot source": "Barrel",
       "Prefab shortname, boss profile, event name [null if not required]": null,
@@ -2457,18 +2212,36 @@
         "Triton's Resilience": 60,
         "Slice of Life (Cake)": 40,
         "Hydrorubber Ducky": 10,
-        "Chainsaw of Destruction": 35
+        "Chainsaw of Destruction": 35,
+        "Battle Royale King": 100,
+        "Mosin Nagant DEADEYE": 15,
+        "AWP Dragon Lore": 10,
+        "Master Chiefs Judgment": 50,
+        "Noob Tube": 25,
+        "Urban Shadow Hoodie": 60,
+        "Undying Pharaoh": 35,
+        "BR55 Halo Battle Rifle": 65,
+        "MP5 Siegebreaker": 60,
+        "CYBER WAIFU CRINGE": 5,
+        "Thunderfury": 10,
+        "Hazmat Heisenberg": 80,
+        "Shadowcraft Gloves": 70,
+        "Evil Dead Boomstick": 75,
+        "Warglaive Of Azzinoth": 5        
       }
     },
     {
-      "Loot source": "Event",
-      "Prefab shortname, boss profile, event name [null if not required]": "SurvivalArena",
+      "Loot source": "HumanNPC",
+      "Prefab shortname, boss profile, event name [null if not required]": "npc_underwaterdweller",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 5.0,
+      "Drop chance [%]": 1.0,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Steel Resolve": 100
+        "Tidebringer's Trousers": 75,
+        "Sea Reaver": 50,
+        "Triton's Resilience": 60,
+        "Hydrorubber Ducky": 40
       }
     },
     {
@@ -2555,5 +2328,5 @@
       "Message type": 0
     }
   },
-  "logDrops": false
+  "logDrops": true
 }
