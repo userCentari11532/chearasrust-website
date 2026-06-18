@@ -274,6 +274,91 @@
             background: rgba(0, 217, 255, 0.05);
         }
 
+        /* ── Resource cards section (Option A) ── */
+        .resources-section {
+            margin: 0 0 60px;
+            animation: fadeIn 1s ease-out 1.4s both;
+        }
+
+        .resources-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 28px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .resource-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--teal), transparent);
+        }
+
+        .resource-card:hover {
+            border-color: var(--teal);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(0, 217, 255, 0.12);
+        }
+
+        .resource-card-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .resource-card-desc {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            flex: 1;
+            margin-bottom: 16px;
+        }
+
+        .resource-card-link {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+            align-self: flex-start;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .resource-card:hover .resource-card-link {
+            color: var(--accent-orange);
+            border-color: rgba(255, 107, 53, 0.4);
+        }
+
         .cta-section {
             text-align: center;
             margin: 60px 0;
@@ -302,9 +387,15 @@
             background: linear-gradient(135deg, var(--accent-orange), #ff8c5a);
         }
 
+        /* ── Updates section ── */
         .updates-section {
             margin: 60px 0;
             animation: fadeIn 1s ease-out 1.5s both;
+        }
+
+        /* Hidden state — content is preserved in the DOM, just not visible */
+        .updates-section.updates-hidden {
+            display: none;
         }
 
         .updates-section h2 {
@@ -314,6 +405,40 @@
             color: var(--teal);
             text-transform: uppercase;
             letter-spacing: 2px;
+        }
+
+        /* Toggle button that lives just above the updates section */
+        .updates-toggle-wrap {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 60px 0 0;
+        }
+
+        .updates-toggle-btn {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 8px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .updates-toggle-btn:hover {
+            border-color: var(--teal);
+            color: var(--teal);
+        }
+
+        .updates-toggle-divider {
+            flex: 1;
+            height: 1px;
+            background: var(--border);
         }
 
         .update-card {
@@ -518,7 +643,7 @@
                 </div>
                 <div class="info-item">
                     <div class="info-label">Last Wiped</div>
-                    <div class="info-value">June 4, 2026</div>
+                    <div class="info-value">June 18, 2026</div>
                 </div>
             </div>
 
@@ -535,35 +660,59 @@
                     <li>Plenty of Quality of Life Improvements</li>
                 </ul>
             </div>
+
+
         </div>
 
         <div class="cta-section">
             <a href="https://discord.gg/reyrcGu3p8" target="_blank" class="discord-btn">Join Discord</a>
         </div>
 
-        <div class="updates-section">
+        <div class="resources-section">
+            <h2>Server Resources</h2>
+            <div class="resources-grid">
+                <a href="/loot/" class="resource-card">
+                    <div class="resource-card-title">Loot Tables</div>
+                    <div class="resource-card-desc">Alpha Loot drop probabilities for Bradley, Heli, and all crate types on the server.</div>
+                    <span class="resource-card-link">View tables →</span>
+                </a>
+                <a href="/loot/legendaries.html" class="resource-card">
+                    <div class="resource-card-title">Legendary Items</div>
+                    <div class="resource-card-desc">Browse all legendary item profiles, perks, and the sources they can drop from.</div>
+                    <span class="resource-card-link">View legendaries →</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="updates-toggle-wrap" id="updatesToggleWrap" style="display:none">
+            <div class="updates-toggle-divider"></div>
+            <button class="updates-toggle-btn" id="updatesToggleBtn" onclick="toggleUpdates()">Show Updates</button>
+            <div class="updates-toggle-divider"></div>
+        </div>
+
+        <div class="updates-section updates-hidden" id="updatesSection" style="display:none">
             <h2>Latest Updates</h2>
 
-        <div class="update-card">
-            <div class="update-date">Jun 5, 2026</div>
-            <div class="update-title">A Look Back — What We've Been Building</div>
-            <div class="update-content collapsible" id="update-4">
-                The past month or so has been one of the busiest stretches we have had since launching CaR, and I wanted to take a moment to recap everything we have been working on behind the scenes.<br><br>
-        
-                <b>NPC Overhaul</b><br><br>
-        
-                We completed a full rework of our NPC configuration across every monument on the server. Every NPC preset was renamed from cryptic hash strings to a clean Location-Weapon convention like Harbor-Python or Airfield-Spas12, making the whole system dramatically easier to manage and tune going forward. Along the way we standardized damage scaling and made sure the right enemies are showing up in the right [or often times, new] places.<br><br>
-        
-                <b>Plugin Compatibility</b><br><br>
-        
-                Facepunch pushed an API change that converted a number of string types to a new StringView format which broke several [40 or so] of our plugins simultaneously. Luckily the authors were pretty on the ball about this patch and shipped updates pretty quickly. I only had to manually patch ten or so plugins which while annoying, wasn't the end of the world.<br><br>
-        
-                <b>The Rough Patch — May 28</b><br><br>
-        
-                I would be remiss not to address the crashes. Starting May 28, the server began going down every couple of hours due to a memory leak that took a few days to fully identify and patch. What a time to be alive. Thankfully, our host was able to patch their side a day or so before FacePunch pushed a patch for it but yeah, woof that was bad. Thankfully we haven't had any issues since then! Let's keep our fingers crossed!<br><br>
-            </div>
-            <span class="read-more-btn" onclick="toggleUpdate('update-4', this)">Read More ▼</span>
-        </div>             
+            <div class="update-card">
+                <div class="update-date">Jun 5, 2026</div>
+                <div class="update-title">A Look Back — What We've Been Building</div>
+                <div class="update-content collapsible" id="update-4">
+                    The past month or so has been one of the busiest stretches we have had since launching CaR, and I wanted to take a moment to recap everything we have been working on behind the scenes.<br><br>
+            
+                    <b>NPC Overhaul</b><br><br>
+            
+                    We completed a full rework of our NPC configuration across every monument on the server. Every NPC preset was renamed from cryptic hash strings to a clean Location-Weapon convention like Harbor-Python or Airfield-Spas12, making the whole system dramatically easier to manage and tune going forward. Along the way we standardized damage scaling and made sure the right enemies are showing up in the right [or often times, new] places.<br><br>
+            
+                    <b>Plugin Compatibility</b><br><br>
+            
+                    Facepunch pushed an API change that converted a number of string types to a new StringView format which broke several [40 or so] of our plugins simultaneously. Luckily the authors were pretty on the ball about this patch and shipped updates pretty quickly. I only had to manually patch ten or so plugins which while annoying, wasn't the end of the world.<br><br>
+            
+                    <b>The Rough Patch — May 28</b><br><br>
+            
+                    I would be remiss not to address the crashes. Starting May 28, the server began going down every couple of hours due to a memory leak that took a few days to fully identify and patch. What a time to be alive. Thankfully, our host was able to patch their side a day or so before FacePunch pushed a patch for it but yeah, woof that was bad. Thankfully we haven't had any issues since then! Let's keep our fingers crossed!<br><br>
+                </div>
+                <span class="read-more-btn" onclick="toggleUpdate('update-4', this)">Read More ▼</span>
+            </div>             
 
             <div class="update-card">
                 <div class="update-date">Mar 5, 2026</div>
@@ -610,7 +759,7 @@
                     
                     I am also exploring ways to allow players to design Boss Monsters and Legendary items. The Boss Monster creator is already finished, but I am still deciding how to roll it out. No promises that every idea will be implemented, but I want to open the door for more community-driven content.<br><br>
                     
-                    For now, I am just trying to keep my head above water while we work through these weird edge-case issues that seem to pop up daily. I appreciate everyone’s patience while we get things locked down.<br><br>
+                    For now, I am just trying to keep my head above water while we work through these weird edge-case issues that seem to pop up daily. I appreciate everyone's patience while we get things locked down.<br><br>
                     
                     As always, thank you for sticking with ClearAsRust ❤️
                 </div>
@@ -674,7 +823,6 @@
                 
                 const data = await response.json();
                 
-                // Update status indicator
                 const statusElement = document.getElementById('serverStatus');
                 const playerCountElement = document.getElementById('playerCount');
                 const mapNameElement = document.getElementById('mapName');
@@ -703,22 +851,24 @@
             }
         }
 
-        // Update on page load
         updateServerStatus();
-        
-        // Update every 30 seconds
         setInterval(updateServerStatus, 30000);
 
-        // Toggle read more/less for updates
+        // ── Updates toggle ──────────────────────────────────────────────
+        // The section starts hidden (.updates-hidden). Toggling removes/adds
+        // that class — the HTML content is never touched.
+        function toggleUpdates() {
+            const section = document.getElementById('updatesSection');
+            const btn     = document.getElementById('updatesToggleBtn');
+            const hidden  = section.classList.toggle('updates-hidden');
+            btn.textContent = hidden ? 'Show Updates' : 'Hide Updates';
+        }
+
+        // ── Per-card read more ──────────────────────────────────────────
         function toggleUpdate(updateId, button) {
             const content = document.getElementById(updateId);
             content.classList.toggle('expanded');
-            
-            if (content.classList.contains('expanded')) {
-                button.textContent = 'Show Less ▲';
-            } else {
-                button.textContent = 'Read More ▼';
-            }
+            button.textContent = content.classList.contains('expanded') ? 'Show Less ▲' : 'Read More ▼';
         }
 
         // Add smooth scroll behavior
@@ -727,10 +877,7 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
