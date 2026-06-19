@@ -164,7 +164,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Kneel. The night is long, and the king does not sleep.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 2
-    },    
+    },
     "Steel Resolve": {
       "Item shortname": "coffeecan.helmet",
       "Item skin": 3415728548,
@@ -288,7 +288,7 @@
         "Angler": 1.0,
         "LineStrength": 2.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A prized reward of the Stranglethorn Fishing Extravaganza. The rarest catch isnt in the water\u2026 its in your hands.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A prized reward of the Stranglethorn Fishing Extravaganza. The rarest catch isnt in the water… its in your hands.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Undying Pharaoh": {
@@ -330,7 +330,7 @@
         "Smelter": 2.0,
         "Prepper": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What are you doing? You wanna explain that? Yeah\u2026 thats a ban. See you later.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What are you doing? You wanna explain that? Yeah… thats a ban. See you later.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Ghost Weave": {
@@ -374,7 +374,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Transmission ended. No survivors. Object returning to surface.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },    
+    },
     "Great Equilizer": {
       "Item shortname": "hmlmg",
       "Item skin": 3601436236,
@@ -444,7 +444,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "She walked between the living and the dead so long, even death forgot her name.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },    
+    },
     "Explosive Pickaxe": {
       "Item shortname": "icepick.salvaged",
       "Item skin": 3111841760,
@@ -607,7 +607,7 @@
         "BeastWard": 1.35,
         "Thorns": 0.1
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It is dangerous to go alone! Take this. Power, wisdom, courage\u2026",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It is dangerous to go alone! Take this. Power, wisdom, courage…",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Golden Mule": {
@@ -663,7 +663,7 @@
         "ScientistBane": 0.3,
         "Thorns": 0.15
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dread it. Run from it. The end arrives all the same. When fired\u2026 nothing survives.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dread it. Run from it. The end arrives all the same. When fired… nothing survives.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Mask of the Satisfied": {
@@ -691,7 +691,7 @@
         "Fabricate": 0.3,
         "Thrifty": 0.3
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We are thieves\u2026 in a world that dont want us no more.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We are thieves… in a world that dont want us no more.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "CYBER WAIFU CRINGE": {
@@ -763,7 +763,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The train doesn't stop. Neither do you.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },    
+    },
     "Boneplate of the Dead": {
       "Item shortname": "metal.plate.torso",
       "Item skin": 3034217639,
@@ -791,7 +791,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It's alive. God help us... it's alive.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },    
+    },
     "Celestial Wardkeeper": {
       "Item shortname": "metal.plate.torso",
       "Item skin": 3531593131,
@@ -831,7 +831,7 @@
         "ScientistBane": 0.3,
         "Vampiric": 0.1
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They are rage, brutal, without mercy. But you\u2026 you will be worse. Against all the evil that Hell can conjure!",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They are rage, brutal, without mercy. But you… you will be worse. Against all the evil that Hell can conjure!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Goes Brrrrrrrrrrr": {
@@ -873,7 +873,7 @@
         "Regeneration": 0.15,
         "HealShare": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They call him Baba Yaga. He once killed three men in a bar\u2026 with a pencil.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They call him Baba Yaga. He once killed three men in a bar… with a pencil.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Tidebringer's Trousers": {
@@ -901,7 +901,7 @@
         "BlastMine": 0.01,
         "Prospector": 1.0
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dont dig straight down. I hear lava\u2026One more block. Straight to diamonds!",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dont dig straight down. I hear lava…One more block. Straight to diamonds!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Miner's Treasure": {
@@ -971,7 +971,7 @@
         "BeastBane": 1.25,
         "UncannyDodge": 0.04
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This is a .44 Magnum, the most powerful handgun in the world\u2026\u2026and would blow your head clean off. Do you feel lucky, punk?",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This is a .44 Magnum, the most powerful handgun in the world……and would blow your head clean off. Do you feel lucky, punk?",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Heli? Bet.": {
@@ -1026,7 +1026,7 @@
         "ScientistBane": 0.25,
         "Thorns": 0.12
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The Ashbringer\u2026it burns with righteous fury. All who sin will be cleansed in holy fire.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The Ashbringer…it burns with righteous fury. All who sin will be cleansed in holy fire.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "GRIM REAPER": {
@@ -1081,7 +1081,7 @@
         "BeastBane": 1.5,
         "Vampiric": 0.1
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I only need one shot\u2026 if I miss, Im dead.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I only need one shot… if I miss, Im dead.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "AWP Dragon Lore": {
@@ -1095,7 +1095,7 @@
         "BeastBane": 2.5,
         "Vampiric": 0.1
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What in God's name is that?! One shot. One kill. He's done the impossible. They line up\u2026 and fall.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What in God's name is that?! One shot. One kill. He's done the impossible. They line up… and fall.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Assassin's Contract": {
@@ -1276,7 +1276,7 @@
         "FlakJacket": 0.5,
         "Prepper": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I see dead people. If it sees you\u2026 its already too late.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I see dead people. If it sees you… its already too late.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
     },
     "Emberguard Harness": {
@@ -1332,7 +1332,7 @@
         "Builder": 0.3,
         "Prepper": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "My army will destroy you. Bound to serve\u2026 even in death.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "My army will destroy you. Bound to serve… even in death.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
     },
     "Killpocalypse": {
@@ -1429,7 +1429,7 @@
         "BeastBane": 1.5,
         "UncannyDodge": 0.04
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This\u2026 is my BOOMSTICK! Hail to the king, baby. Come get some!",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This… is my BOOMSTICK! Hail to the king, baby. Come get some!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "The Boogeyman Baba Yaga": {
@@ -1443,7 +1443,7 @@
         "BeastBane": 1.5,
         "Vampiric": 0.1
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Rules\u2026 without them, we live with the animals. No one escapes.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Rules… without them, we live with the animals. No one escapes.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "The Holy Parabellum": {
@@ -1499,7 +1499,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Nobody walks away from a hostage situation. Nobody except you.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },    
+    },
     "Sea Reaver": {
       "Item shortname": "speargun",
       "Item skin": 0,
@@ -1553,7 +1553,7 @@
         "Forager": 0.7,
         "BeastWard": 0.75
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Provides light in dark places. I hear zombies\u2026",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Provides light in dark places. I hear zombies…",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Oni's Wrath": {
@@ -1569,7 +1569,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The demon does not negotiate. It does not tire. It simply comes.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    }    
+    }
   },
   "Loot profiles": [
     {
@@ -1796,7 +1796,6 @@
         "Can Opener": 100,
         "Voidcaller Barrage": 5,
         "Mask of the Satisfied": 40,
-        "DragonLance": 55,
         "Divine Mythryl": 75
       }
     },
@@ -1926,6 +1925,37 @@
         "Magnum Force": 35
       }
     },
+    {
+      "Loot source": "Crate",
+      "Prefab shortname, boss profile, event name [null if not required]": "supply_drop",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 8.0,
+      "Should we consider loot chance modifiers that the player may have?": true,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Can Opener": 100,
+        "Flintstones Club": 80,
+        "Attractive Boots": 80,
+        "Nightslayer Boots": 70,
+        "Engineers Pipe Tool": 70,
+        "Outlaw Bandana": 60,
+        "Urban Shadow Hoodie": 50,
+        "Mask of the Satisfied": 50,
+        "Continental Trousers": 40,
+        "Road Warrior Jacket": 40,
+        "Hazmat Heisenberg": 35,
+        "Shadowcraft Gloves": 35,
+        "MP5 Siegebreaker": 30,
+        "BR55 Halo Battle Rifle": 30,
+        "Dirty Harry": 25,
+        "Magnum Force": 25,
+        "Battle Royale King": 20,
+        "Master Chiefs Judgment": 15,
+        "Boneplate of the Dead": 15,
+        "Wallaces War Kilt": 15,
+        "Mosin Nagant DEADEYE": 10
+      }
+    },    
     {
       "Loot source": "Crate",
       "Prefab shortname, boss profile, event name [null if not required]": "crate_basic",
@@ -2377,7 +2407,6 @@
         "Celestial Wardkeeper": 25,
         "Dirty Harry": 50,
         "Divine Mythryl": 75,
-        "DragonLance": 55,
         "EagleEye": 10,
         "Emberguard Harness": 25,
         "Evergreen Blessing": 25,
