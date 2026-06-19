@@ -1,374 +1,24 @@
 {
   "Item profiles": {
-    "Ashbringer": {
-      "Item shortname": "rifle.ak",
-      "Item skin": 3492222524,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HeliDamage": 0.3,
-        "ScientistBane": 0.25,
-        "Thorns": 0.12
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The Ashbringer…it burns with righteous fury. All who sin will be cleansed in holy fire.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Ragnaros Wrath": {
-      "Item shortname": "lmg.m249",
-      "Item skin": 2324518512,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HeliDamage": 0.3,
-        "ScientistBane": 0.25,
-        "Thorns": 0.12
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "BY FIRE BE PURGED! DIE, INSECT! COME FORTH TASTE THE FLAMES OF SULFURON!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "WORLD ENDER": {
-      "Item shortname": "lmg.m249",
-      "Item skin": 3580932538,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HeliDamage": 1.0,
-        "ScientistBane": 0.3,
-        "Thorns": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dread it. Run from it. The end arrives all the same. When fired… nothing survives.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "GRIM REAPER": {
-      "Item shortname": "rifle.ak",
-      "Item skin": 3709656792,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HeliDamage": 1.0,
-        "ScientistBane": 0.3,
-        "Thorns": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Seasons dont fear the Reaper. Nor do the wind, the sun, or the rain. Take my hand.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "SILENT TERROR": {
-      "Item shortname": "rifle.l96",
-      "Item skin": 3620119983,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BeastBane": 5.0,
-        "ScientistBane": 0.3,
-        "Vampiric": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "No sound. No trace. Silence is the weapon. Right between the eyes.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Thunderfury": {
-      "Item shortname": "rifle.lr300",
-      "Item skin": 2621115159,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "ScientistWard": 0.3,
-        "Vampiric": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Lightning strikes...The Windseeker has been unleashed!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Warglaive Of Azzinoth": {
-      "Item shortname": "hmlmg",
-      "Item skin": 3601425682,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "HeliDamage": 0.25,
-        "Thorns": 0.08
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Behold the flames of Azzinoth! Feel the hatred of ten thousand years! Your resistance is insignificant...",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "AWP Dragon Lore": {
-      "Item shortname": "rifle.l96",
-      "Item skin": 2866542152,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "BeastBane": 2.5,
-        "Vampiric": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What in God’s name is that?! One shot. One kill. He’s done the impossible. They line up… and fall.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "MP5 Siegebreaker": {
-      "Item shortname": "smg.mp5",
-      "Item skin": 3145493397,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.1,
-        "HeliDamage": 0.1,
-        "UncannyDodge": 0.02
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We need to secure the biohazard container. Breach charge going live! Going in!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "BR55 Halo Battle Rifle": {
-      "Item shortname": "rifle.semiauto",
-      "Item skin": 3525810305,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.1,
-        "HeliDamage": 0.1,
-        "BeastBane": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Thought Id try shooting my way out. Spartans never die! Killimanjaro!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Magnum Force": {
-      "Item shortname": "pistol.python",
-      "Item skin": 3023796295,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.3,
-        "BeastBane": 1.25,
-        "UncannyDodge": 0.04
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This is a .44 Magnum, the most powerful handgun in the world……and would blow your head clean off. Do you feel lucky, punk?",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Sashas Wrath": {
-      "Item shortname": "minigun",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "Vampiric": 0.1,
-        "Thorns": 0.08
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It costs $400,000 to fire this weapon… for 12 seconds. WHO TOUCHED MY GUN?!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Evil Dead Boomstick": {
-      "Item shortname": "shotgun.m4",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "BeastBane": 1.5,
-        "UncannyDodge": 0.04
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This… is my BOOMSTICK! Hail to the king, baby. Come get some!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "The Boogeyman Baba Yaga": {
-      "Item shortname": "shotgun.pump",
-      "Item skin": 3265054842,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "BeastBane": 1.5,
-        "Vampiric": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Rules… without them, we live with the animals. No one escapes.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Battle Royale King": {
-      "Item shortname": "rifle.sks",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "BeastBane": 1.5,
-        "Vampiric": 0.12
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Winner Winner Chicken Dinner!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Noob Tube": {
-      "Item shortname": "multiplegrenadelauncher",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "BradleyDamage": 4.0,
-        "Thorns": 0.08
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Stop tubing! Learn to aim! You are trash without that. Imagine using a tube.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Master Chiefs Judgment": {
-      "Item shortname": "rifle.m39",
-      "Item skin": 3572933244,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.15,
-        "BeastBane": 1.75,
-        "Thorns": 0.08
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Spartans never die. Finish the fight.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Primlocked": {
-      "Item shortname": "crossbow",
+    "Forester's Edge": {
+      "Item shortname": "axe.salvaged",
       "Item skin": 0,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "BeastBane": 1.75,
-        "Thorns": 0.08
+        "Lumberjack": 2.75,
+        "WoodcuttingLuck": 0.5,
+        "Regeneration": 5.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Primlocked and cursed. Back to the beach...",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Evil Dead Chainsaw": {
-      "Item shortname": "chainsaw",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Lumberjack": 1.0,
-        "BeastWard": 0.5,
-        "WoodcuttingLuck": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Hail to the king, baby. Come get some!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "HELLFIRE": {
-      "Item shortname": "military flamethrower",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BeastBane": 3.0,
-        "ScientistBane": 0.3,
-        "Vampiric": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They are rage, brutal, without mercy. But you… you will be worse. Against all the evil that Hell can conjure!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Killpocalypse": {
-      "Item shortname": "rocket.launcher",
-      "Item skin": 3556102205,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BradleyDamage": 0.25,
-        "FlakJacket": 0.1,
-        "Thorns": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Double Kill! Triple Kill! Overkill! Finish the fight.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Mosin Nagant DEADEYE": {
-      "Item shortname": "rifle.bolt",
-      "Item skin": 3700910960,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.2,
-        "BeastBane": 1.5,
-        "Vampiric": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I only need one shot… if I miss, Im dead.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Dragonbone Knee Breaker": {
-      "Item shortname": "bow.hunting",
-      "Item skin": 3456147227,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BeastBane": 2.5,
-        "Vampiric": 0.05,
-        "BeastWard": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I used to be an adventurer like you...then I took an arrow in the knee.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Perditions Blade": {
-      "Item shortname": "knife.combat",
-      "Item skin": 3639955437,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Butcher": 1.0,
-        "SkinningLuck": 0.5,
-        "Tanner": 0.75
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I win this. Stunlocked. He cant move. Deleted!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Flintstones Club": {
-      "Item shortname": "bone.club",
-      "Item skin": 2713666691,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Scavenger": 0.3,
-        "ComponentLuck": 0.3,
-        "ElectronicsLuck": 0.3
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Yabba Dabba Doo! Wilmaaa!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Diamond Pickaxe": {
-      "Item shortname": "pickaxe",
-      "Item skin": 2982384375,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MiningLuck": 0.3,
-        "BlastMine": 0.01,
-        "Prospector": 1.0
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dont dig straight down. I hear lava…One more block. Straight to diamonds!",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shaking the ground with every strike.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Patrick Batemans Axe": {
       "Item shortname": "axe.salvaged",
       "Item skin": 3706444904,
       "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
+      "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
         "Lumberjack": 0.7,
@@ -376,502 +26,6 @@
         "Prepper": 0.3
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Do you like Huey Lewis and the News? Try getting a reservation at Dorsia now you fucking stupid bastard!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Villagers Wrath": {
-      "Item shortname": "pitchfork",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Horticulture": 1.0,
-        "Regeneration": 0.12,
-        "Forager": 1.0
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Get the torches and pitchforks. Hunt it down...We end this tonight!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "BRRRRRRRR Nodes Gone": {
-      "Item shortname": "jackhammer",
-      "Item skin": 3542469160,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MiningLuck": 0.3,
-        "BlastMine": 0.01,
-        "Prospector": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Where did all the nodes go? The Zerg is farming again!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Get The Ban Hammer": {
-      "Item shortname": "hammer",
-      "Item skin": 2779578381,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Builder": 0.3,
-        "Smelter": 2.0,
-        "Prepper": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What are you doing? You wanna explain that? Yeah… thats a ban. See you later.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "The Iceman": {
-      "Item shortname": "icepick.salvaged",
-      "Item skin": 1625222037,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MiningLuck": 0.3,
-        "BlastMine": 0.01,
-        "Prospector": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "You wont feel a thing. Silent. Precise. One strike. Cold as ice.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Arcanite Fishing Pole": {
-      "Item shortname": "fishingrod.handmade",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "FishingLuck": 0.3,
-        "Angler": 1.0,
-        "LineStrength": 2.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A prized reward of the Stranglethorn Fishing Extravaganza. The rarest catch isnt in the water… its in your hands.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Mincecraft Torch": {
-      "Item shortname": "torch",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 0.1,
-        "Forager": 0.7,
-        "BeastWard": 0.75
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Provides light in dark places. I hear zombies…",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Engineers Pipe Tool": {
-      "Item shortname": "pipetool",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Fabricate": 0.3,
-        "Builder": 0.3,
-        "Thrifty": 0.3
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I solve practical problems. This is the right tool for the job.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "New Founding Fathers Facemask": {
-      "Item shortname": "metal.facemask",
-      "Item skin": 859381588,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "FlakJacket": 0.1,
-        "UncannyDodge": 0.05,
-        "Thorns": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "All crime is legal. This is not a test. May God be with you all.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
-    },
-    "CYBER WAIFU CRINGE": {
-      "Item shortname": "metal.facemask",
-      "Item skin": 3714429334,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "FlakJacket": 0.05,
-        "UncannyDodge": 0.04,
-        "ScientistWard": 0.05
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "All crime is legal. This is not a test. May God be with you all.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
-    },
-    "DEATHS REFLECTION": {
-      "Item shortname": "metal.facemask",
-      "Item skin": 2746346258,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "FlakJacket": 0.5,
-        "UncannyDodge": 0.15,
-        "Thorns": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Welcome to the end. No one escapes. No one hears you here.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
-    },
-    "Boneplate of the Dead": {
-      "Item shortname": "metal.plate.torso",
-      "Item skin": 3034217639,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 0.12,
-        "FlakJacket": 0.1,
-        "HealShare": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The dead will rise! You will join me in death! Death walks with you.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
-    "PLATE OF THE DAMNED": {
-      "Item shortname": "metal.plate.torso",
-      "Item skin": 2746349778,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 1.0,
-        "Vampiric": 0.15,
-        "HealShare": 1.0
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What an excellent day for an exorcism!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
-    "Warlords Remains": {
-      "Item shortname": "roadsign.kilt",
-      "Item skin": 2988222237,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "IronStomach": 2.5,
-        "Builder": 0.3,
-        "Prepper": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "My army will destroy you. Bound to serve… even in death.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
-    "Wallaces War Kilt": {
-      "Item shortname": "roadsign.kilt",
-      "Item skin": 2890592107,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Pharmaceutical": 0.15,
-        "FlakJacket": 0.1,
-        "Prepper": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They may take our lives, but they will never take our freedom! Every man dies, not every man really lives.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
-    "BLACK VEIL ARMOR": {
-      "Item shortname": "roadsign.kilt",
-      "Item skin": 3512825196,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Pharmaceutical": 0.5,
-        "FlakJacket": 0.5,
-        "Prepper": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I see dead people. If it sees you… its already too late.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
-    "Road Warrior Jacket": {
-      "Item shortname": "roadsign.jacket",
-      "Item skin": 1088919217,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MeleeWard": 0.5,
-        "Lead": 0.5,
-        "ScientistWard": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I live, I die, I live again! You will ride eternal, shiny and chrome.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
-    "Continental Trousers": {
-      "Item shortname": "pants",
-      "Item skin": 2660329469,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BeastWard": 0.35,
-        "Regeneration": 0.15,
-        "HealShare": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They call him Baba Yaga. He once killed three men in a bar… with a pencil.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Urban Shadow Hoodie": {
-      "Item shortname": "hoodie",
-      "Item skin": 3598894469,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 0.15,
-        "Thorns": 0.1,
-        "Vampiric": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I am not dying here. You cant catch me!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Outlaw Bandana": {
-      "Item shortname": "mask.bandana",
-      "Item skin": 3290126647,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Prepper": 0.75,
-        "Fabricate": 0.3,
-        "Thrifty": 0.3
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We are thieves… in a world that dont want us no more.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Level One Helmet": {
-      "Item shortname": "coffeecan.helmet",
-      "Item skin": 2942986068,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MeleeWard": 1.0,
-        "Paramedic": 1.0,
-        "Lead": 1.0
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Better than nothing. It will do. Dont aim for the head.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
-    },
-    "Hazmat Heisenberg": {
-      "Item shortname": "hazmatsuit",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "UncannyDodge": 0.04,
-        "ScientistWard": 0.15,
-        "Lead": 1.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I am the danger... I am the one who knocks. Stay out of my territory.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Undying Pharaoh": {
-      "Item shortname": "halloween.mummysuit",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "UncannyDodge": 0.02,
-        "ScientistWard": 0.15,
-        "Lead": 2.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "You have unleashed a creature beyond your control. You shall be cursed for all eternity!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Shadowcraft Gloves": {
-      "Item shortname": "tactical.gloves",
-      "Item skin": 3629348931,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Pharmaceutical": 0.12,
-        "Regeneration": 0.13,
-        "HealShare": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The flames consume you! You took this from a boss.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Nightslayer Boots": {
-      "Item shortname": "shoes.boots",
-      "Item skin": 3688281700,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Scavenger": 0.7,
-        "Forager": 1.0,
-        "ComponentLuck": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "From the shadows, death comes. Right behind you.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Cabelas Fishing Suit": {
-      "Item shortname": "diving.wetsuit",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Angler": 0.5,
-        "LineStrength": 1.0,
-        "FishingLuck": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I would rather be fishing.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Big Daddy Diver": {
-      "Item shortname": "diving.mask",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Angler": 0.5,
-        "LineStrength": 1.0,
-        "Regeneration": 0.12
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Would you kindly? No gods or kings. Only man.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Paul Bunyans Jacket": {
-      "Item shortname": "jacket",
-      "Item skin": 3435948435,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "WoodcuttingLuck": 0.3,
-        "FlakJacket": 0.1,
-        "Lumberjack": 0.4
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I have cleared bigger forests before breakfast. Cut it down. Timber!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Adventurers Pack": {
-      "Item shortname": "largebackpack",
-      "Item skin": 3407243284,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistWard": 0.2,
-        "BeastWard": 1.35,
-        "Thorns": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It is dangerous to go alone! Take this. Power, wisdom, courage…",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },    
-    "Heli? Bet.": {
-      "Item shortname": "pistol.semiauto",
-      "Item skin": 1109657124,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HeliDamage": 2.5,
-        "UncannyDodge": 0.25
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A semi-auto pistol, Snapple at the trigger, and a complete lack of self-preservation.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "MULTI PASS": {
-      "Item shortname": "keycard_green",
-      "Item skin": 3659163315,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Durable": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Leeloo Dallas Multi Pass. A universal access card that works on any card reader, no questions asked.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Merchant's Reaping Spade": {
-      "Item shortname": "shovel",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Horticulture": 2.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A single strike reaps every ripe plant within reach.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Kazamakis' Grafting Knife of Plenty": {
-      "Item shortname": "knife.bone",
-      "Item skin": 1864644530,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Horticulture": 0.25
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A bone knife that was never meant to be used this way. When it strikes the ground, nature responds enthusiastically; proof that even failure can somehow improve productivity. Each use splinters the blade, consuming bone fragments in the process.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Wrath of the Scientist": {
-      "Item shortname": "rifle.ak",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.25,
-        "Durable": 0.25
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": null,
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Miner's Treasure": {
-      "Item shortname": "pickaxe",
-      "Item skin": 3116120925,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MiningLuck": 0.5,
-        "BlastMine": 0.01,
-        "Prospector": 3.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shatters mine and nodes with ease.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Annoyance Protocol - AP47": {
-      "Item shortname": "rifle.ak",
-      "Item skin": 3492276761,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.45,
-        "ScientistWard": 0.75,
-        "Vampiric": 0.2
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Forged for the min-maxer who almost had it perfect. Tuned, tweaked, and pushed to the limit...just not the absolute one.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Angler's Fortune": {
-      "Item shortname": "fishingrod.handmade",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "FishingLuck": 0.75,
-        "Angler": 3.0,
-        "LineStrength": 2.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Infused with celestial energy to attract the rarest of fish.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Woodcutter's Pride": {
@@ -888,186 +42,44 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Cuts not just wood, but the soul of the forest itself.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Silent Hunter": {
-      "Item shortname": "crossbow",
-      "Item skin": 2871003086,
+    "A Scrub's Tissue": {
+      "Item shortname": "bandage",
+      "Item skin": 3659608613,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": true,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.75,
-        "BeastBane": 1.75,
-        "Thorns": 0.4
+        "HealShare": 0.3
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Born of shadows, striking unseen and deadly.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Wipe away your tears when you get shot in the feels.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Iron Bastion": {
-      "Item shortname": "metal.facemask",
-      "Item skin": 3433952909,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "FlakJacket": 0.35,
-        "UncannyDodge": 0.35,
-        "Thorns": 0.35
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A blast-proof grin that occasionally says NOPE to all damage, then refunds a percentage of the pain with interest.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Medic's Remedy": {
-      "Item shortname": "pants",
-      "Item skin": 3526244375,
+    "Can Opener": {
+      "Item shortname": "bone.club",
+      "Item skin": 2504024549,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "BeastWard": 0.35,
-        "Regeneration": 2.5,
-        "HealShare": 0.5
+        "Scavenger": 2.5,
+        "ComponentLuck": 2.5,
+        "ElectronicsLuck": 2.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Worn by those who walk the line between life and death.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It was said that he got so good at shredding metal, that the gods rewarded his fervour.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Torch of Survival": {
-      "Item shortname": "torch",
-      "Item skin": 0,
+    "Flintstones Club": {
+      "Item shortname": "bone.club",
+      "Item skin": 2713666691,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 10.0,
-        "Forager": 1.75,
-        "BeastWard": 0.75
+        "Scavenger": 0.3,
+        "ComponentLuck": 0.3,
+        "ElectronicsLuck": 0.3
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Harness divine fire to survive the harshest conditions.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Chainsaw of Destruction": {
-      "Item shortname": "chainsaw",
-      "Item skin": 1887115597,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Lumberjack": 2.5,
-        "WoodcuttingLuck": 0.5,
-        "Deforest": 0.2
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Sings with the winds of the north, creating a storm of lumber.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Infernal Fang": {
-      "Item shortname": "military flamethrower",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BeastBane": 3.0,
-        "ScientistBane": 3.0,
-        "Vampiric": 0.2
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Herald the end of the world with its destructive flames.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Master Crafter": {
-      "Item shortname": "pipetool",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Fabricate": 0.75,
-        "Manufacture": 0.75,
-        "Thrifty": 0.75
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dwarfs Helper in crafting efficiency.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Farmer's Friend": {
-      "Item shortname": "pitchfork",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Horticulture": 1.5,
-        "Regeneration": 7.5,
-        "Forager": 1.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Once belonged to a forgotten god of agriculture.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Mask of the Satisfied": {
-      "Item shortname": "mask.bandana",
-      "Item skin": 3254475114,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Prepper": 0.75,
-        "Manufacture": 2.5,
-        "Thrifty": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Embodying the beauty and protection of the goddess of production.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Voidcaller Barrage": {
-      "Item shortname": "rocket.launcher",
-      "Item skin": 2881907618,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BradleyDamage": 2.75,
-        "FlakJacket": 0.35,
-        "Thorns": 0.35
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Channels the infinite energy of the void, reshaping reality itself.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Kilt of Production": {
-      "Item shortname": "roadsign.kilt",
-      "Item skin": 834837451,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Environmentalist": 2.5,
-        "Builder": 0.75,
-        "Smelter": 2.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Obeys the wearer's mental commands to create and build.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Steel Resolve": {
-      "Item shortname": "coffeecan.helmet",
-      "Item skin": 3415728548,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MeleeWard": 1.0,
-        "Reinforced": 1.0,
-        "Lead": 1.0
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Black hole in helmet form, absorbing matter and nature alike.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Forester's Edge": {
-      "Item shortname": "axe.salvaged",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Lumberjack": 2.75,
-        "WoodcuttingLuck": 0.5,
-        "Regeneration": 5.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shaking the ground with every strike.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Yabba Dabba Doo! Wilmaaa!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Beastmaster's Bow": {
@@ -1097,60 +109,186 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": null,
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
     },
-    "Slice of Life (Gloves)": {
-      "Item shortname": "tactical.gloves",
-      "Item skin": 3606696267,
+    "Chainsaw of Destruction": {
+      "Item shortname": "chainsaw",
+      "Item skin": 1887115597,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": true,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Pharmaceutical": 0.5,
-        "Regeneration": 10.0,
-        "HealShare": 0.5
+        "Lumberjack": 2.5,
+        "WoodcuttingLuck": 0.5,
+        "Deforest": 0.2
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Said to have been worn by gods of healing in ages past.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Sings with the winds of the north, creating a storm of lumber.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Attractive Boots": {
-      "Item shortname": "shoes.boots",
-      "Item skin": 2936561559,
+    "Evil Dead Chainsaw": {
+      "Item shortname": "chainsaw",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Lumberjack": 1.0,
+        "BeastWard": 0.5,
+        "WoodcuttingLuck": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Hail to the king, baby. Come get some!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Level One Helmet": {
+      "Item shortname": "coffeecan.helmet",
+      "Item skin": 2942986068,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Scavenger": 1.5,
-        "Forager": 1.5,
-        "ComponentLuck": 1.0
+        "MeleeWard": 1.0,
+        "Paramedic": 1.0,
+        "Lead": 1.0
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Absorbs the scrap of the fallen.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Better than nothing. It will do. Dont aim for the head.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
     },
-    "Bloodharvest Blade": {
-      "Item shortname": "knife.combat",
-      "Item skin": 1732804435,
+    "Steel Resolve": {
+      "Item shortname": "coffeecan.helmet",
+      "Item skin": 3415728548,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": true,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Butcher": 2.75,
-        "SkinningLuck": 0.5,
-        "Tanner": 0.75
+        "MeleeWard": 1.0,
+        "Reinforced": 1.0,
+        "Lead": 1.0
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Carve through flesh and fortune alike.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Black hole in helmet form, absorbing matter and nature alike.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Primlocked": {
+      "Item shortname": "crossbow",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "BeastBane": 1.75,
+        "Thorns": 0.08
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Primlocked and cursed. Back to the beach...",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Tidebringer's Trousers": {
-      "Item shortname": "pants",
-      "Item skin": 2636257227,
+    "Tenrai Tsubasa": {
+      "Item shortname": "diving.fins",
+      "Item skin": 0,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": true,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Angler": 2.5,
-        "SharkWard": 0.75,
-        "SharkBane": 0.75
+        "Angler": 3.5,
+        "LineStrength": 2.5,
+        "SharkBane": 1.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The ocean fears its own hunter.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Swim with the grace and power of the legendary sea dragon.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Big Daddy Diver": {
+      "Item shortname": "diving.mask",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Angler": 0.5,
+        "LineStrength": 1.0,
+        "Regeneration": 0.12
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Would you kindly? No gods or kings. Only man.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Hydrorubber Ducky": {
+      "Item shortname": "diving.mask",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Pharmaceutical": 0.3,
+        "SharkWard": 0.25,
+        "Regeneration": 1.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Seals so snug and squeaks so proudly that even the ocean knows you're here to loot, not to breathe quietly",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Cabelas Fishing Suit": {
+      "Item shortname": "diving.wetsuit",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Angler": 0.5,
+        "LineStrength": 1.0,
+        "FishingLuck": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I would rather be fishing.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Triton's Resilience": {
+      "Item shortname": "diving.wetsuit",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Pharmaceutical": 0.3,
+        "SharkWard": 0.25,
+        "Regeneration": 1.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The deep knows no fear, only the tide.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Angler's Fortune": {
+      "Item shortname": "fishingrod.handmade",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "FishingLuck": 0.75,
+        "Angler": 3.0,
+        "LineStrength": 2.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Infused with celestial energy to attract the rarest of fish.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Arcanite Fishing Pole": {
+      "Item shortname": "fishingrod.handmade",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "FishingLuck": 0.3,
+        "Angler": 1.0,
+        "LineStrength": 2.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A prized reward of the Stranglethorn Fishing Extravaganza. The rarest catch isnt in the water\u2026 its in your hands.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Undying Pharaoh": {
+      "Item shortname": "halloween.mummysuit",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "UncannyDodge": 0.02,
+        "ScientistWard": 0.15,
+        "Lead": 2.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "You have unleashed a creature beyond your control. You shall be cursed for all eternity!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Architect's Edge": {
@@ -1167,18 +305,992 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Who says Building, Smelting and speed can't go hand in hand?",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Can Opener": {
-      "Item shortname": "bone.club",
-      "Item skin": 2504024549,
+    "Get The Ban Hammer": {
+      "Item shortname": "hammer",
+      "Item skin": 2779578381,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Scavenger": 2.5,
-        "ComponentLuck": 2.5,
-        "ElectronicsLuck": 2.5
+        "Builder": 0.3,
+        "Smelter": 2.0,
+        "Prepper": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It was said that he got so good at shredding metal, that the gods rewarded his fervour.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What are you doing? You wanna explain that? Yeah\u2026 thats a ban. See you later.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Ghost Weave": {
+      "Item shortname": "hazmatsuit",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "UncannyDodge": 0.5,
+        "Elemental": 0.5,
+        "Lead": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Bullets whisper past, fate bends away",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Hazmat Heisenberg": {
+      "Item shortname": "hazmatsuit",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "UncannyDodge": 0.04,
+        "ScientistWard": 0.15,
+        "Lead": 1.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I am the danger... I am the one who knocks. Stay out of my territory.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Great Equilizer": {
+      "Item shortname": "hmlmg",
+      "Item skin": 3601436236,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.5,
+        "HeliDamage": 1.5,
+        "Thorns": 0.3
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Whispers the names of those it will kill next.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Warglaive Of Azzinoth": {
+      "Item shortname": "hmlmg",
+      "Item skin": 3601425682,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "HeliDamage": 0.25,
+        "Thorns": 0.08
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Behold the flames of Azzinoth! Feel the hatred of ten thousand years! Your resistance is insignificant...",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Divine Mythryl": {
+      "Item shortname": "hoodie",
+      "Item skin": 3526243306,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 2.5,
+        "Thorns": 0.15,
+        "Vampiric": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Bends the laws of nature to its will.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Urban Shadow Hoodie": {
+      "Item shortname": "hoodie",
+      "Item skin": 3598894469,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 0.15,
+        "Thorns": 0.1,
+        "Vampiric": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I am not dying here. You cant catch me!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Explosive Pickaxe": {
+      "Item shortname": "icepick.salvaged",
+      "Item skin": 3111841760,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MiningLuck": 0.75,
+        "BlastMine": 0.01,
+        "Prospector": 2.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A piece of Krag's thumb still grips the handle of the pickaxe.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "The Iceman": {
+      "Item shortname": "icepick.salvaged",
+      "Item skin": 1625222037,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MiningLuck": 0.3,
+        "BlastMine": 0.01,
+        "Prospector": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "You wont feel a thing. Silent. Precise. One strike. Cold as ice.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Paul Bunyans Jacket": {
+      "Item shortname": "jacket",
+      "Item skin": 3435948435,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "WoodcuttingLuck": 0.3,
+        "FlakJacket": 0.1,
+        "Lumberjack": 0.4
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I have cleared bigger forests before breakfast. Cut it down. Timber!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Phoenix Protector": {
+      "Item shortname": "jacket",
+      "Item skin": 1644758865,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Elemental": 0.5,
+        "FlakJacket": 0.4,
+        "Lead": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Built to stroll through rockets, rads, and elemental chaos like it's a mild inconvenience.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "BRRRRRRRR Nodes Gone": {
+      "Item shortname": "jackhammer",
+      "Item skin": 3542469160,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MiningLuck": 0.3,
+        "BlastMine": 0.01,
+        "Prospector": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Where did all the nodes go? The Zerg is farming again!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Snapple's Jackhammer of Destruction": {
+      "Item shortname": "jackhammer",
+      "Item skin": 2790749663,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.5,
+        "BeastBane": 1.5,
+        "BlastMine": 0.2,
+        "RockCycler": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shake, Quake, Obliterate.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Turbo Jacky": {
+      "Item shortname": "jackhammer",
+      "Item skin": 3009403295,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MiningLuck": 0.5,
+        "BlastMine": 0.01,
+        "Prospector": 1.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Jackhammer that can split mountains.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "MULTI PASS": {
+      "Item shortname": "keycard_green",
+      "Item skin": 3659163315,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Durable": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Leeloo Dallas Multi Pass. A universal access card that works on any card reader, no questions asked.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Kazamakis' Grafting Knife of Plenty": {
+      "Item shortname": "knife.bone",
+      "Item skin": 1864644530,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Horticulture": 0.25
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A bone knife that was never meant to be used this way. When it strikes the ground, nature responds enthusiastically; proof that even failure can somehow improve productivity. Each use splinters the blade, consuming bone fragments in the process.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Bloodharvest Blade": {
+      "Item shortname": "knife.combat",
+      "Item skin": 1732804435,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Butcher": 2.75,
+        "SkinningLuck": 0.5,
+        "Tanner": 0.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Carve through flesh and fortune alike.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Perditions Blade": {
+      "Item shortname": "knife.combat",
+      "Item skin": 3639955437,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Butcher": 1.0,
+        "SkinningLuck": 0.5,
+        "Tanner": 0.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I win this. Stunlocked. He cant move. Deleted!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Adventurers Pack": {
+      "Item shortname": "largebackpack",
+      "Item skin": 3407243284,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistWard": 0.2,
+        "BeastWard": 1.35,
+        "Thorns": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It is dangerous to go alone! Take this. Power, wisdom, courage\u2026",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Golden Mule": {
+      "Item shortname": "largebackpack",
+      "Item skin": 3372009392,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistWard": 0.15,
+        "BeastWard": 0.15,
+        "Thorns": 0.25
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shines in the moonlight, offering protection to its bearer.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Ragnaros Wrath": {
+      "Item shortname": "lmg.m249",
+      "Item skin": 2324518512,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "HeliDamage": 0.3,
+        "ScientistBane": 0.25,
+        "Thorns": 0.12
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "BY FIRE BE PURGED! DIE, INSECT! COME FORTH TASTE THE FLAMES OF SULFURON!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Rain of Hell": {
+      "Item shortname": "lmg.m249",
+      "Item skin": 1740224810,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "HeliDamage": 2.0,
+        "ScientistBane": 2.0,
+        "Thorns": 0.4
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "And the heavens trembled as fire rose to meet them, for no beast of iron shall defy the will of man.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "WORLD ENDER": {
+      "Item shortname": "lmg.m249",
+      "Item skin": 3580932538,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "HeliDamage": 1.0,
+        "ScientistBane": 0.3,
+        "Thorns": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dread it. Run from it. The end arrives all the same. When fired\u2026 nothing survives.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Mask of the Satisfied": {
+      "Item shortname": "mask.bandana",
+      "Item skin": 3254475114,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Prepper": 0.75,
+        "Manufacture": 2.5,
+        "Thrifty": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Embodying the beauty and protection of the goddess of production.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Outlaw Bandana": {
+      "Item shortname": "mask.bandana",
+      "Item skin": 3290126647,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Prepper": 0.75,
+        "Fabricate": 0.3,
+        "Thrifty": 0.3
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We are thieves\u2026 in a world that dont want us no more.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "CYBER WAIFU CRINGE": {
+      "Item shortname": "metal.facemask",
+      "Item skin": 3714429334,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "FlakJacket": 0.05,
+        "UncannyDodge": 0.04,
+        "ScientistWard": 0.05
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "All crime is legal. This is not a test. May God be with you all.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
+    },
+    "DEATHS REFLECTION": {
+      "Item shortname": "metal.facemask",
+      "Item skin": 2746346258,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "FlakJacket": 0.5,
+        "UncannyDodge": 0.15,
+        "Thorns": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Welcome to the end. No one escapes. No one hears you here.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
+    },
+    "Iron Bastion": {
+      "Item shortname": "metal.facemask",
+      "Item skin": 3433952909,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "FlakJacket": 0.35,
+        "UncannyDodge": 0.35,
+        "Thorns": 0.35
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A blast-proof grin that occasionally says NOPE to all damage, then refunds a percentage of the pain with interest.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "New Founding Fathers Facemask": {
+      "Item shortname": "metal.facemask",
+      "Item skin": 859381588,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "FlakJacket": 0.1,
+        "UncannyDodge": 0.05,
+        "Thorns": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "All crime is legal. This is not a test. May God be with you all.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
+    },
+    "Boneplate of the Dead": {
+      "Item shortname": "metal.plate.torso",
+      "Item skin": 3034217639,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 0.12,
+        "FlakJacket": 0.1,
+        "HealShare": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The dead will rise! You will join me in death! Death walks with you.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "Celestial Wardkeeper": {
+      "Item shortname": "metal.plate.torso",
+      "Item skin": 3531593131,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 1.5,
+        "FlakJacket": 0.35,
+        "Elemental": 0.4
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "So overprotective it blocks blades, bullies rockets, and tells the elements to behave - politely, but firmly.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "PLATE OF THE DAMNED": {
+      "Item shortname": "metal.plate.torso",
+      "Item skin": 2746349778,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 1.0,
+        "Vampiric": 0.15,
+        "HealShare": 1.0
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What an excellent day for an exorcism!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "HELLFIRE": {
+      "Item shortname": "military flamethrower",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "BeastBane": 3.0,
+        "ScientistBane": 0.3,
+        "Vampiric": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They are rage, brutal, without mercy. But you\u2026 you will be worse. Against all the evil that Hell can conjure!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Goes Brrrrrrrrrrr": {
+      "Item shortname": "minigun",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.5,
+        "Vampiric": 0.15,
+        "Thorns": 0.25
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Even The Predator would be impressed by the firepower.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Noob Tube": {
+      "Item shortname": "multiplegrenadelauncher",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "BradleyDamage": 2.0,
+        "Thorns": 0.08
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Stop tubing! Learn to aim! You are trash without that. Imagine using a tube.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Continental Trousers": {
+      "Item shortname": "pants",
+      "Item skin": 2660329469,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "BeastWard": 0.35,
+        "Regeneration": 0.15,
+        "HealShare": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They call him Baba Yaga. He once killed three men in a bar\u2026 with a pencil.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Tidebringer's Trousers": {
+      "Item shortname": "pants",
+      "Item skin": 2636257227,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Angler": 2.5,
+        "SharkWard": 0.75,
+        "SharkBane": 0.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The ocean fears its own hunter.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Diamond Pickaxe": {
+      "Item shortname": "pickaxe",
+      "Item skin": 2982384375,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MiningLuck": 0.3,
+        "BlastMine": 0.01,
+        "Prospector": 1.0
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dont dig straight down. I hear lava\u2026One more block. Straight to diamonds!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Miner's Treasure": {
+      "Item shortname": "pickaxe",
+      "Item skin": 3116120925,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MiningLuck": 0.5,
+        "BlastMine": 0.01,
+        "Prospector": 3.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shatters mine and nodes with ease.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Engineers Pipe Tool": {
+      "Item shortname": "pipetool",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Fabricate": 0.3,
+        "Builder": 0.3,
+        "Thrifty": 0.3
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I solve practical problems. This is the right tool for the job.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Master Crafter": {
+      "Item shortname": "pipetool",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Fabricate": 0.75,
+        "Manufacture": 0.75,
+        "Thrifty": 0.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Dwarfs Helper in crafting efficiency.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Dirty Harry": {
+      "Item shortname": "pistol.python",
+      "Item skin": 2799406843,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.75,
+        "BeastBane": 1.25,
+        "UncannyDodge": 0.35
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The most powerful handgun in the world.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Magnum Force": {
+      "Item shortname": "pistol.python",
+      "Item skin": 3023796295,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.3,
+        "BeastBane": 1.25,
+        "UncannyDodge": 0.04
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This is a .44 Magnum, the most powerful handgun in the world\u2026\u2026and would blow your head clean off. Do you feel lucky, punk?",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Heli? Bet.": {
+      "Item shortname": "pistol.semiauto",
+      "Item skin": 1109657124,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "HeliDamage": 2.5,
+        "UncannyDodge": 0.25
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A semi-auto pistol, Snapple at the trigger, and a complete lack of self-preservation.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Farmer's Friend": {
+      "Item shortname": "pitchfork",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Horticulture": 1.5,
+        "Regeneration": 7.5,
+        "Forager": 1.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Once belonged to a forgotten god of agriculture.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Annoyance Protocol - AP47": {
+      "Item shortname": "rifle.ak",
+      "Item skin": 3492276761,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.45,
+        "ScientistWard": 0.15,
+        "Vampiric": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Forged for the min-maxer who almost had it perfect. Tuned, tweaked, and pushed to the limit...just not the absolute one.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Ashbringer": {
+      "Item shortname": "rifle.ak",
+      "Item skin": 3492222524,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "HeliDamage": 0.3,
+        "ScientistBane": 0.25,
+        "Thorns": 0.12
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The Ashbringer\u2026it burns with righteous fury. All who sin will be cleansed in holy fire.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "GRIM REAPER": {
+      "Item shortname": "rifle.ak",
+      "Item skin": 3709656792,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "HeliDamage": 1.0,
+        "ScientistBane": 0.3,
+        "Thorns": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Seasons dont fear the Reaper. Nor do the wind, the sun, or the rain. Take my hand.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Skyfire": {
+      "Item shortname": "rifle.ak",
+      "Item skin": 2483379964,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "HeliDamage": 1.75,
+        "Regeneration": 2.5,
+        "Thorns": 0.35
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "And the heavens trembled as fire rose to meet them, for no beast of iron shall defy the will of man.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Wrath of the Scientist": {
+      "Item shortname": "rifle.ak",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.25,
+        "Durable": 0.25
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": null,
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Mosin Nagant DEADEYE": {
+      "Item shortname": "rifle.bolt",
+      "Item skin": 3700910960,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "BeastBane": 1.5,
+        "Vampiric": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I only need one shot\u2026 if I miss, Im dead.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "AWP Dragon Lore": {
+      "Item shortname": "rifle.l96",
+      "Item skin": 2866542152,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "BeastBane": 2.5,
+        "Vampiric": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "What in God's name is that?! One shot. One kill. He's done the impossible. They line up\u2026 and fall.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Assassin's Contract": {
+      "Item shortname": "rifle.l96",
+      "Item skin": 2586280094,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Durable": 0.1,
+        "ScientistBane": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We're out here making 18 grid shots to the feels!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "EagleEye": {
+      "Item shortname": "rifle.l96",
+      "Item skin": 3603156180,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.5,
+        "BeastBane": 1.5,
+        "Vampiric": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Makes enemies question their life choices.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "SILENT TERROR": {
+      "Item shortname": "rifle.l96",
+      "Item skin": 3620119983,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "BeastBane": 5.0,
+        "ScientistBane": 0.3,
+        "Vampiric": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "No sound. No trace. Silence is the weapon. Right between the eyes.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Scientist Wrath": {
+      "Item shortname": "rifle.lr300",
+      "Item skin": 3372202750,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.75,
+        "ScientistWard": 0.15,
+        "Vampiric": 0.25
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Scientist slayer infused with dark energy.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Thunderfury": {
+      "Item shortname": "rifle.lr300",
+      "Item skin": 2621115159,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "ScientistWard": 0.15,
+        "Vampiric": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Lightning strikes...The Windseeker has been unleashed!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Harbinger's Viper": {
+      "Item shortname": "rifle.m39",
+      "Item skin": 2582997883,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.75,
+        "BeastBane": 1.75,
+        "Thorns": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Fires bullets laced with venom. Enemies feel the sting of death.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Master Chiefs Judgment": {
+      "Item shortname": "rifle.m39",
+      "Item skin": 3572933244,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.15,
+        "BeastBane": 1.75,
+        "Thorns": 0.08
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Spartans never die. Finish the fight.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "BR55 Halo Battle Rifle": {
+      "Item shortname": "rifle.semiauto",
+      "Item skin": 3525810305,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.1,
+        "HeliDamage": 0.1,
+        "BeastBane": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Thought Id try shooting my way out. Spartans never die! Killimanjaro!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Battle Royale King": {
+      "Item shortname": "rifle.sks",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "BeastBane": 1.5,
+        "Vampiric": 0.12
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Winner Winner Chicken Dinner!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Evergreen Blessing": {
+      "Item shortname": "rifle.sks",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "BeastWard": 0.75,
+        "BeastBane": 1.75,
+        "Thorns": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Fell the old, sow the new  -  animals bend to it.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Vynx's Mystic Visor": {
+      "Item shortname": "riot.helmet",
+      "Item skin": 3216034627,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Thorns": 0.1,
+        "ScientistWard": 0.25,
+        "Vampiric": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Standard issue steel, twisted by enchantment, something feels special!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "Road Warrior Jacket": {
+      "Item shortname": "roadsign.jacket",
+      "Item skin": 1088919217,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MeleeWard": 0.5,
+        "Lead": 0.5,
+        "ScientistWard": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I live, I die, I live again! You will ride eternal, shiny and chrome.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "BLACK VEIL ARMOR": {
+      "Item shortname": "roadsign.kilt",
+      "Item skin": 3512825196,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Pharmaceutical": 0.5,
+        "FlakJacket": 0.5,
+        "Prepper": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I see dead people. If it sees you\u2026 its already too late.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "Emberguard Harness": {
+      "Item shortname": "roadsign.kilt",
+      "Item skin": 2324499692,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Elemental": 0.15,
+        "FallDamage": 0.15,
+        "Lead": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Built for fiery chaos, radioactive nonsense, and gravity-based mistakes - because dignity was never the plan.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Kilt of Production": {
+      "Item shortname": "roadsign.kilt",
+      "Item skin": 834837451,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Environmentalist": 2.5,
+        "Builder": 0.75,
+        "Smelter": 2.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Obeys the wearer's mental commands to create and build.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "Wallaces War Kilt": {
+      "Item shortname": "roadsign.kilt",
+      "Item skin": 2890592107,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Pharmaceutical": 0.15,
+        "FlakJacket": 0.1,
+        "Prepper": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "They may take our lives, but they will never take our freedom! Every man dies, not every man really lives.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "Warlords Remains": {
+      "Item shortname": "roadsign.kilt",
+      "Item skin": 2988222237,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "IronStomach": 2.5,
+        "Builder": 0.3,
+        "Prepper": 0.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "My army will destroy you. Bound to serve\u2026 even in death.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "Killpocalypse": {
+      "Item shortname": "rocket.launcher",
+      "Item skin": 3556102205,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "BradleyDamage": 0.25,
+        "FlakJacket": 0.1,
+        "Thorns": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Double Kill! Triple Kill! Overkill! Finish the fight.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Voidcaller Barrage": {
+      "Item shortname": "rocket.launcher",
+      "Item skin": 2881907618,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "BradleyDamage": 1.75,
+        "FlakJacket": 0.35,
+        "Thorns": 0.35
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Channels the infinite energy of the void, reshaping reality itself.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "Angellic Boots (Fall Protection)": {
@@ -1208,308 +1320,60 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Step with the grace of the divine, land with the mercy of an angel.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Explosive Pickaxe": {
-      "Item shortname": "icepick.salvaged",
-      "Item skin": 3111841760,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MiningLuck": 0.75,
-        "BlastMine": 0.01,
-        "Prospector": 2.75
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A piece of Krag's thumb still grips the handle of the pickaxe.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Skyfire": {
-      "Item shortname": "rifle.ak",
-      "Item skin": 2483379964,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HeliDamage": 1.75,
-        "Regeneration": 2.5,
-        "Thorns": 0.35
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "And the heavens trembled as fire rose to meet them, for no beast of iron shall defy the will of man.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Evergreen Blessing": {
-      "Item shortname": "rifle.sks",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "BeastWard": 0.75,
-        "BeastBane": 1.75,
-        "Thorns": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Fell the old, sow the new  -  animals bend to it.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Ghost Weave": {
-      "Item shortname": "hazmatsuit",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "UncannyDodge": 0.5,
-        "Elemental": 0.5,
-        "Lead": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Bullets whisper past, fate bends away",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Snapple's Jackhammer of Destruction": {
-      "Item shortname": "jackhammer",
-      "Item skin": 2790749663,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.5,
-        "BeastBane": 1.5,
-        "BlastMine": 0.2,
-        "RockCycler": 0.2
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shake, Quake, Obliterate.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Steve's Boots of Falling": {
+    "Attractive Boots": {
       "Item shortname": "shoes.boots",
-      "Item skin": 2897919839,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "FallDamage": 1.0
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "No, you cannot be an admin. Stop asking.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Assassin's Contract": {
-      "Item shortname": "rifle.l96",
-      "Item skin": 2586280094,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Durable": 0.1,
-        "ScientistBane": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We're out here making 18 grid shots to the feels!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Vynx's Mystic Visor": {
-      "Item shortname": "riot.helmet",
-      "Item skin": 3216034627,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Thorns": 0.1,
-        "ScientistWard": 0.5,
-        "Vampiric": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Standard issue steel, twisted by enchantment, something feels special!",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
-    "A Scrub's Tissue": {
-      "Item shortname": "bandage",
-      "Item skin": 3659608613,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HealShare": 0.3
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Wipe away your tears when you get shot in the feels.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Rain of Hell": {
-      "Item shortname": "lmg.m249",
-      "Item skin": 1740224810,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "HeliDamage": 2.0,
-        "ScientistBane": 2.0,
-        "Thorns": 0.4
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "And the heavens trembled as fire rose to meet them, for no beast of iron shall defy the will of man.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "DragonLance": {
-      "Item shortname": "multiplegrenadelauncher",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.25,
-        "BradleyDamage": 5.5,
-        "Thorns": 0.35
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Channels the power of the dragon's fiery breath.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Divine Mythryl": {
-      "Item shortname": "hoodie",
-      "Item skin": 3526243306,
+      "Item skin": 2936561559,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 2.5,
-        "Thorns": 0.15,
-        "Vampiric": 0.15
+        "Scavenger": 1.5,
+        "Forager": 1.5,
+        "ComponentLuck": 1.0
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Bends the laws of nature to its will.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Absorbs the scrap of the fallen.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Tenrai Tsubasa": {
-      "Item shortname": "diving.fins",
-      "Item skin": 0,
+    "Nightslayer Boots": {
+      "Item shortname": "shoes.boots",
+      "Item skin": 3688281700,
       "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
+      "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Angler": 3.5,
-        "LineStrength": 2.5,
-        "SharkBane": 1.5
+        "Scavenger": 0.7,
+        "Forager": 1.0,
+        "ComponentLuck": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Swim with the grace and power of the legendary sea dragon.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "From the shadows, death comes. Right behind you.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Sea Reaver": {
-      "Item shortname": "speargun",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "SharkBane": 2.5,
-        "SharkWard": 0.75,
-        "UncannyDodge": 0.4
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Sharks acknowledge their predator.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Scientist Wrath": {
-      "Item shortname": "rifle.lr300",
-      "Item skin": 3372202750,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.75,
-        "ScientistWard": 0.5,
-        "Vampiric": 0.25
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Scientist slayer infused with dark energy.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Harbinger's Viper": {
-      "Item shortname": "rifle.m39",
-      "Item skin": 2582997883,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.75,
-        "BeastBane": 1.75,
-        "Thorns": 0.2
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Fires bullets laced with venom. Enemies feel the sting of death.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Golden Mule": {
-      "Item shortname": "largebackpack",
-      "Item skin": 3372009392,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistWard": 0.35,
-        "BeastWard": 0.35,
-        "Thorns": 0.25
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shines in the moonlight, offering protection to its bearer.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Great Equilizer": {
-      "Item shortname": "hmlmg",
-      "Item skin": 3601436236,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.5,
-        "HeliDamage": 1.5,
-        "Thorns": 0.3
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Whispers the names of those it will kill next.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "EagleEye": {
-      "Item shortname": "rifle.l96",
-      "Item skin": 3603156180,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.5,
-        "BeastBane": 1.5,
-        "Vampiric": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Makes enemies question their life choices.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Dirty Harry": {
-      "Item shortname": "pistol.python",
-      "Item skin": 2799406843,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.75,
-        "BeastBane": 1.25,
-        "UncannyDodge": 0.35
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The most powerful handgun in the world.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Goes Brrrrrrrrrrr": {
-      "Item shortname": "minigun",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.5,
-        "Vampiric": 0.15,
-        "Thorns": 0.25
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Even The Predator would be impressed by the firepower.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "I'll Be Back": {
+    "Evil Dead Boomstick": {
       "Item shortname": "shotgun.m4",
       "Item skin": 0,
       "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.2,
+        "BeastBane": 1.5,
+        "UncannyDodge": 0.04
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "This\u2026 is my BOOMSTICK! Hail to the king, baby. Come get some!",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "The Boogeyman Baba Yaga": {
+      "Item shortname": "shotgun.pump",
+      "Item skin": 3265054842,
+      "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": true,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 1.25,
-        "BeastBane": 1.0,
-        "UncannyDodge": 0.25
+        "ScientistBane": 0.2,
+        "BeastBane": 1.5,
+        "Vampiric": 0.1
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Back for more carnage and destruction.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Rules\u2026 without them, we live with the animals. No one escapes.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
     "The Holy Parabellum": {
@@ -1526,117 +1390,185 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Smokes the unholy from the wicked.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Turbo Jacky": {
-      "Item shortname": "jackhammer",
-      "Item skin": 3009403295,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MiningLuck": 0.5,
-        "BlastMine": 0.01,
-        "Prospector": 1.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Jackhammer that can split mountains.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Triton's Resilience": {
-      "Item shortname": "diving.wetsuit",
+    "Merchant's Reaping Spade": {
+      "Item shortname": "shovel",
       "Item skin": 0,
       "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Horticulture": 2.5
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A single strike reaps every ripe plant within reach.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+    },
+    "MP5 Siegebreaker": {
+      "Item shortname": "smg.mp5",
+      "Item skin": 3145493397,
+      "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Pharmaceutical": 0.3,
-        "SharkWard": 0.25,
-        "Regeneration": 1.5
+        "ScientistBane": 0.1,
+        "HeliDamage": 0.1,
+        "UncannyDodge": 0.02
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The deep knows no fear, only the tide.",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We need to secure the biohazard container. Breach charge going live! Going in!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Hydrorubber Ducky": {
-      "Item shortname": "diving.mask",
+    "Sea Reaver": {
+      "Item shortname": "speargun",
       "Item skin": 0,
       "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
+      "Announce in chat when this item drops for the player?": true,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "Pharmaceutical": 0.3,
-        "SharkWard": 0.25,
-        "Regeneration": 1.5
+        "SharkBane": 2.5,
+        "SharkWard": 0.75,
+        "UncannyDodge": 0.4
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Seals so snug and squeaks so proudly that even the ocean knows you're here to loot, not to breathe quietly",
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Sharks acknowledge their predator.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Frostfire Garb": {
-      "Item shortname": "roadsign.jacket",
-      "Item skin": 974975617,
+    "Shadowcraft Gloves": {
+      "Item shortname": "tactical.gloves",
+      "Item skin": 3629348931,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": false,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
-        "MeleeWard": 0.5,
-        "Lead": 0.2,
-        "Elemental": 0.2
+        "Pharmaceutical": 0.12,
+        "Regeneration": 0.13,
+        "HealShare": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A duct-taped miracle that heals your bad decisions, shrugs off rads, and tells fire and ice to \"take a number\" while you keep looting.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The flames consume you! You took this from a boss.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Phoenix Protector": {
-      "Item shortname": "jacket",
-      "Item skin": 1644758865,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Elemental": 0.5,
-        "FlakJacket": 0.4,
-        "Lead": 0.5
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Built to stroll through rockets, rads, and elemental chaos like it's a mild inconvenience.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Celestial Wardkeeper": {
-      "Item shortname": "metal.plate.torso",
-      "Item skin": 3531593131,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 1.5,
-        "FlakJacket": 0.35,
-        "Elemental": 0.4
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "So overprotective it blocks blades, bullies rockets, and tells the elements to behave - politely, but firmly.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Emberguard Harness": {
-      "Item shortname": "roadsign.kilt",
-      "Item skin": 2324499692,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": false,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Elemental": 0.15,
-        "FallDamage": 0.15,
-        "Lead": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Built for fiery chaos, radioactive nonsense, and gravity-based mistakes - because dignity was never the plan.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
-    },
-    "Arcane Pledge": {
-      "Item shortname": "roadsign.kilt",
-      "Item skin": 3260691772,
+    "Slice of Life (Gloves)": {
+      "Item shortname": "tactical.gloves",
+      "Item skin": 3606696267,
       "Restrict enhancement": true,
       "Announce in chat when this item drops for the player?": true,
       "Send a UINotify message to the player when this item drops?": false,
       "List of perks and modifiers that the item has [perk: modifier]": {
         "Pharmaceutical": 0.5,
-        "FlakJacket": 0.35,
-        "Prepper": 0.5
+        "Regeneration": 10.0,
+        "HealShare": 0.5
       },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "A vow-bound kilt that makes heals hit harder, explosions hit softer, and snacks occasionally agree to be \"just for show.\"",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 4
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Said to have been worn by gods of healing in ages past.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Mincecraft Torch": {
+      "Item shortname": "torch",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": false,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 0.1,
+        "Forager": 0.7,
+        "BeastWard": 0.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Provides light in dark places. I hear zombies\u2026",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Frankenstein's Burden": {
+      "Item shortname": "metal.plate.torso",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 1.25,
+        "Vampiric": 0.15,
+        "Thorns": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It's alive. God help us... it's alive.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },
+    "Oni's Wrath": {
+      "Item shortname": "longsword",
+      "Item skin": 2203825958,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Butcher": 1.5,
+        "BeastBane": 1.5,
+        "Vampiric": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The demon does not negotiate. It does not tire. It simply comes.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Kiaransalee's Veil": {
+      "Item shortname": "hoodie",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MeleeWard": 0.5,
+        "Regeneration": 1.0,
+        "Thorns": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "She walked between the living and the dead so long, even death forgot her name.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Crown of the Night": {
+      "Item shortname": "coffeecan.helmet",
+      "Item skin": 3739539441,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "UncannyDodge": 0.15,
+        "Lead": 1.5,
+        "Vampiric": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Kneel. The night is long, and the king does not sleep.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 2
+    },
+    "Signal Lost": {
+      "Item shortname": "hazmatsuit",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Elemental": 0.4,
+        "Lead": 0.75,
+        "UncannyDodge": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Transmission ended. No survivors. Object returning to surface.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Hostage Taker's Trophy": {
+      "Item shortname": "smg.mp5",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.75,
+        "UncannyDodge": 0.2,
+        "Vampiric": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Nobody walks away from a hostage situation. Nobody except you.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
+    "Iron Convoy": {
+      "Item shortname": "metal.plate.torso",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MeleeWard": 0.4,
+        "FlakJacket": 0.3,
+        "Regeneration": 0.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The train doesn't stop. Neither do you.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
     }
   },
   "Loot profiles": [
@@ -1680,14 +1612,13 @@
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
         "Master Crafter": 100,
-        "Frostfire Garb": 45,
         "Golden Mule": 5,
         "Engineers Pipe Tool": 100,
         "Warlords Remains": 50,
         "Wallaces War Kilt": 25,
         "BR55 Halo Battle Rifle": 55,
         "Get The Ban Hammer": 20,
-        "Adventurers Pack": 5        
+        "Adventurers Pack": 5
       }
     },
     {
@@ -1708,7 +1639,7 @@
         "Wallaces War Kilt": 25,
         "BR55 Halo Battle Rifle": 55,
         "Get The Ban Hammer": 20,
-        "Adventurers Pack": 5        
+        "Adventurers Pack": 5
       }
     },
     {
@@ -1716,29 +1647,29 @@
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.05,
+      "Drop chance [%]": 0.03,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
         "Woodcutter's Pride": 100,
-        "Evergreen Blessing": 5,
-        "Forester's Edge": 40,
-        "Chainsaw of Destruction": 10,
-        "Dirty Harry": 55,
-        "Iron Bastion": 25,
-        "Mask of the Satisfied": 80,
-        "Divine Mythryl": 12,
-        "Frostfire Garb": 55,
+        "Forester's Edge": 60,
+        "Chainsaw of Destruction": 20,
         "Patrick Batemans Axe": 100,
-        "Evil Dead Chainsaw": 10,
+        "Evil Dead Chainsaw": 15,
+        "Paul Bunyans Jacket": 40,
+        "Outlaw Bandana": 50,
+        "Urban Shadow Hoodie": 20,
+        "Nightslayer Boots": 15,
+        "Wallaces War Kilt": 25,
+        "Mask of the Satisfied": 30,
+        "Divine Mythryl": 8,
+        "Road Warrior Jacket": 20,
+        "Dirty Harry": 10,
+        "Magnum Force": 10,
+        "Evergreen Blessing": 5,
+        "New Founding Fathers Facemask": 10,
         "Battle Royale King": 5,
-        "Outlaw Bandana": 80,
-        "Urban Shadow Hoodie": 12,
-        "Road Warrior Jacket": 55,
-        "BR55 Halo Battle Rifle": 60,
-        "New Founding Fathers Facemask": 25,
-        "Wallaces War Kilt": 40,
-        "Nightslayer Boots": 13,
-        "Magnum Force": 55        
+        "Iron Bastion": 5,
+        "BR55 Halo Battle Rifle": 10
       }
     },
     {
@@ -1746,28 +1677,27 @@
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.05,
+      "Drop chance [%]": 0.03,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
         "Miner's Treasure": 100,
-        "Explosive Pickaxe": 65,
-        "Turbo Jacky": 35,
-        "Emberguard Harness": 55,
+        "Explosive Pickaxe": 70,
+        "Diamond Pickaxe": 80,
+        "Turbo Jacky": 40,
+        "BRRRRRRRR Nodes Gone": 40,
+        "Emberguard Harness": 30,
+        "Flintstones Club": 50,
+        "Can Opener": 25,
+        "Snapple's Jackhammer of Destruction": 20,
+        "Urban Shadow Hoodie": 10,
+        "New Founding Fathers Facemask": 20,
+        "Warlords Remains": 15,
+        "Wallaces War Kilt": 15,
+        "HELLFIRE": 5,
+        "Nightslayer Boots": 10,
+        "Mask of the Satisfied": 20,
         "Divine Mythryl": 5,
-        "Iron Bastion": 20,
-        "Mask of the Satisfied": 65,
-        "Can Opener": 20,
-        "Snapple's Jackhammer of Destruction": 50,
-        "Urban Shadow Hoodie": 12,
-        "New Founding Fathers Facemask": 65,
-        "Diamond Pickaxe": 75,
-        "BRRRRRRRR Nodes Gone": 35,
-        "Flintstones Club": 65,
-        "Warlords Remains": 45,
-        "BR55 Halo Battle Rifle": 60,
-        "Wallaces War Kilt": 40,
-        "HELLFIRE": 15,
-        "Nightslayer Boots": 15        
+        "Iron Bastion": 5
       }
     },
     {
@@ -1777,33 +1707,27 @@
       "Identifiers to exclude from consideration [List - null if not required]": [
         "player_corpse"
       ],
-      "Drop chance [%]": 3.5,
+      "Drop chance [%]": 2.0,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Silent Hunter": 15,
-        "Beastmaster's Bow": 75,
+        "Beastmaster's Bow": 100,
         "Bloodharvest Blade": 100,
-        "Iron Bastion": 15,
-        "Divine Mythryl": 10,
-        "Infernal Fang": 25,
-        "Medic's Remedy": 65,
-        "Slice of Life (Gloves)": 50,
-        "Frostfire Garb": 70,
-        "Torch of Survival": 45,
-        "Primlocked": 15,
-        "Dragonbone Knee Breaker": 75,
-        "New Founding Fathers Facemask": 15,
-        "Urban Shadow Hoodie": 10,
-        "HELLFIRE": 55,
+        "Perditions Blade": 80,
+        "Mincecraft Torch": 60,
+        "Continental Trousers": 50,
+        "Road Warrior Jacket": 40,
+        "Shadowcraft Gloves": 30,
         "Nightslayer Boots": 20,
-        "Shadowcraft Gloves": 40,
-        "CYBER WAIFU CRINGE": 5,
-        "Get The Ban Hammer": 35,
-        "BR55 Halo Battle Rifle": 65,
-        "Continental Trousers": 65,
-        "Road Warrior Jacket": 70,
-        "Perditions Blade": 100,
-        "Mincecraft Torch": 90            
+        "Urban Shadow Hoodie": 15,
+        "HELLFIRE": 25,
+        "Primlocked": 10,
+        "Divine Mythryl": 5,
+        "Iron Bastion": 5,
+        "New Founding Fathers Facemask": 8,
+        "CYBER WAIFU CRINGE": 3,
+        "Get The Ban Hammer": 10,
+        "BR55 Halo Battle Rifle": 15,
+        "Slice of Life (Gloves)": 20
       }
     },
     {
@@ -1832,7 +1756,7 @@
         "BR55 Halo Battle Rifle": 65,
         "Shadowcraft Gloves": 40,
         "Big Daddy Diver": 90,
-        "Continental Trousers": 75    
+        "Continental Trousers": 75
       }
     },
     {
@@ -1840,25 +1764,23 @@
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 2.5,
+      "Drop chance [%]": 1.5,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Mask of the Satisfied": 65,
         "Can Opener": 100,
-        "Beastmaster's Bow": 75,
-        "Farmer's Friend": 50,
-        "Miner's Treasure": 10,
-        "Woodcutter's Pride": 10,
-        "Forester's Edge": 5,
-        "Outlaw Bandana": 65,
+        "Farmer's Friend": 60,
+        "Beastmaster's Bow": 50,
+        "Mask of the Satisfied": 40,
+        "Outlaw Bandana": 40,
         "Nightslayer Boots": 15,
-        "Dragonbone Knee Breaker": 75,
-        "Villagers Wrath": 85,
-        "BR55 Halo Battle Rifle": 65,
-        "Diamond Pickaxe": 10,
+        "Woodcutter's Pride": 10,
+        "Forester's Edge": 8,
+        "Diamond Pickaxe": 8,
         "The Iceman": 5,
         "Patrick Batemans Axe": 10,
-        "Get The Ban Hammer": 35                
+        "Get The Ban Hammer": 15,
+        "Miner's Treasure": 8,
+        "BR55 Halo Battle Rifle": 10
       }
     },
     {
@@ -1874,7 +1796,6 @@
         "Can Opener": 100,
         "Voidcaller Barrage": 5,
         "Mask of the Satisfied": 40,
-        "Infernal Fang": 25,
         "DragonLance": 55,
         "Divine Mythryl": 75
       }
@@ -1898,8 +1819,7 @@
       "Drop chance [%]": 0.1,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Farmer's Friend": 100,
-        "Villagers Wrath": 100        
+        "Farmer's Friend": 100
       }
     },
     {
@@ -1910,35 +1830,29 @@
       "Drop chance [%]": 2.5,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Infernal Fang": 75,
-        "Skyfire": 10,
-        "Rain of Hell": 40,
-        "Celestial Wardkeeper": 30,
-        "Divine Mythryl": 60,
-        "Goes Brrrrrrrrrrr": 15,
-        "I'll Be Back": 100,
-        "The Holy Parabellum": 65,
-        "Great Equilizer": 20,
-        "DragonLance": 45,
-        "Harbinger's Viper": 50,
+        "Skyfire": 20,
+        "Rain of Hell": 50,
+        "Celestial Wardkeeper": 35,
+        "Divine Mythryl": 50,
+        "Goes Brrrrrrrrrrr": 20,
+        "The Holy Parabellum": 60,
+        "Great Equilizer": 25,
+        "Harbinger's Viper": 45,
         "Annoyance Protocol - AP47": 40,
-        "MULTI PASS": 100,
-        "Boneplate of the Dead": 30,
-        "Master Chiefs Judgment": 50,
-        "Noob Tube": 45,
-        "Warglaive Of Azzinoth": 20,
-        "The Boogeyman Baba Yaga": 65,
-        "Undying Pharaoh": 35,
-        "Evil Dead Boomstick": 100,
-        "MP5 Siegebreaker": 60,
-        "Sashas Wrath": 15,
-        "Urban Shadow Hoodie": 60,
-        "BR55 Halo Battle Rifle": 65,
-        "HELLFIRE": 10,
-        "AWP Dragon Lore": 5,
-        "Mosin Nagant DEADEYE": 15,
-        "Ragnaros Wrath": 5,
-        "Ashbringer": 10        
+        "MULTI PASS": 80,
+        "Boneplate of the Dead": 35,
+        "Master Chiefs Judgment": 40,
+        "Noob Tube": 30,
+        "Warglaive Of Azzinoth": 25,
+        "The Boogeyman Baba Yaga": 50,
+        "Undying Pharaoh": 30,
+        "Evil Dead Boomstick": 60,
+        "MP5 Siegebreaker": 40,
+        "HELLFIRE": 15,
+        "AWP Dragon Lore": 10,
+        "Mosin Nagant DEADEYE": 20,
+        "Ragnaros Wrath": 10,
+        "Ashbringer": 15
       }
     },
     {
@@ -1949,34 +1863,32 @@
       "Drop chance [%]": 2.5,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Voidcaller Barrage": 30,
+        "Voidcaller Barrage": 35,
         "Harbinger's Viper": 100,
-        "Scientist Wrath": 15,
-        "DragonLance": 85,
-        "Rain of Hell": 30,
-        "Divine Mythryl": 35,
-        "Goes Brrrrrrrrrrr": 5,
-        "I'll Be Back": 70,
-        "Dirty Harry": 75,
-        "Great Equilizer": 5,
-        "Annoyance Protocol - AP47": 65,
-        "MULTI PASS": 100,
-        "Killpocalypse": 10,
-        "HELLFIRE": 100,
-        "Thunderfury": 20,
-        "Road Warrior Jacket": 60,
-        "Shadowcraft Gloves": 30,
-        "Master Chiefs Judgment": 50,
-        "MP5 Siegebreaker": 60,
-        "The Boogeyman Baba Yaga": 75,
-        "BR55 Halo Battle Rifle": 65,
-        "Undying Pharaoh": 35,
+        "Scientist Wrath": 20,
+        "Rain of Hell": 35,
+        "Divine Mythryl": 30,
+        "Goes Brrrrrrrrrrr": 10,
+        "Dirty Harry": 60,
+        "Great Equilizer": 10,
+        "Annoyance Protocol - AP47": 55,
+        "MULTI PASS": 80,
+        "Killpocalypse": 15,
+        "HELLFIRE": 80,
+        "Thunderfury": 25,
+        "Road Warrior Jacket": 50,
+        "Shadowcraft Gloves": 25,
+        "Master Chiefs Judgment": 40,
+        "MP5 Siegebreaker": 45,
+        "The Boogeyman Baba Yaga": 60,
+        "BR55 Halo Battle Rifle": 40,
+        "Undying Pharaoh": 30,
         "Warglaive Of Azzinoth": 20,
-        "Noob Tube": 45,
-        "Mosin Nagant DEADEYE": 15,
-        "Ragnaros Wrath": 5,
+        "Noob Tube": 30,
+        "Mosin Nagant DEADEYE": 20,
+        "Ragnaros Wrath": 8,
         "AWP Dragon Lore": 15,
-        "Ashbringer": 10        
+        "Ashbringer": 12
       }
     },
     {
@@ -1987,33 +1899,31 @@
       "Drop chance [%]": 2.0,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Voidcaller Barrage": 10,
-        "Infernal Fang": 100,
-        "DragonLance": 15,
-        "Scientist Wrath": 20,
+        "Voidcaller Barrage": 15,
+        "Scientist Wrath": 25,
         "Wrath of the Scientist": 40,
-        "Emberguard Harness": 60,
-        "Great Equilizer": 25,
+        "Emberguard Harness": 50,
+        "Great Equilizer": 30,
         "The Holy Parabellum": 55,
         "Evergreen Blessing": 35,
         "EagleEye": 30,
-        "Dirty Harry": 50,
-        "MULTI PASS": 50,
-        "Killpocalypse": 10,
-        "HELLFIRE": 100,
-        "Noob Tube": 15,
-        "Thunderfury": 20,
-        "Warlords Remains": 60,
-        "Wallaces War Kilt": 60,
-        "BR55 Halo Battle Rifle": 65,
-        "Undying Pharaoh": 35,
-        "MP5 Siegebreaker": 60,
-        "Warglaive Of Azzinoth": 25,
-        "The Boogeyman Baba Yaga": 55,
-        "Battle Royale King": 35,
-        "Mosin Nagant DEADEYE": 15,
-        "AWP Dragon Lore": 10,
-        "Magnum Force": 50        
+        "Dirty Harry": 45,
+        "MULTI PASS": 40,
+        "Killpocalypse": 15,
+        "HELLFIRE": 80,
+        "Noob Tube": 20,
+        "Thunderfury": 25,
+        "Warlords Remains": 50,
+        "Wallaces War Kilt": 45,
+        "BR55 Halo Battle Rifle": 40,
+        "Undying Pharaoh": 30,
+        "MP5 Siegebreaker": 40,
+        "Warglaive Of Azzinoth": 20,
+        "The Boogeyman Baba Yaga": 45,
+        "Battle Royale King": 30,
+        "Mosin Nagant DEADEYE": 20,
+        "AWP Dragon Lore": 12,
+        "Magnum Force": 35
       }
     },
     {
@@ -2021,19 +1931,16 @@
       "Prefab shortname, boss profile, event name [null if not required]": "crate_basic",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.5,
+      "Drop chance [%]": 1.0,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Celestial Wardkeeper": 10,
-        "Arcane Pledge": 15,
-        "Phoenix Protector": 20,
-        "Slice of Life (Cake)": 30,
         "Hydrorubber Ducky": 100,
-        "Ghost Weave": 75,
-        "Goes Brrrrrrrrrrr": 5,
         "Triton's Resilience": 70,
-        "Frostfire Garb": 60,
-        "Emberguard Harness": 50
+        "Ghost Weave": 40,
+        "Slice of Life (Cake)": 30,
+        "Phoenix Protector": 15,
+        "Emberguard Harness": 25,
+        "Celestial Wardkeeper": 8
       }
     },
     {
@@ -2044,28 +1951,26 @@
       "Drop chance [%]": 1.5,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Celestial Wardkeeper": 10,
-        "Arcane Pledge": 15,
-        "Phoenix Protector": 20,
-        "Slice of Life (Cake)": 30,
-        "Hydrorubber Ducky": 100,
-        "Ghost Weave": 75,
-        "Goes Brrrrrrrrrrr": 5,
-        "Triton's Resilience": 70,
-        "Frostfire Garb": 60,
-        "Emberguard Harness": 50,
-        "Boneplate of the Dead": 10,
-        "Warlords Remains": 50,
-        "Paul Bunyans Jacket": 20,
-        "Big Daddy Diver": 100,
-        "BR55 Halo Battle Rifle": 65,
-        "Undying Pharaoh": 35,
-        "MP5 Siegebreaker": 60,
-        "Hazmat Heisenberg": 75,
-        "Shadowcraft Gloves": 25,
-        "Sashas Wrath": 5,
-        "Cabelas Fishing Suit": 70,
-        "Road Warrior Jacket": 60        
+        "Ghost Weave": 60,
+        "Celestial Wardkeeper": 15,
+        "Phoenix Protector": 25,
+        "Slice of Life (Cake)": 20,
+        "Hydrorubber Ducky": 50,
+        "Triton's Resilience": 40,
+        "Emberguard Harness": 35,
+        "Boneplate of the Dead": 20,
+        "Warlords Remains": 30,
+        "Paul Bunyans Jacket": 25,
+        "Big Daddy Diver": 60,
+        "BR55 Halo Battle Rifle": 40,
+        "Undying Pharaoh": 25,
+        "MP5 Siegebreaker": 35,
+        "Hazmat Heisenberg": 45,
+        "Shadowcraft Gloves": 30,
+        "Cabelas Fishing Suit": 40,
+        "Road Warrior Jacket": 30,
+        "Harbinger's Viper": 15,
+        "Divine Mythryl": 10
       }
     },
     {
@@ -2073,33 +1978,26 @@
       "Prefab shortname, boss profile, event name [null if not required]": "crate_normal_2",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 1.5,
+      "Drop chance [%]": 1.0,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Evergreen Blessing": 100,
-        "EagleEye": 5,
-        "Harbinger's Viper": 50,
-        "DragonLance": 25,
-        "Divine Mythryl": 60,
-        "Scientist Wrath": 10,
-        "Ghost Weave": 80,
-        "I'll Be Back": 75,
-        "Great Equilizer": 5,
         "Battle Royale King": 100,
-        "Mosin Nagant DEADEYE": 15,
-        "AWP Dragon Lore": 10,
-        "Master Chiefs Judgment": 50,
-        "CYBER WAIFU CRINGE": 5,
-        "Undying Pharaoh": 35,
-        "MP5 Siegebreaker": 60,
-        "BR55 Halo Battle Rifle": 65,
-        "Noob Tube": 25,
-        "Urban Shadow Hoodie": 60,
-        "Thunderfury": 10,
-        "Hazmat Heisenberg": 80,
+        "Evergreen Blessing": 60,
+        "Urban Shadow Hoodie": 80,
+        "Nightslayer Boots": 50,
         "Shadowcraft Gloves": 70,
-        "Evil Dead Boomstick": 75,
-        "Warglaive Of Azzinoth": 5        
+        "Hazmat Heisenberg": 60,
+        "Evil Dead Boomstick": 50,
+        "Ghost Weave": 30,
+        "Thunderfury": 15,
+        "Mosin Nagant DEADEYE": 20,
+        "CYBER WAIFU CRINGE": 5,
+        "Warglaive Of Azzinoth": 5,
+        "MP5 Siegebreaker": 40,
+        "Master Chiefs Judgment": 25,
+        "AWP Dragon Lore": 8,
+        "Undying Pharaoh": 20,
+        "BR55 Halo Battle Rifle": 45
       }
     },
     {
@@ -2107,24 +2005,24 @@
       "Prefab shortname, boss profile, event name [null if not required]": "crate_mine",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 5.0,
+      "Drop chance [%]": 4.0,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
         "Battle Royale King": 100,
-        "Mosin Nagant DEADEYE": 15,
-        "AWP Dragon Lore": 10,
-        "Master Chiefs Judgment": 50,
-        "Noob Tube": 25,
         "Urban Shadow Hoodie": 60,
-        "Undying Pharaoh": 35,
-        "BR55 Halo Battle Rifle": 65,
-        "MP5 Siegebreaker": 60,
+        "Nightslayer Boots": 40,
+        "Shadowcraft Gloves": 50,
+        "Hazmat Heisenberg": 60,
+        "Evil Dead Boomstick": 40,
+        "Mosin Nagant DEADEYE": 20,
+        "Thunderfury": 15,
+        "MP5 Siegebreaker": 35,
+        "Undying Pharaoh": 25,
+        "BR55 Halo Battle Rifle": 45,
         "CYBER WAIFU CRINGE": 5,
-        "Thunderfury": 10,
-        "Hazmat Heisenberg": 80,
-        "Shadowcraft Gloves": 70,
-        "Evil Dead Boomstick": 75,
-        "Warglaive Of Azzinoth": 5
+        "Warglaive Of Azzinoth": 5,
+        "AWP Dragon Lore": 8,
+        "Master Chiefs Judgment": 20
       }
     },
     {
@@ -2132,23 +2030,23 @@
       "Prefab shortname, boss profile, event name [null if not required]": "crate_normal_2_medical",
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 5.0,
+      "Drop chance [%]": 1.0,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Battle Royale King": 100,
-        "Mosin Nagant DEADEYE": 15,
-        "AWP Dragon Lore": 10,
-        "Master Chiefs Judgment": 50,
-        "MP5 Siegebreaker": 60,
-        "Undying Pharaoh": 35,
-        "CYBER WAIFU CRINGE": 5,
-        "BR55 Halo Battle Rifle": 65,
-        "Noob Tube": 25,
+        "Shadowcraft Gloves": 100,
+        "Slice of Life (Cake)": 80,
+        "Hydrorubber Ducky": 70,
         "Urban Shadow Hoodie": 60,
+        "Nightslayer Boots": 40,
+        "Battle Royale King": 50,
+        "Hazmat Heisenberg": 50,
+        "MP5 Siegebreaker": 30,
+        "BR55 Halo Battle Rifle": 35,
+        "Undying Pharaoh": 25,
+        "Mosin Nagant DEADEYE": 15,
         "Thunderfury": 10,
-        "Hazmat Heisenberg": 80,
-        "Shadowcraft Gloves": 70,
-        "Evil Dead Boomstick": 75,
+        "CYBER WAIFU CRINGE": 5,
+        "Evil Dead Boomstick": 30,
         "Warglaive Of Azzinoth": 5
       }
     },
@@ -2160,18 +2058,20 @@
       "Drop chance [%]": 3.5,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Killpocalypse": 20,
+        "Killpocalypse": 25,
         "HELLFIRE": 100,
-        "Ashbringer": 10,
-        "Thunderfury": 30,
-        "Boneplate of the Dead": 75,
-        "BR55 Halo Battle Rifle": 65,
-        "MP5 Siegebreaker": 60,
-        "Sashas Wrath": 50,
-        "Warglaive Of Azzinoth": 40,
-        "Mosin Nagant DEADEYE": 15,
-        "AWP Dragon Lore": 20,
-        "Paul Bunyans Jacket": 25
+        "Ashbringer": 15,
+        "Thunderfury": 35,
+        "Boneplate of the Dead": 70,
+        "BR55 Halo Battle Rifle": 50,
+        "MP5 Siegebreaker": 45,
+        "Warglaive Of Azzinoth": 35,
+        "Mosin Nagant DEADEYE": 20,
+        "AWP Dragon Lore": 25,
+        "Paul Bunyans Jacket": 20,
+        "EagleEye": 20,
+        "Skyfire": 15,
+        "Celestial Wardkeeper": 15
       }
     },
     {
@@ -2182,52 +2082,42 @@
       "Drop chance [%]": 20.0,
       "Should we consider loot chance modifiers that the player may have?": false,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Killpocalypse": 20,
-        "Sashas Wrath": 60,
-        "Warglaive Of Azzinoth": 30,
-        "Ragnaros Wrath": 5,
-        "Ashbringer": 10,
-        "Noob Tube": 75,
+        "Killpocalypse": 25,
+        "Warglaive Of Azzinoth": 35,
+        "Ragnaros Wrath": 10,
+        "Ashbringer": 15,
+        "Noob Tube": 70,
         "Evil Dead Boomstick": 100,
-        "AWP Dragon Lore": 15,
-        "Mosin Nagant DEADEYE": 15
+        "AWP Dragon Lore": 20,
+        "Mosin Nagant DEADEYE": 20,
+        "Skyfire": 15,
+        "Rain of Hell": 25,
+        "Voidcaller Barrage": 20
       }
-    },    
+    },
     {
       "Loot source": "Barrel",
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
       "Identifiers to exclude from consideration [List - null if not required]": [],
-      "Drop chance [%]": 0.5,
+      "Drop chance [%]": 0.25,
       "Should we consider loot chance modifiers that the player may have?": true,
       "Items that can drop from this source [profile name: drop weight]": {
-        "Forester's Edge": 20,
+        "Forester's Edge": 30,
         "Can Opener": 100,
-        "Farmer's Friend": 40,
-        "Medic's Remedy": 50,
-        "Torch of Survival": 25,
-        "Attractive Boots": 80,
-        "Miner's Treasure": 30,
-        "Explosive Pickaxe": 25,
-        "Triton's Resilience": 60,
-        "Slice of Life (Cake)": 40,
-        "Hydrorubber Ducky": 10,
-        "Chainsaw of Destruction": 35,
-        "Battle Royale King": 100,
-        "Mosin Nagant DEADEYE": 15,
-        "AWP Dragon Lore": 10,
-        "Master Chiefs Judgment": 50,
-        "Noob Tube": 25,
-        "Urban Shadow Hoodie": 60,
-        "Undying Pharaoh": 35,
-        "BR55 Halo Battle Rifle": 65,
-        "MP5 Siegebreaker": 60,
+        "Farmer's Friend": 20,
+        "Attractive Boots": 50,
+        "Miner's Treasure": 15,
+        "Explosive Pickaxe": 10,
+        "Triton's Resilience": 25,
+        "Slice of Life (Cake)": 15,
+        "Hydrorubber Ducky": 20,
+        "Chainsaw of Destruction": 10,
+        "Flintstones Club": 40,
+        "Nightslayer Boots": 20,
+        "Urban Shadow Hoodie": 15,
         "CYBER WAIFU CRINGE": 5,
-        "Thunderfury": 10,
-        "Hazmat Heisenberg": 80,
-        "Shadowcraft Gloves": 70,
-        "Evil Dead Boomstick": 75,
-        "Warglaive Of Azzinoth": 5        
+        "Warglaive Of Azzinoth": 3
       }
     },
     {
@@ -2268,6 +2158,206 @@
       }
     },
     {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Clown",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 40.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "CYBER WAIFU CRINGE": 100,
+        "Noob Tube": 50,
+        "Evil Dead Boomstick": 75,
+        "A Scrub's Tissue": 100,
+        "New Founding Fathers Facemask": 60,
+        "Urban Shadow Hoodie": 40
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Jason",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 40.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Perditions Blade": 100,
+        "Bloodharvest Blade": 75,
+        "Continental Trousers": 60,
+        "Urban Shadow Hoodie": 50,
+        "Nightslayer Boots": 40
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "King of the Night",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 40.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Crown of the Night": 100,
+        "GRIM REAPER": 15,
+        "DEATHS REFLECTION": 60,
+        "Warglaive Of Azzinoth": 40,
+        "Urban Shadow Hoodie": 50
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Michael Myers",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 40.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Perditions Blade": 100,
+        "Bloodharvest Blade": 60,
+        "Nightslayer Boots": 50,
+        "Urban Shadow Hoodie": 75,
+        "Continental Trousers": 40
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Oni",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 40.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Oni's Wrath": 100,
+        "Kiaransalee's Veil": 75,
+        "Vynx's Mystic Visor": 50,
+        "Road Warrior Jacket": 40,
+        "Divine Mythryl": 30
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Evil",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 55.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "HELLFIRE": 60,
+        "PLATE OF THE DAMNED": 40,
+        "Boneplate of the Dead": 50,
+        "Evil Dead Chainsaw": 75,
+        "Evil Dead Boomstick": 100,
+        "DEATHS REFLECTION": 30
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Horror",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 55.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Bloodharvest Blade": 100,
+        "PLATE OF THE DAMNED": 50,
+        "Mincecraft Torch": 75,
+        "Nightslayer Boots": 40,
+        "DEATHS REFLECTION": 60
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Raptor",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 55.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Annoyance Protocol - AP47": 40,
+        "Nightslayer Boots": 75,
+        "Attractive Boots": 100,
+        "EagleEye": 30,
+        "Urban Shadow Hoodie": 60
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Scary",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 55.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "The Holy Parabellum": 60,
+        "Evil Dead Boomstick": 100,
+        "New Founding Fathers Facemask": 75,
+        "Wallaces War Kilt": 50,
+        "Warlords Remains": 30
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Wasteland Revenant",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 55.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Warlords Remains": 100,
+        "DEATHS REFLECTION": 50,
+        "Continental Trousers": 60,
+        "Boneplate of the Dead": 75,
+        "Warglaive Of Azzinoth": 30
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Frankenstein",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 65.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Frankenstein's Burden": 100,
+        "Great Equilizer": 50,
+        "Warglaive Of Azzinoth": 75,
+        "PLATE OF THE DAMNED": 60,
+        "Boneplate of the Dead": 80,
+        "DEATHS REFLECTION": 40
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Heavy",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 65.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Iron Bastion": 100,
+        "Steel Resolve": 60,
+        "Goes Brrrrrrrrrrr": 40,
+        "Road Warrior Jacket": 75,
+        "BLACK VEIL ARMOR": 50,
+        "Boneplate of the Dead": 30
+      }
+    },
+    {
+      "Loot source": "BossMonster",
+      "Prefab shortname, boss profile, event name [null if not required]": "Kazamakis the Regional Annihilator",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 65.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Kazamakis' Grafting Knife of Plenty": 100,
+        "Noob Tube": 50,
+        "Voidcaller Barrage": 30,
+        "Emberguard Harness": 60,
+        "Annoyance Protocol - AP47": 40,
+        "Wrath of the Scientist": 50
+      }
+    },
+    {
       "Loot source": "BetterNPC",
       "Prefab shortname, boss profile, event name [null if not required]": null,
       "A list of required skin IDs [null if not required]": [],
@@ -2278,7 +2368,6 @@
         "MULTI PASS": 100,
         "Assassin's Contract": 100,
         "Vynx's Mystic Visor": 100,
-        "Steve's Boots of Falling": 100,
         "A Scrub's Tissue": 100,
         "Angler's Fortune": 80,
         "Annoyance Protocol - AP47": 35,
@@ -2293,17 +2382,13 @@
         "Emberguard Harness": 25,
         "Evergreen Blessing": 25,
         "Forester's Edge": 30,
-        "Frostfire Garb": 25,
         "Goes Brrrrrrrrrrr": 10,
         "Golden Mule": 50,
         "Great Equilizer": 5,
         "Harbinger's Viper": 30,
         "Hydrorubber Ducky": 25,
-        "I'll Be Back": 70,
-        "Infernal Fang": 70,
         "Iron Bastion": 25,
         "Mask of the Satisfied": 40,
-        "Medic's Remedy": 75,
         "Miner's Treasure": 60,
         "Phoenix Protector": 25,
         "Rain of Hell": 30,
@@ -2314,12 +2399,180 @@
         "Steel Resolve": 35,
         "Tenrai Tsubasa": 60,
         "Tidebringer's Trousers": 40,
-        "Torch of Survival": 100,
         "Triton's Resilience": 40,
         "Voidcaller Barrage": 5,
         "Wrath of the Scientist": 35,
         "Woodcutter's Pride": 85,
         "Heli? Bet.": 35
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "Harbor",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Sea Reaver": 100,
+        "Tidebringer's Trousers": 80,
+        "Tenrai Tsubasa": 60,
+        "Road Warrior Jacket": 50,
+        "MP5 Siegebreaker": 75,
+        "Harbinger's Viper": 30,
+        "Nightslayer Boots": 40
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "Junkyard",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Can Opener": 100,
+        "Flintstones Club": 75,
+        "Attractive Boots": 80,
+        "Engineers Pipe Tool": 100,
+        "Ghost Weave": 30,
+        "Outlaw Bandana": 60,
+        "Nightslayer Boots": 50
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "SatDish",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Annoyance Protocol - AP47": 50,
+        "Scientist Wrath": 75,
+        "Wrath of the Scientist": 60,
+        "Thunderfury": 80,
+        "Hazmat Heisenberg": 100,
+        "Assassin's Contract": 40,
+        "EagleEye": 30
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "Arctic",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Ghost Weave": 75,
+        "Emberguard Harness": 100,
+        "Undying Pharaoh": 60,
+        "Mincecraft Torch": 80,
+        "Celestial Wardkeeper": 30,
+        "Phoenix Protector": 40
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "GasStation",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Road Warrior Jacket": 100,
+        "Warlords Remains": 60,
+        "Magnum Force": 75,
+        "Dirty Harry": 50,
+        "Noob Tube": 40,
+        "Outlaw Bandana": 80,
+        "Evil Dead Boomstick": 60
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "Sputnik",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Signal Lost": 100,
+        "Ghost Weave": 60,
+        "Celestial Wardkeeper": 40,
+        "MULTI PASS": 20,
+        "Thunderfury": 50,
+        "WORLD ENDER": 15,
+        "Undying Pharaoh": 50
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "Supermarket",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Can Opener": 100,
+        "Attractive Boots": 80,
+        "Nightslayer Boots": 60,
+        "Outlaw Bandana": 75,
+        "Mask of the Satisfied": 40,
+        "Flintstones Club": 60,
+        "Farmer's Friend": 30
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "ArmoredTrain",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Iron Convoy": 100,
+        "Rain of Hell": 50,
+        "Goes Brrrrrrrrrrr": 40,
+        "Harbinger's Viper": 60,
+        "Voidcaller Barrage": 30,
+        "Iron Bastion": 50,
+        "Annoyance Protocol - AP47": 40
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "Convoy",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Annoyance Protocol - AP47": 75,
+        "Master Chiefs Judgment": 60,
+        "BR55 Halo Battle Rifle": 100,
+        "Killpocalypse": 30,
+        "Road Warrior Jacket": 50,
+        "MP5 Siegebreaker": 80,
+        "Harbinger's Viper": 40
+      }
+    },
+    {
+      "Loot source": "Event",
+      "Prefab shortname, boss profile, event name [null if not required]": "FerryTerminal",
+      "A list of required skin IDs [null if not required]": [],
+      "Identifiers to exclude from consideration [List - null if not required]": [],
+      "Drop chance [%]": 75.0,
+      "Should we consider loot chance modifiers that the player may have?": false,
+      "Items that can drop from this source [profile name: drop weight]": {
+        "Hostage Taker's Trophy": 100,
+        "Road Warrior Jacket": 75,
+        "Continental Trousers": 60,
+        "Dirty Harry": 50,
+        "Nightslayer Boots": 80,
+        "Urban Shadow Hoodie": 60,
+        "Outlaw Bandana": 40
       }
     }
   ],
