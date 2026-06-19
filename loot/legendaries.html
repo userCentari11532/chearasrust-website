@@ -551,9 +551,7 @@ function buildDropMap() {
 
 function formatPerk(key, val) {
   const label = weaponPerkLabels[key] || key;
-  let display;
-  if (val < 1) display = '+' + Math.round(val * 100) + '%';
-  else display = '+' + val + 'x';
+  let display = '+' + Math.round(val * 100) + '%';
   return label + ': ' + display;
 }
 
@@ -639,7 +637,7 @@ function renderGrid() {
     for (const [k,v] of Object.entries(perks)) {
       const row = document.createElement('div');
       row.className = 'perk-row';
-      const valDisplay = v < 1 ? '+' + Math.round(v*100) + '%' : '+' + v + 'x';
+      const valDisplay = '+' + Math.round(v*100) + '%';
       const label = document.createElement('span');
       label.textContent = weaponPerkLabels[k] || k;
       if (perkDescriptions[k]) {
