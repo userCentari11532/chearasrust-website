@@ -151,6 +151,20 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Better than nothing. It will do. Dont aim for the head.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
     },
+    "Crown of the Night": {
+      "Item shortname": "coffeecan.helmet",
+      "Item skin": 3739539441,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "UncannyDodge": 0.15,
+        "Lead": 1.5,
+        "Vampiric": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Kneel. The night is long, and the king does not sleep.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 2
+    },    
     "Steel Resolve": {
       "Item shortname": "coffeecan.helmet",
       "Item skin": 3415728548,
@@ -347,6 +361,20 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I am the danger... I am the one who knocks. Stay out of my territory.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
+    "Signal Lost": {
+      "Item shortname": "hazmatsuit",
+      "Item skin": 0,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Elemental": 0.4,
+        "Lead": 0.75,
+        "UncannyDodge": 0.1
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Transmission ended. No survivors. Object returning to surface.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },    
     "Great Equilizer": {
       "Item shortname": "hmlmg",
       "Item skin": 3601436236,
@@ -403,6 +431,20 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "I am not dying here. You cant catch me!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
+    "Kiaransalee's Veil": {
+      "Item shortname": "hoodie",
+      "Item skin": 2944163248,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MeleeWard": 0.5,
+        "Regeneration": 1.0,
+        "Thorns": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "She walked between the living and the dead so long, even death forgot her name.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },    
     "Explosive Pickaxe": {
       "Item shortname": "icepick.salvaged",
       "Item skin": 3111841760,
@@ -708,6 +750,20 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "All crime is legal. This is not a test. May God be with you all.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 1
     },
+    "Iron Convoy": {
+      "Item shortname": "metal.plate.torso",
+      "Item skin": 3307946831,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "MeleeWard": 0.4,
+        "FlakJacket": 0.3,
+        "Regeneration": 0.75
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The train doesn't stop. Neither do you.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },    
     "Boneplate of the Dead": {
       "Item shortname": "metal.plate.torso",
       "Item skin": 3034217639,
@@ -722,6 +778,20 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The dead will rise! You will join me in death! Death walks with you.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
     },
+    "Frankenstein's Burden": {
+      "Item shortname": "metal.plate.torso",
+      "Item skin": 3371802330,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "Regeneration": 1.25,
+        "Vampiric": 0.15,
+        "Thorns": 0.2
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It's alive. God help us... it's alive.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
+    },    
     "Celestial Wardkeeper": {
       "Item shortname": "metal.plate.torso",
       "Item skin": 3531593131,
@@ -1416,6 +1486,20 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "We need to secure the biohazard container. Breach charge going live! Going in!",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
+    "Hostage Taker's Trophy": {
+      "Item shortname": "smg.mp5",
+      "Item skin": 3451418965,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 0.75,
+        "UncannyDodge": 0.2,
+        "Vampiric": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Nobody walks away from a hostage situation. Nobody except you.",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },    
     "Sea Reaver": {
       "Item shortname": "speargun",
       "Item skin": 0,
@@ -1472,20 +1556,6 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Provides light in dark places. I hear zombies\u2026",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
-    "Frankenstein's Burden": {
-      "Item shortname": "metal.plate.torso",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Regeneration": 1.25,
-        "Vampiric": 0.15,
-        "Thorns": 0.2
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "It's alive. God help us... it's alive.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    },
     "Oni's Wrath": {
       "Item shortname": "longsword",
       "Item skin": 2203825958,
@@ -1499,77 +1569,7 @@
       },
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The demon does not negotiate. It does not tire. It simply comes.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Kiaransalee's Veil": {
-      "Item shortname": "hoodie",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MeleeWard": 0.5,
-        "Regeneration": 1.0,
-        "Thorns": 0.2
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "She walked between the living and the dead so long, even death forgot her name.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Crown of the Night": {
-      "Item shortname": "coffeecan.helmet",
-      "Item skin": 3739539441,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "UncannyDodge": 0.15,
-        "Lead": 1.5,
-        "Vampiric": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Kneel. The night is long, and the king does not sleep.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 2
-    },
-    "Signal Lost": {
-      "Item shortname": "hazmatsuit",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "Elemental": 0.4,
-        "Lead": 0.75,
-        "UncannyDodge": 0.1
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Transmission ended. No survivors. Object returning to surface.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Hostage Taker's Trophy": {
-      "Item shortname": "smg.mp5",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "ScientistBane": 0.75,
-        "UncannyDodge": 0.2,
-        "Vampiric": 0.15
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Nobody walks away from a hostage situation. Nobody except you.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
-    },
-    "Iron Convoy": {
-      "Item shortname": "metal.plate.torso",
-      "Item skin": 0,
-      "Restrict enhancement": true,
-      "Announce in chat when this item drops for the player?": true,
-      "Send a UINotify message to the player when this item drops?": false,
-      "List of perks and modifiers that the item has [perk: modifier]": {
-        "MeleeWard": 0.4,
-        "FlakJacket": 0.3,
-        "Regeneration": 0.75
-      },
-      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "The train doesn't stop. Neither do you.",
-      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 3
-    }
+    }    
   },
   "Loot profiles": [
     {
