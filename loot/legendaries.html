@@ -30,17 +30,91 @@ body {
   background: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Animated background grid — matches loot/index.html */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: 0;
+  animation: gridScroll 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes gridScroll {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.05), transparent 50%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Back nav — matches loot/index.html */
+.back-nav {
+  margin-top: 20px;
+}
+
+.back-nav a {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.back-nav a:hover {
+  color: var(--teal);
+}
+
+.back-nav a::before {
+  content: '◂ ';
 }
 
 header {
   padding: 50px 0 30px;
   text-align: center;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent);
 }
 
 h1 {
@@ -292,10 +366,13 @@ footer {
 </head>
 <body>
 <div class="container">
+  <div class="back-nav">
+    <a href="/">Clear as Rust</a>
+  </div>
+
   <header>
     <h1>Legendary Loot</h1>
     <p class="tagline">Clear as Rust &mdash; Item Reference</p>
-    <span class="alpha-tag">Pre-Alpha &middot; Subject to Change</span>
   </header>
 
   <div class="controls">
