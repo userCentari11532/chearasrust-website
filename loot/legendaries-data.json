@@ -14,6 +14,21 @@
       "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Shaking the ground with every strike.",
       "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
     },
+    "The Taskmaster": {
+      "Item shortname": "lmg.m249",
+      "Item skin": 2936535156,
+      "Restrict enhancement": true,
+      "Announce in chat when this item drops for the player?": true,
+      "Send a UINotify message to the player when this item drops?": false,
+      "List of perks and modifiers that the item has [perk: modifier]": {
+        "ScientistBane": 1.25,
+        "ScientistWard": 0.15,
+        "BeastBane": 1.25,
+        "BeastWard": 0.15
+      },
+      "Description about the item that is shown when mousing over the ownership banner [blank/null = nothing]": "Earned through grit, not luck",
+      "How many armor mod slots will the item spawn with? [won't exceed item definitions max cap]": 0
+    },
     "Patrick Batemans Axe": {
       "Item shortname": "axe.salvaged",
       "Item skin": 3706444904,
@@ -1955,7 +1970,7 @@
         "Wallaces War Kilt": 15,
         "Mosin Nagant DEADEYE": 10
       }
-    },    
+    },
     {
       "Loot source": "Crate",
       "Prefab shortname, boss profile, event name [null if not required]": "crate_basic",
