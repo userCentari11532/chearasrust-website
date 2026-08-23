@@ -815,7 +815,11 @@
         // Fetch server status from BattleMetrics
         async function updateServerStatus() {
             try {
-                const response = await fetch('https://api.battlemetrics.com/servers/37780905');
+                const response = await fetch('https://api.battlemetrics.com/servers/37780905', {
+                    headers: {
+                        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjRhYmVjY2EzYmMyYmU1NGMiLCJpYXQiOjE3ODc1MTg3ODgsIm5iZiI6MTc4NzUxODc4OCwiaXNzIjoiaHR0cHM6Ly93d3cuYmF0dGxlbWV0cmljcy5jb20iLCJzdWIiOiJ1cm46dXNlcjo4NTg4ODkifQ.Olo4-wjVac5LAths84-_45IdwFeI3A2HyinLCJmO7CA'
+                    }
+                });
                 
                 if (!response.ok) {
                     throw new Error('Server query failed');
