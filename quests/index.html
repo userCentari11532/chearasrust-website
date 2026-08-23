@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quest Editor — Clear as Rust</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0e14;
+    --bg-panel: #10151d;
+    --bg-card: #151b24;
+    --bg-card-hover: #1a212c;
+    --line: #1f2937;
+    --line-soft: #182029;
+    --rust: #00d9ff;          /* teal — primary accent (kept var name for drop-in compat) */
+    --rust-bright: #33e2ff;
+    --rust-dim: #008fa3;
+    --orange: #ff6b35;
+    --sand: #cbb896;
+    --text: #e8edf2;
+    --text-dim: #8a95a3;
+    --text-faint: #5a6472;
+    --green: #10b981;
+    --red: #ef4444;
+    --mono: 'JetBrains Mono', 'Consolas', monospace;
+    --display: 'Orbitron', sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background:
+      radial-gradient(circle at 50% -10%, rgba(0,217,255,0.05), transparent 55%),
+      var(--bg);
+    background-image:
+      radial-gradient(circle at 50% -10%, rgba(0,217,255,0.05), transparent 55%),
+      linear-gradient(rgba(0,217,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,217,255,0.025) 1px, transparent 1px);
+    background-size: auto, 50px 50px, 50px 50px;
+    color: var(--text);
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection{ background: var(--rust-dim); color:#fff; }
+
+  a { color: var(--rust-bright); }
+
+  /* ---------- Header ---------- */
+  header{
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, #1c1710, #16130f);
+    padding: 22px clamp(16px,4vw,48px);
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    flex-wrap: wrap;
+    position: sticky; top:0; z-index: 50;
+    backdrop-filter: blur(6px);
+  }
+  .brand{ display:flex; align-items:center; gap:14px; }
+  .brand-mark{
+    width:38px; height:38px; border-radius:4px;
+    background: linear-gradient(135deg, var(--rust) 0%, var(--orange) 100%);
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--display); font-weight:700; color:#081018;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15), 0 4px 16px rgba(0,217,255,0.3);
+    flex-shrink:0;
+  }
+  .brand-text h1{
+    margin:0; font-size:16px; letter-spacing:0.14em; text-transform:uppercase;
+    font-weight:700; color: var(--text); font-family: var(--display);
+  }
+  .brand-text p{ margin:2px 0 0; font-size:12px; color: var(--text-faint); font-family: var(--mono); }
+  .header-actions{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+
+  /* ---------- Buttons ---------- */
+  button, .btn{
+    font-family: 'Rajdhani', inherit; font-size: 14px; font-weight:700;
+    letter-spacing: 0.02em;
+    border-radius: 4px; border: 1px solid var(--line);
+    background: var(--bg-card); color: var(--text);
+    padding: 8px 14px; cursor:pointer;
+    transition: border-color .2s, background .2s, transform .05s, box-shadow .2s;
+    display:inline-flex; align-items:center; gap:6px; white-space:nowrap;
+  }
+  button:hover{ border-color: var(--rust-dim); background: var(--bg-card-hover); }
+  button:active{ transform: translateY(1px); }
+  button.primary{
+    background: linear-gradient(135deg, var(--rust), var(--rust-dim));
+    border-color: var(--rust); color:#081018;
+    box-shadow: 0 6px 20px rgba(0,217,255,0.18);
+  }
+  button.primary:hover{
+    background: linear-gradient(135deg, var(--orange), #ff8c5a);
+    border-color: var(--orange);
+    box-shadow: 0 8px 24px rgba(255,107,53,0.25);
+  }
+  button.ghost{ background: transparent; }
+  button.danger{ color: var(--red); border-color: rgba(239,68,68,0.35); }
+  button.danger:hover{ background: rgba(239,68,68,0.1); border-color: var(--red); }
+  button.small{ padding: 4px 9px; font-size: 12.5px; }
+  button:disabled{ opacity:0.35; cursor:not-allowed; }
+  input[type=file]{ display:none; }
+
+  /* ---------- Layout ---------- */
+  main{ max-width: 1180px; margin: 0 auto; padding: 28px clamp(16px,4vw,48px) 120px; }
+
+  .empty-state{
+    margin-top: 60px; text-align:center; color: var(--text-dim);
+    border: 1.5px dashed var(--line); border-radius: 10px; padding: 60px 20px;
+    background: repeating-linear-gradient(135deg, rgba(255,255,255,0.012) 0 2px, transparent 2px 14px);
+  }
+  .empty-state.dragover{ border-color: var(--rust-bright); background: rgba(0,217,255,0.06); }
+  .empty-state h2{ color: var(--text); font-size: 18px; margin: 0 0 8px; }
+  .empty-state p{ font-size: 13px; margin: 0 0 20px; }
+
+  /* ---------- Tabs ---------- */
+  .tabbar{ display:flex; gap:6px; flex-wrap:wrap; margin-bottom: 20px; align-items:center; }
+  .tab{
+    padding: 9px 14px; border-radius: 6px 6px 0 0; cursor:pointer;
+    border: 1px solid var(--line); border-bottom:none;
+    background: var(--bg-panel); color: var(--text-dim);
+    font-size: 13px; font-weight:600; display:flex; align-items:center; gap:8px;
+  }
+  .tab.active{ background: var(--bg-card); color: var(--rust-bright); }
+  .tab .dot{ width:6px; height:6px; border-radius:50%; background: var(--green); }
+  .tab .dot.unsaved{ background: var(--rust-bright); }
+  .tab .close-x{ opacity:0.5; font-size:14px; line-height:1; padding: 0 2px; }
+  .tab .close-x:hover{ opacity:1; color: var(--red); }
+  .tab-add{
+    padding: 9px 12px; border-radius: 6px; border: 1px dashed var(--line);
+    color: var(--text-faint); font-size: 12px; cursor:pointer; background:transparent;
+  }
+  .tab-add:hover{ color: var(--rust-bright); border-color: var(--rust-dim); }
+
+  /* ---------- Panel ---------- */
+  .panel{ background: var(--bg-panel); border: 1px solid var(--line); border-radius: 8px; padding: 24px; }
+  .panel-toolbar{
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+    margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--line-soft);
+    flex-wrap: wrap;
+  }
+  .filename-tag{ font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+
+  /* NPC meta */
+  .npc-meta{ display:grid; grid-template-columns: 88px 1fr; gap: 18px; margin-bottom: 26px; }
+  .npc-avatar{
+    width:88px; height:88px; border-radius:6px; object-fit:cover;
+    border: 1px solid var(--line); background: var(--bg-card);
+  }
+  .npc-fields{ display:grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+  .npc-fields .field.wide{ grid-column: 1 / -1; }
+
+  /* ---------- Generic field styling ---------- */
+  .field{ margin-bottom: 10px; }
+  .field label{
+    display:block; font-size: 11px; color: var(--text-faint); margin-bottom: 4px;
+    letter-spacing: 0.02em; font-weight:600;
+  }
+  .field label .badge{
+    font-size: 9px; text-transform: uppercase; letter-spacing:0.08em;
+    color: var(--text-faint); font-weight:500; margin-left:6px;
+  }
+  input[type=text], input[type=number], textarea, select{
+    width:100%; background: var(--bg-card); border: 1px solid var(--line);
+    color: var(--text); border-radius: 4px; padding: 7px 9px; font-size: 13px;
+    font-family: inherit;
+  }
+  select{ cursor:pointer; }
+  input:focus, textarea:focus, select:focus{
+    outline:none; border-color: var(--rust-bright);
+    box-shadow: 0 0 0 3px rgba(0,217,255,0.15);
+  }
+  textarea{ resize: vertical; min-height: 54px; line-height:1.4; }
+  .num-input{ font-family: var(--mono); }
+  .checkbox-row{ display:flex; align-items:center; gap:8px; padding: 6px 0; }
+  .checkbox-row input{ width:15px; height:15px; accent-color: var(--rust-bright); }
+  .checkbox-row label{ margin:0; font-size:12px; color: var(--text); font-weight:500; cursor:pointer; }
+
+  .fields-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 4px 14px; }
+  .fields-grid .field.wide, .fields-grid .checkbox-row.wide { grid-column: 1 / -1; }
+
+  /* nested group (plain sub-object) */
+  .group{ border: 1px solid var(--line-soft); border-radius: 6px; padding: 14px; margin: 10px 0; background: rgba(0,0,0,0.12); }
+  .group > .group-title{
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rust-bright);
+    font-weight:700; margin-bottom: 10px; display:flex; align-items:center; gap:8px;
+  }
+
+  /* nullable object toggle */
+  .nullable-box{
+    border: 1px dashed var(--line); border-radius: 6px; padding: 10px 12px; margin: 10px 0;
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    color: var(--text-faint); font-size:12px;
+  }
+  .nullable-box.set{ border-style: solid; border-color: var(--line-soft); background: rgba(0,0,0,0.1); padding:0; display:block; }
+  .nullable-box.set .nb-header{ display:flex; justify-content:space-between; align-items:center; padding: 10px 12px; }
+
+  /* Card lists (Steps, Rewards, Quests, dialog nodes...) */
+  .card-list{ display:flex; flex-direction:column; gap:10px; margin: 6px 0 14px; }
+  .card{ border:1px solid var(--line); border-radius:6px; background: var(--bg-card); overflow:hidden; }
+  .card-head{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    padding: 10px 14px; cursor:pointer; user-select:none;
+  }
+  .card-head:hover{ background: var(--bg-card-hover); }
+  .card-head-left{ display:flex; align-items:center; gap:10px; min-width:0; }
+  .card-index{
+    font-family: var(--mono); font-size: 11px; color: var(--text-faint);
+    background: var(--bg-panel); border-radius:3px; padding: 2px 6px; flex-shrink:0;
+  }
+  .card-title{ font-size: 13px; font-weight:600; color: var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .card-subtitle{ font-size: 11px; color: var(--text-faint); font-family: var(--mono); }
+  .card-actions{ display:flex; gap:4px; align-items:center; flex-shrink:0; }
+  .caret{ transition: transform .15s; color: var(--text-faint); font-size:11px; }
+  .card.collapsed .caret{ transform: rotate(-90deg); }
+  .card-body{ padding: 14px; border-top: 1px solid var(--line); }
+  .card.collapsed .card-body{ display:none; }
+  .icon-btn{
+    width:26px; height:26px; border-radius:4px; display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--line); background:transparent; color: var(--text-faint); font-size:13px; padding:0;
+  }
+  .icon-btn:hover{ color: var(--text); border-color: var(--rust-dim); }
+  .icon-btn.danger:hover{ color: var(--red); border-color: var(--red); }
+
+  .add-item-btn{
+    align-self:flex-start; font-size:12px; color: var(--rust-bright); background:transparent;
+    border: 1px dashed var(--rust-dim); padding: 7px 12px;
+  }
+  .add-item-btn:hover{ background: rgba(0,217,255,0.1); }
+
+  /* chip list for primitive arrays */
+  .chip-list{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:6px; }
+  .chip{
+    display:flex; align-items:center; gap:6px; background: var(--bg-card); border:1px solid var(--line);
+    border-radius: 100px; padding: 4px 6px 4px 10px; font-family: var(--mono); font-size: 12px;
+  }
+  .chip input{ background:transparent; border:none; width: 70px; padding:0; font-family:var(--mono); font-size:12px; }
+  .chip input:focus{ box-shadow:none; outline:none; }
+  .chip .x{ cursor:pointer; color: var(--text-faint); font-size:13px; padding:2px 4px; border-radius:50%; }
+  .chip .x:hover{ color: var(--red); background: rgba(209,106,106,0.15); }
+  .chip-add{
+    display:flex; align-items:center; gap:6px; border:1px dashed var(--line); border-radius:100px;
+    padding: 4px 10px; font-size:12px; color: var(--text-faint); cursor:pointer;
+  }
+  .chip-add:hover{ color: var(--rust-bright); border-color: var(--rust-dim); }
+
+  /* multi-line string list (NPC dialog lines) */
+  .lines-list{ display:flex; flex-direction:column; gap:6px; margin-bottom:6px; }
+  .line-row{ display:flex; gap:6px; align-items:flex-start; }
+  .line-row textarea{ min-height:38px; flex:1; }
+
+  section.top-quests > .section-label{
+    font-family: var(--display); font-size: 13px; text-transform:uppercase; letter-spacing:0.12em; color: var(--rust-bright);
+    font-weight:700; margin: 26px 0 10px; display:flex; align-items:center; gap:10px;
+  }
+  section.top-quests > .section-label::after{ content:''; flex:1; height:1px; background: var(--line-soft); }
+
+  /* raw json */
+  .raw-toggle-bar{ display:flex; justify-content:flex-end; margin-bottom:10px; }
+  textarea.raw-json{
+    width:100%; min-height: 480px; font-family: var(--mono); font-size:12.5px;
+    line-height:1.5; white-space:pre;
+  }
+  .raw-error{ color: var(--red); font-size:12px; margin-top:8px; font-family: var(--mono); }
+
+  .drop-hint{ font-size:12px; color:var(--text-faint); margin-top:16px; }
+  .footer-note{ text-align:center; color: var(--text-faint); font-size: 12px; margin-top: 40px; }
+
+  ::-webkit-scrollbar{ width:10px; height:10px; }
+  ::-webkit-scrollbar-track{ background: transparent; }
+  ::-webkit-scrollbar-thumb{ background: var(--line); border-radius:5px; }
+  ::-webkit-scrollbar-thumb:hover{ background: var(--rust-dim); }
+
+  @media (max-width: 640px){
+    .npc-meta{ grid-template-columns: 1fr; }
+    .fields-grid, .npc-fields{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-mark">UQ</div>
+    <div class="brand-text">
+      <h1>Quest Editor</h1>
+      <p>UltimateQuests NPC data · Clear as Rust</p>
+    </div>
+  </div>
+  <div class="header-actions">
+    <button class="ghost" id="btnAddMore" style="display:none;">+ Load more JSON</button>
+    <button class="primary" id="btnDownloadAll" style="display:none;">Download all (.zip)</button>
+  </div>
+  <input type="file" id="fileInput" accept=".json" multiple>
+</header>
+
+<main>
+  <div id="emptyState" class="empty-state">
+    <h2>Drop NPC quest files here</h2>
+    <p>Upload one or more <code>.json</code> files exported by UltimateQuests (e.g. <code>Hal_Brannigan.json</code>). Edit quests, steps, rewards and dialog trees, then download the file(s) back out — no Discord needed.</p>
+    <button class="primary" id="btnBrowse">Choose JSON files</button>
+    <div class="drop-hint">or drag &amp; drop onto this page</div>
+  </div>
+
+  <div id="workspace" style="display:none;">
+    <div class="tabbar" id="tabbar"></div>
+    <div class="panel" id="panel"></div>
+  </div>
+
+  <div class="footer-note">Everything happens in your browser — files are never uploaded anywhere. Reload the page to start fresh.</div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  // ---------------------------------------------------------------
+  // Enum lists (from UltimateQuests.cs)
+  // ---------------------------------------------------------------
+  const STEP_TYPES = ["Gather","Collect","KillPlayer","Fish","Craft","Research","Recycle",
+    "SwipeCard","Deploy","Loot","Hunt","HackCrate","Upgrade","BuyFromNpc","EnterZone",
+    "PlaceChickenCoop","AddChickens","CollectEggs","Butcher","ExternalEvent","Deliver"];
+  const REWARD_TYPES = ["Item","Command"];
+
+  // ---------------------------------------------------------------
+  // State
+  // ---------------------------------------------------------------
+  let files = [];          // { name, data, rawMode, rawError, collapse: WeakSet-ish tracked by id }
+  let activeIndex = -1;
+  let collapseState = {};  // per-file map of "path key" -> collapsed bool (default collapsed=true for cards)
+  let idCounter = 1;
+
+  const fileInput = document.getElementById('fileInput');
+  const emptyState = document.getElementById('emptyState');
+  const workspace = document.getElementById('workspace');
+  const tabbar = document.getElementById('tabbar');
+  const panel = document.getElementById('panel');
+  const btnAddMore = document.getElementById('btnAddMore');
+  const btnDownloadAll = document.getElementById('btnDownloadAll');
+
+  document.getElementById('btnBrowse').onclick = () => fileInput.click();
+  btnAddMore.onclick = () => fileInput.click();
+  fileInput.onchange = e => handleFiles(e.target.files);
+
+  ['dragover','dragenter'].forEach(ev => emptyState.addEventListener(ev, e => {
+    e.preventDefault(); emptyState.classList.add('dragover');
+  }));
+  ['dragleave','drop'].forEach(ev => emptyState.addEventListener(ev, e => {
+    e.preventDefault(); emptyState.classList.remove('dragover');
+  }));
+  emptyState.addEventListener('drop', e => { handleFiles(e.dataTransfer.files); });
+  document.body.addEventListener('dragover', e => e.preventDefault());
+  document.body.addEventListener('drop', e => {
+    if (e.target.closest('.empty-state')) return;
+    e.preventDefault();
+    if (e.dataTransfer.files.length) handleFiles(e.dataTransfer.files);
+  });
+
+  function handleFiles(fileList){
+    const arr = Array.from(fileList).filter(f => f.name.toLowerCase().endsWith('.json'));
+    if (!arr.length) return;
+    let remaining = arr.length;
+    arr.forEach(f => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        let data, error = null;
+        try { data = JSON.parse(reader.result); }
+        catch(err){ error = 'This file is not valid JSON: ' + err.message; data = null; }
+        files.push({
+          id: 'f' + (idCounter++),
+          name: f.name,
+          data: data,
+          rawText: reader.result,
+          rawMode: !!error,
+          rawError: error
+        });
+        remaining--;
+        if (remaining === 0){
+          activeIndex = files.length - arr.length; // focus first newly added
+          renderAll();
+        }
+      };
+      reader.readAsText(f);
+    });
+    fileInput.value = '';
+  }
+
+  // ---------------------------------------------------------------
+  // Templates: scan all loaded data so we know the "shape" of nullable
+  // sub-objects (Zone settings / Bounty / Butcher) and array items.
+  // ---------------------------------------------------------------
+  function collectTemplates(){
+    const objTemplates = {};   // key -> deep-cloned non-null object example
+    const arrItemTemplates = {}; // arrayKey -> deep-cloned example item
+
+    function zeroClone(v){
+      if (Array.isArray(v)) return [];
+      if (v === null) return null;
+      if (typeof v === 'object') {
+        const o = {};
+        for (const k in v) o[k] = zeroClone(v[k]);
+        return o;
+      }
+      if (typeof v === 'string') return '';
+      if (typeof v === 'number') return 0;
+      if (typeof v === 'boolean') return false;
+      return v;
+    }
+
+    function walk(node){
+      if (Array.isArray(node)){
+        node.forEach(walk);
+        return;
+      }
+      if (node && typeof node === 'object'){
+        for (const k in node){
+          const v = node[k];
+          if (v !== null && typeof v === 'object' && !Array.isArray(v) && !objTemplates[k]){
+            objTemplates[k] = zeroClone(v);
+          }
+          if (Array.isArray(v) && v.length && !arrItemTemplates[k]){
+            arrItemTemplates[k] = JSON.parse(JSON.stringify(v[0]));
+          }
+          walk(v);
+        }
+      }
+    }
+    files.forEach(f => { if (f.data) walk(f.data); });
+    return { objTemplates, arrItemTemplates };
+  }
+
+  let TPL = { objTemplates:{}, arrItemTemplates:{} };
+
+  // ---------------------------------------------------------------
+  // Helpers
+  // ---------------------------------------------------------------
+  function el(tag, cls, text){
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+
+  function enumOptionsFromKey(key){
+    const m = key.match(/\(([A-Za-z0-9_]+(?:\/[A-Za-z0-9_]+){1,})\)\s*$/);
+    return m ? m[1].split('/') : null;
+  }
+
+  function labelForKey(key){
+    return key;
+  }
+
+  function collapsedFor(path){
+    if (!(path in collapseState)) collapseState[path] = true; // default collapsed
+    return collapseState[path];
+  }
+  function toggleCollapsed(path){
+    collapseState[path] = !collapsedFor(path);
+  }
+
+  function nextId(items, field){
+    let max = 0;
+    items.forEach(it => { if (typeof it[field] === 'number') max = Math.max(max, it[field]); });
+    return max + 1;
+  }
+
+  // human label for a card in a given array, based on the array's key name
+  function cardLabel(arrayKey, item, index){
+    const k = arrayKey;
+    if (k.startsWith('Quests')) return { title: `${item.Title || '(untitled quest)'}`, sub: `ID ${item.ID}` };
+    if (k.startsWith('Steps')) return { title: `${index+1}. ${item.Type}`, sub: item.Description || '' };
+    if (k.startsWith('Rewards')) return { title: `${item.Type}${item.ShortName ? ': ' + item.ShortName : ''}${item.Command ? ': ' + item.Command : ''}`, sub: item.Amount !== undefined ? `x${item.Amount}` : '' };
+    if (k.startsWith('Greeting')) return { title: `Node ${item.ID}`, sub: (item['NPC lines'] && item['NPC lines'][0]) ? item['NPC lines'][0].slice(0,60) : '' };
+    if (k === 'Options') return { title: item.Text || '(empty option)', sub: item.Accept ? 'Accepts quest' : '' };
+    if (k.startsWith('Waves')) return { title: item['NPC preset'] || '(preset)', sub: `x${item.Count || 0}` };
+    return { title: `Item ${index+1}`, sub: '' };
+  }
+
+  function singularName(arrayKey){
+    if (arrayKey.startsWith('Quests')) return 'quest';
+    if (arrayKey.startsWith('Steps')) return 'step';
+    if (arrayKey.startsWith('Rewards')) return 'reward';
+    if (arrayKey.startsWith('Greeting')) return 'dialog node';
+    if (arrayKey === 'Options') return 'option';
+    if (arrayKey.startsWith('Waves')) return 'wave';
+    if (arrayKey.startsWith('NPC lines')) return 'line';
+    return 'item';
+  }
+
+  function makeNewArrayItem(arrayKey, existingItems){
+    // clone a template item (from anywhere in the loaded data), else last existing item, else a blank object
+    let tpl = TPL.arrItemTemplates[arrayKey];
+    if (!tpl && existingItems.length) tpl = existingItems[existingItems.length - 1];
+    let item = tpl ? JSON.parse(JSON.stringify(tpl)) : {};
+
+    if ('ID' in item) item.ID = nextId(existingItems, 'ID');
+    if ('Title' in item) item.Title = 'New';
+    if ('Description' in item) item.Description = '';
+    if ('Text' in item && arrayKey === 'Options') item.Text = '';
+    if ('NPC lines' in item) item['NPC lines'] = ['...'];
+    if ('Options' in item) item['Options'] = [];
+    return item;
+  }
+
+  // ---------------------------------------------------------------
+  // Field renderers (mutate objects by direct reference; only
+  // structural changes trigger a re-render, so typing never loses focus)
+  // ---------------------------------------------------------------
+  function renderField(parentObj, key, itemKind, pathPrefix){
+    const value = parentObj[key];
+    const path = pathPrefix + '/' + key;
+
+    // 1) enum encoded in the key itself, e.g. "Trigger (Enter/ContainerOpen)"
+    const enumOpts = enumOptionsFromKey(key);
+    if (enumOpts && typeof value === 'string'){
+      return fieldWrap(key, selectInput(enumOpts, value, v => parentObj[key] = v));
+    }
+
+    // 2) contextual Type dropdowns for steps/rewards
+    if (key === 'Type' && itemKind === 'step'){
+      return fieldWrap(key, selectInput(STEP_TYPES, value, v => parentObj[key] = v));
+    }
+    if (key === 'Type' && itemKind === 'reward'){
+      return fieldWrap(key, selectInput(REWARD_TYPES, value, v => parentObj[key] = v));
+    }
+
+    if (typeof value === 'boolean'){
+      return checkboxField(key, value, v => parentObj[key] = v);
+    }
+
+    if (typeof value === 'number'){
+      const input = document.createElement('input');
+      input.type = 'number'; input.className = 'num-input';
+      input.value = value; input.step = 'any';
+      input.oninput = () => { const n = parseFloat(input.value); parentObj[key] = isNaN(n) ? 0 : n; };
+      return fieldWrap(key, input);
+    }
+
+    if (typeof value === 'string'){
+      const longField = /Description|Hint|Lines|Text/i.test(key) || value.length > 70;
+      const input = document.createElement(longField ? 'textarea' : 'input');
+      if (!longField) input.type = 'text';
+      input.value = value;
+      input.oninput = () => { parentObj[key] = input.value; };
+      return fieldWrap(key, input);
+    }
+
+    if (value === null){
+      // could be a nullable object (Zone settings/Bounty/Butcher) or a nullable string (Title/Command)
+      const tpl = TPL.objTemplates[key];
+      if (tpl){
+        return nullableObjectField(parentObj, key, tpl, path);
+      }
+      // treat as nullable string
+      const input = document.createElement('input');
+      input.type = 'text'; input.placeholder = '(empty)';
+      input.value = '';
+      input.oninput = () => { parentObj[key] = input.value; };
+      return fieldWrap(key, input);
+    }
+
+    if (Array.isArray(value)){
+      return renderArrayField(parentObj, key, itemKind, path);
+    }
+
+    if (typeof value === 'object'){
+      const wrap = el('div', 'group');
+      const title = el('div', 'group-title', key);
+      wrap.appendChild(title);
+      const grid = el('div', 'fields-grid');
+      Object.keys(value).forEach(k => grid.appendChild(renderField(value, k, null, path)));
+      wrap.appendChild(grid);
+      return wrap;
+    }
+
+    // fallback
+    return fieldWrap(key, el('div', null, String(value)));
+  }
+
+  function fieldWrap(key, inputEl){
+    const wrap = el('div', 'field');
+    const label = el('label', null, labelForKey(key));
+    wrap.appendChild(label);
+    wrap.appendChild(inputEl);
+    return wrap;
+  }
+
+  function checkboxField(key, value, onChange){
+    const wrap = el('div', 'checkbox-row');
+    const input = document.createElement('input');
+    input.type = 'checkbox'; input.checked = value;
+    const id = 'cb_' + Math.random().toString(36).slice(2);
+    input.id = id;
+    input.onchange = () => onChange(input.checked);
+    const label = el('label', null, labelForKey(key));
+    label.htmlFor = id;
+    wrap.appendChild(input); wrap.appendChild(label);
+    return wrap;
+  }
+
+  function selectInput(options, value, onChange){
+    const select = document.createElement('select');
+    options.forEach(o => {
+      const opt = document.createElement('option');
+      opt.value = o; opt.textContent = o;
+      if (o === value) opt.selected = true;
+      select.appendChild(opt);
+    });
+    if (value && !options.includes(value)){
+      const opt = document.createElement('option');
+      opt.value = value; opt.textContent = value + ' (unrecognized)'; opt.selected = true;
+      select.appendChild(opt);
+    }
+    select.onchange = () => onChange(select.value);
+    return select;
+  }
+
+  function nullableObjectField(parentObj, key, tpl, path){
+    const box = el('div', 'nullable-box');
+    const label = el('span', null, `${key} — not set`);
+    const btn = el('button', 'small', '+ Configure');
+    btn.type = 'button';
+    btn.onclick = () => {
+      parentObj[key] = JSON.parse(JSON.stringify(tpl));
+      rerenderActive();
+    };
+    box.appendChild(label); box.appendChild(btn);
+    return box;
+  }
+
+  function setObjectField(parentObj, key, valueObj, itemKind, path){
+    const box = el('div', 'nullable-box set');
+    const header = el('div', 'nb-header');
+    header.appendChild(el('span', 'group-title', key));
+    const clearBtn = el('button', 'icon-btn danger', '✕');
+    clearBtn.title = 'Clear ' + key;
+    clearBtn.onclick = () => { parentObj[key] = null; rerenderActive(); };
+    header.appendChild(clearBtn);
+    box.appendChild(header);
+    const body = el('div', 'card-body');
+    const grid = el('div', 'fields-grid');
+    Object.keys(valueObj).forEach(k => grid.appendChild(renderField(valueObj, k, null, path)));
+    body.appendChild(grid);
+    box.appendChild(body);
+    return box;
+  }
+
+  function renderArrayField(parentObj, key, itemKind, path){
+    const arr = parentObj[key];
+    const wrap = el('div', null);
+    const heading = el('label', null, labelForKey(key) + `  (${arr.length})`);
+    wrap.appendChild(heading);
+
+    if (key === 'NPC lines' || (arr.every(v => typeof v === 'string') && key.includes('lines'))){
+      return renderLinesArray(parentObj, key, path);
+    }
+
+    if (arr.length === 0 || (typeof arr[0] !== 'object')){
+      return renderChipArray(parentObj, key, path);
+    }
+
+    // array of objects -> card list
+    const list = el('div', 'card-list');
+    const childKind = key === 'Steps' ? 'step' : (key === 'Rewards' ? 'reward' : null);
+
+    arr.forEach((item, i) => {
+      const cardPath = path + '/' + i;
+      const card = el('div', 'card' + (collapsedFor(cardPath) ? ' collapsed' : ''));
+      const info = cardLabel(key, item, i);
+
+      const head = el('div', 'card-head');
+      const left = el('div', 'card-head-left');
+      left.appendChild(el('span', 'caret', '▾'));
+      left.appendChild(el('span', 'card-index', '#' + (i+1)));
+      const titleWrap = el('div', null);
+      titleWrap.appendChild(el('div', 'card-title', info.title));
+      if (info.sub) titleWrap.appendChild(el('div', 'card-subtitle', info.sub));
+      left.appendChild(titleWrap);
+      head.appendChild(left);
+
+      const actions = el('div', 'card-actions');
+      const upBtn = el('button', 'icon-btn', '↑'); upBtn.type='button'; upBtn.title='Move up';
+      upBtn.disabled = i === 0;
+      upBtn.onclick = (e) => { e.stopPropagation(); [arr[i-1], arr[i]] = [arr[i], arr[i-1]]; rerenderActive(); };
+      const downBtn = el('button', 'icon-btn', '↓'); downBtn.type='button'; downBtn.title='Move down';
+      downBtn.disabled = i === arr.length - 1;
+      downBtn.onclick = (e) => { e.stopPropagation(); [arr[i+1], arr[i]] = [arr[i], arr[i+1]]; rerenderActive(); };
+      const delBtn = el('button', 'icon-btn danger', '🗑'); delBtn.type='button'; delBtn.title='Delete ' + singularName(key);
+      delBtn.onclick = (e) => {
+        e.stopPropagation();
+        if (confirm(`Delete this ${singularName(key)}?`)){ arr.splice(i,1); rerenderActive(); }
+      };
+      actions.appendChild(upBtn); actions.appendChild(downBtn); actions.appendChild(delBtn);
+      head.appendChild(actions);
+
+      head.onclick = () => { toggleCollapsed(cardPath); rerenderActive(); };
+      card.appendChild(head);
+
+      const body = el('div', 'card-body');
+      const grid = el('div', 'fields-grid');
+      Object.keys(item).forEach(k => grid.appendChild(renderField(item, k, childKind, cardPath)));
+      body.appendChild(grid);
+      card.appendChild(body);
+
+      list.appendChild(card);
+    });
+
+    wrap.appendChild(list);
+
+    const addBtn = el('button', 'add-item-btn', `+ Add ${singularName(key)}`);
+    addBtn.type = 'button';
+    addBtn.onclick = () => {
+      arr.push(makeNewArrayItem(key, arr));
+      collapseState[path + '/' + (arr.length - 1)] = false;
+      rerenderActive();
+    };
+    wrap.appendChild(addBtn);
+    return wrap;
+  }
+
+  function renderChipArray(parentObj, key, path){
+    const arr = parentObj[key];
+    const wrap = el('div', 'field');
+    wrap.appendChild(el('label', null, labelForKey(key)));
+    const list = el('div', 'chip-list');
+    arr.forEach((v, i) => {
+      const chip = el('span', 'chip');
+      const input = document.createElement('input');
+      input.value = v;
+      input.oninput = () => {
+        const n = parseFloat(input.value);
+        arr[i] = (!isNaN(n) && input.value.trim() !== '' && typeof v === 'number') ? n : input.value;
+      };
+      const x = el('span', 'x', '✕');
+      x.onclick = () => { arr.splice(i,1); rerenderActive(); };
+      chip.appendChild(input); chip.appendChild(x);
+      list.appendChild(chip);
+    });
+    const addChip = el('span', 'chip-add', '+ add');
+    addChip.onclick = () => {
+      arr.push(arr.length && typeof arr[arr.length-1] === 'number' ? 0 : '');
+      rerenderActive();
+    };
+    list.appendChild(addChip);
+    wrap.appendChild(list);
+    return wrap;
+  }
+
+  function renderLinesArray(parentObj, key, path){
+    const arr = parentObj[key];
+    const wrap = el('div', 'field');
+    wrap.appendChild(el('label', null, labelForKey(key)));
+    const list = el('div', 'lines-list');
+    arr.forEach((v, i) => {
+      const row = el('div', 'line-row');
+      const ta = document.createElement('textarea');
+      ta.value = v; ta.rows = 2;
+      ta.oninput = () => { arr[i] = ta.value; };
+      const del = el('button', 'icon-btn danger', '✕'); del.type='button';
+      del.onclick = () => { arr.splice(i,1); rerenderActive(); };
+      row.appendChild(ta); row.appendChild(del);
+      list.appendChild(row);
+    });
+    wrap.appendChild(list);
+    const addBtn = el('button', 'add-item-btn', '+ Add line');
+    addBtn.type = 'button';
+    addBtn.onclick = () => { arr.push(''); rerenderActive(); };
+    wrap.appendChild(addBtn);
+    return wrap;
+  }
+
+  // patch: object-typed non-null field needs the "set" nullable box, not a plain group,
+  // so users can clear it back to null. Route those keys through setObjectField instead
+  // of the generic group renderer when a template exists for that key.
+  const _origRenderField = renderField;
+  function renderFieldRouted(parentObj, key, itemKind, path){
+    const value = parentObj[key];
+    if (value !== null && typeof value === 'object' && !Array.isArray(value) && TPL.objTemplates[key] !== undefined){
+      return setObjectField(parentObj, key, value, itemKind, path + '/' + key);
+    }
+    return _origRenderField(parentObj, key, itemKind, path);
+  }
+  renderField = renderFieldRouted;
+
+  // ---------------------------------------------------------------
+  // Top-level NPC panel
+  // ---------------------------------------------------------------
+  function renderNpcPanel(file){
+    const data = file.data;
+    const container = el('div');
+
+    const toolbar = el('div', 'panel-toolbar');
+    const left = el('div');
+    left.appendChild(el('div', 'filename-tag', file.name));
+    toolbar.appendChild(left);
+
+    const actions = el('div', 'header-actions');
+    const rawBtn = el('button', 'ghost small', file.rawMode ? 'Structured view' : 'Raw JSON');
+    rawBtn.onclick = () => {
+      if (!file.rawMode){
+        try { file.rawText = JSON.stringify(data, null, 2); } catch(e){}
+      } else {
+        try {
+          const parsed = JSON.parse(file.rawText);
+          file.data = parsed;
+          file.rawError = null;
+        } catch(err){
+          file.rawError = 'Fix JSON errors before switching back: ' + err.message;
+          rerenderActive();
+          return;
+        }
+      }
+      file.rawMode = !file.rawMode;
+      rerenderActive();
+    };
+    actions.appendChild(rawBtn);
+
+    const dupBtn = el('button', 'ghost small', 'Duplicate file');
+    dupBtn.onclick = () => {
+      files.splice(files.indexOf(file)+1, 0, {
+        id: 'f' + (idCounter++),
+        name: file.name.replace(/\.json$/i, '') + '_copy.json',
+        data: JSON.parse(JSON.stringify(file.data)),
+        rawText: '', rawMode: false, rawError: null
+      });
+      renderAll();
+    };
+    actions.appendChild(dupBtn);
+
+    const dlBtn = el('button', 'primary small', 'Download JSON');
+    dlBtn.onclick = () => downloadFile(file);
+    actions.appendChild(dlBtn);
+
+    toolbar.appendChild(actions);
+    container.appendChild(toolbar);
+
+    if (file.rawMode){
+      const ta = document.createElement('textarea');
+      ta.className = 'raw-json';
+      ta.value = file.rawText;
+      ta.oninput = () => { file.rawText = ta.value; };
+      container.appendChild(ta);
+      if (file.rawError) container.appendChild(el('div', 'raw-error', file.rawError));
+      return container;
+    }
+
+    if (!data || typeof data !== 'object'){
+      container.appendChild(el('p', null, 'This file does not look like an UltimateQuests NPC file.'));
+      return container;
+    }
+
+    // NPC meta block
+    const meta = el('div', 'npc-meta');
+    const img = document.createElement('img');
+    img.className = 'npc-avatar';
+    img.src = data.Avatar || '';
+    img.onerror = () => { img.style.opacity = 0.15; };
+    meta.appendChild(img);
+
+    const fieldsGrid = el('div', 'npc-fields');
+    ['Name','Role'].forEach(k => {
+      if (k in data) fieldsGrid.appendChild(renderField(data, k, null, 'root'));
+    });
+    if ('Avatar' in data){
+      const avatarField = renderField(data, 'Avatar', null, 'root');
+      avatarField.classList.add('wide');
+      const input = avatarField.querySelector('input,textarea');
+      if (input) input.addEventListener('input', () => { img.src = input.value; });
+      fieldsGrid.appendChild(avatarField);
+    }
+    if ('Description' in data){
+      const descField = renderField(data, 'Description', null, 'root');
+      descField.classList.add('wide');
+      fieldsGrid.appendChild(descField);
+    }
+    meta.appendChild(fieldsGrid);
+    container.appendChild(meta);
+
+    // Quests
+    Object.keys(data).forEach(k => {
+      if (['Name','Role','Description','Avatar'].includes(k)) return;
+      if (k === 'Quests'){
+        const section = el('section', 'top-quests');
+        section.appendChild(el('div', 'section-label', `Quests (${data.Quests.length})`));
+        section.appendChild(renderArrayField(data, k, null, 'root'));
+        container.appendChild(section);
+      } else {
+        container.appendChild(renderField(data, k, null, 'root'));
+      }
+    });
+
+    return container;
+  }
+
+  function downloadFile(file){
+    let text;
+    if (file.rawMode){
+      text = file.rawText;
+    } else {
+      text = JSON.stringify(file.data, null, 2);
+    }
+    const blob = new Blob([text], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = file.name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  btnDownloadAll.onclick = async () => {
+    const zip = new JSZip();
+    files.forEach(f => {
+      const text = f.rawMode ? f.rawText : JSON.stringify(f.data, null, 2);
+      zip.file(f.name, text);
+    });
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'quest-npcs.zip';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  // ---------------------------------------------------------------
+  // Tabs / top-level render
+  // ---------------------------------------------------------------
+  function renderTabs(){
+    tabbar.innerHTML = '';
+    files.forEach((f, i) => {
+      const tab = el('div', 'tab' + (i === activeIndex ? ' active' : ''));
+      tab.appendChild(el('span', 'dot' + (f.rawError ? ' unsaved' : '')));
+      tab.appendChild(el('span', null, f.name));
+      const x = el('span', 'close-x', '✕');
+      x.onclick = (e) => {
+        e.stopPropagation();
+        files.splice(i, 1);
+        if (activeIndex >= files.length) activeIndex = files.length - 1;
+        renderAll();
+      };
+      tab.appendChild(x);
+      tab.onclick = () => { activeIndex = i; renderAll(); };
+      tabbar.appendChild(tab);
+    });
+    const addTab = el('div', 'tab-add', '+ Add file');
+    addTab.onclick = () => fileInput.click();
+    tabbar.appendChild(addTab);
+  }
+
+  function rerenderActive(){
+    if (activeIndex < 0 || !files[activeIndex]) return;
+    panel.innerHTML = '';
+    panel.appendChild(renderNpcPanel(files[activeIndex]));
+  }
+
+  function renderAll(){
+    TPL = collectTemplates();
+    if (!files.length){
+      emptyState.style.display = '';
+      workspace.style.display = 'none';
+      btnAddMore.style.display = 'none';
+      btnDownloadAll.style.display = 'none';
+      return;
+    }
+    emptyState.style.display = 'none';
+    workspace.style.display = '';
+    btnAddMore.style.display = '';
+    btnDownloadAll.style.display = files.length > 1 ? '' : 'none';
+    if (activeIndex < 0 || activeIndex >= files.length) activeIndex = 0;
+    renderTabs();
+    rerenderActive();
+  }
+
+})();
+</script>
+</body>
+</html>
