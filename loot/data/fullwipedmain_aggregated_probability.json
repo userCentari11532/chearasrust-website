@@ -208,8 +208,7 @@
             "chocolate": 14.0,
             "granolabar": 14.0,
             "smallwaterbottle": 14.0,
-            "antiradpills": 14.0,
-            "scrap": 100.0
+            "antiradpills": 14.0
         },
         "Amounts": {
             "apple": {
@@ -251,12 +250,6 @@
             "antiradpills": {
                 "Min": 1.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -388,8 +381,7 @@
             "shotgun.m4": 6.0,
             "ammo.shotgun.slug": 6.0,
             "bdu.pants": 1.0,
-            "bdu.shirt": 1.0,
-            "scrap": 100.0
+            "bdu.shirt": 1.0
         },
         "Amounts": {
             "ammo.rifle.explosive": {
@@ -1141,12 +1133,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -1482,7 +1468,7 @@
             "hmlmg": 1.5,
             "smg.mp5": 2.0,
             "ammo.rifle": 2.5,
-            "ammo.pistol": 2.5,
+            "ammo.pistol": 7.5,
             "rifle.lr300": 0.5,
             "pistol.m92": 0.5,
             "shotgun.spas12": 0.5,
@@ -1510,6 +1496,7 @@
             "ammo.rocket.mlrs": 50.0,
             "bdu.pants": 1.0,
             "bdu.shirt": 1.0,
+            "smg.uzi": 5.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -2322,6 +2309,12 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
+            },
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.1,
+                "MaxCondition": 0.2
             },
             "scrap": {
                 "Min": 25,
@@ -3775,8 +3768,7 @@
             "granolabar": 7.5,
             "pumpkin": 7.5,
             "smallwaterbottle": 31.0,
-            "waterjug": 7.5,
-            "scrap": 100.0
+            "waterjug": 7.5
         },
         "Amounts": {
             "apple": {
@@ -3838,12 +3830,6 @@
                 "Max": 2.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -3851,8 +3837,7 @@
         "Probabilities": {
             "bandage": 40.0,
             "largemedkit": 50.0,
-            "syringe.medical": 10.0,
-            "scrap": 100.0
+            "syringe.medical": 10.0
         },
         "Amounts": {
             "bandage": {
@@ -3870,12 +3855,6 @@
             "syringe.medical": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -4170,8 +4149,7 @@
             "granolabar": 11.0,
             "smallwaterbottle": 11.0,
             "waterjug": 13.5,
-            "jar.pickle": 6.5,
-            "scrap": 100.0
+            "jar.pickle": 6.5
         },
         "Amounts": {
             "antiradpills": {
@@ -4225,12 +4203,6 @@
             "jar.pickle": {
                 "Min": 1.0,
                 "Max": 3.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -4542,7 +4514,7 @@
             "rifle.bolt": 10.5,
             "hmlmg": 1.5,
             "smg.mp5": 10.5,
-            "ammo.pistol": 18.0,
+            "ammo.pistol": 23.0,
             "rifle.lr300": 5.5,
             "rifle.l96": 3.5,
             "weapon.mod.8x.scope": 3.5,
@@ -4554,12 +4526,12 @@
             "clothing.mod.armorinsert_metal": 200.0,
             "workbench.upgrade.accelerated": 4.0,
             "workbench.upgrade.salvage": 4.0,
-            "advancedblueprintfragment": 10.0,
             "ballistic.helmet": 3.5,
             "ballistic.legarmor": 3.5,
             "ballistic.vest": 3.5,
             "bdu.pants": 1.0,
             "bdu.shirt": 1.0,
+            "smg.uzi": 5.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -4804,7 +4776,7 @@
                 "MaxCondition": 0.2
             },
             "ammo.pistol": {
-                "Min": 30.0,
+                "Min": 15.0,
                 "Max": 45.0,
                 "MinCondition": null,
                 "MaxCondition": null
@@ -4875,12 +4847,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "advancedblueprintfragment": {
-                "Min": 1.0,
-                "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "ballistic.helmet": {
                 "Min": 1.0,
                 "Max": 1.0,
@@ -4911,6 +4877,12 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.1,
+                "MaxCondition": 0.2
+            },
             "scrap": {
                 "Min": 50,
                 "Max": 69,
@@ -4933,8 +4905,7 @@
             "stonehatchet": 7.5,
             "stone.pickaxe": 7.5,
             "flare": 7.5,
-            "flashlight.held": 7.5,
-            "scrap": 100.0
+            "flashlight.held": 7.5
         },
         "Amounts": {
             "lowgradefuel": {
@@ -5014,12 +4985,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -5037,7 +5002,6 @@
             "floor.triangle.ladder.hatch": 0.5,
             "shutter.metal.embrasure.b": 0.5,
             "gates.external.high.stone": 0.5,
-            "mini fridge": 0.5,
             "wall.external.high.stone": 0.5,
             "cookingworkbench": 0.5,
             "wall.frame.garagedoor": 0.5,
@@ -5103,10 +5067,11 @@
             "storageadaptor": 0.5,
             "supply.signal": 1.0,
             "largebackpack": 5.0,
-            "basicblueprintfragment": 10.0,
             "workbench.upgrade.efficiency": 1.5,
             "workbench.upgrade.prototype": 1.5,
             "workbench.upgrade.reinforced": 1.5,
+            "fuse.highgrade": 6.0,
+            "blueprintpage": 10.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -5177,12 +5142,6 @@
                 "MaxCondition": null
             },
             "gates.external.high.stone": {
-                "Min": 1.0,
-                "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "mini fridge": {
                 "Min": 1.0,
                 "Max": 1.0,
                 "MinCondition": null,
@@ -5578,12 +5537,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "basicblueprintfragment": {
-                "Min": 1.0,
-                "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "workbench.upgrade.efficiency": {
                 "Min": 1.0,
                 "Max": 1.0,
@@ -5597,6 +5550,18 @@
                 "MaxCondition": null
             },
             "workbench.upgrade.reinforced": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "fuse.highgrade": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "blueprintpage": {
                 "Min": 1.0,
                 "Max": 1.0,
                 "MinCondition": null,
@@ -5708,7 +5673,6 @@
             "electric.sprinkler": 0.5,
             "electric.battery.rechargable.large": 0.5,
             "electric.fuelgenerator.small": 0.5,
-            "mini fridge": 0.5,
             "cookingworkbench": 0.5,
             "iotable": 0.5,
             "boomerang": 0.5,
@@ -5716,6 +5680,7 @@
             "workbench.upgrade.defensive": 0.5,
             "workbench.upgrade.range": 0.5,
             "workbench.upgrade.recyclebin": 0.5,
+            "fuse.highgrade": 3.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -6295,12 +6260,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "mini fridge": {
-                "Min": 1.0,
-                "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "cookingworkbench": {
                 "Min": 1.0,
                 "Max": 1.0,
@@ -6343,6 +6302,12 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "fuse.highgrade": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
             "scrap": {
                 "Min": 4,
                 "Max": 19,
@@ -6362,8 +6327,7 @@
             "granolabar": 7.5,
             "pumpkin": 7.5,
             "smallwaterbottle": 31.0,
-            "waterjug": 7.5,
-            "scrap": 100.0
+            "waterjug": 7.5
         },
         "Amounts": {
             "apple": {
@@ -6425,12 +6389,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -6438,8 +6396,7 @@
         "Probabilities": {
             "bandage": 40.0,
             "largemedkit": 50.0,
-            "syringe.medical": 10.0,
-            "scrap": 100.0
+            "syringe.medical": 10.0
         },
         "Amounts": {
             "bandage": {
@@ -6457,12 +6414,6 @@
             "syringe.medical": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -6762,7 +6713,7 @@
             "speargun": 5.0,
             "metal.refined": 25.0,
             "boomerang": 1.0,
-            "basicblueprintfragment": 10.0,
+            "blueprintpage": 10.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -6970,7 +6921,7 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "basicblueprintfragment": {
+            "blueprintpage": {
                 "Min": 1.0,
                 "Max": 1.0,
                 "MinCondition": null,
@@ -7319,8 +7270,7 @@
             "ammo.rocket.hv": 4.5,
             "ammo.rocket.basic": 4.5,
             "ammo.shotgun": 8.5,
-            "ammo.shotgun.slug": 8.5,
-            "scrap": 100.0
+            "ammo.shotgun.slug": 8.5
         },
         "Amounts": {
             "ammo.handmade.shell": {
@@ -7400,30 +7350,17 @@
                 "Max": 20.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
     "dm c4": {
         "Probabilities": {
-            "explosive.timed": 100.0,
-            "scrap": 100.0
+            "explosive.timed": 100.0
         },
         "Amounts": {
             "explosive.timed": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -7436,8 +7373,7 @@
             "cloth": 100.0,
             "metal.ore": 100.0,
             "fat.animal": 100.0,
-            "sulfur": 100.0,
-            "scrap": 100.0
+            "sulfur": 100.0
         },
         "Amounts": {
             "wood": {
@@ -7475,12 +7411,6 @@
                 "Max": 900.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -7489,8 +7419,7 @@
             "hammer": 100.0,
             "building.planner": 100.0,
             "axe.salvaged": 100.0,
-            "icepick.salvaged": 100.0,
-            "scrap": 100.0
+            "icepick.salvaged": 100.0
         },
         "Amounts": {
             "hammer": {
@@ -7516,12 +7445,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -7536,8 +7459,7 @@
             "granolabar": 7.5,
             "pumpkin": 7.5,
             "smallwaterbottle": 31.0,
-            "waterjug": 7.5,
-            "scrap": 100.0
+            "waterjug": 7.5
         },
         "Amounts": {
             "apple": {
@@ -7599,12 +7521,6 @@
                 "Max": 2.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -7612,8 +7528,7 @@
         "Probabilities": {
             "bandage": 40.0,
             "largemedkit": 50.0,
-            "syringe.medical": 10.0,
-            "scrap": 100.0
+            "syringe.medical": 10.0
         },
         "Amounts": {
             "bandage": {
@@ -7633,12 +7548,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -7648,8 +7557,7 @@
             "stones": 100.0,
             "sulfur.ore": 100.0,
             "metal.ore": 100.0,
-            "hq.metal.ore": 100.0,
-            "scrap": 100.0
+            "hq.metal.ore": 100.0
         },
         "Amounts": {
             "wood": {
@@ -7679,12 +7587,6 @@
             "hq.metal.ore": {
                 "Min": 50.0,
                 "Max": 50.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -7721,8 +7623,7 @@
             "lowgradefuel": 1.0,
             "pistol.nailgun": 1.0,
             "ammo.nailgun.nails": 1.0,
-            "bow.compound": 3.5,
-            "scrap": 100.0
+            "bow.compound": 3.5
         },
         "Amounts": {
             "wood.armor.jacket": {
@@ -7904,12 +7805,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -7944,8 +7839,7 @@
             "flamethrower": 2.5,
             "lowgradefuel": 2.5,
             "shotgun.double": 2.5,
-            "rifle.m39": 2.5,
-            "scrap": 100.0
+            "rifle.m39": 2.5
         },
         "Amounts": {
             "bone.armor.suit": {
@@ -8127,12 +8021,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -8167,8 +8055,7 @@
             "smg.mp5": 2.0,
             "shotgun.spas12": 2.5,
             "ammo.shotgun.fire": 2.5,
-            "rifle.l96": 1.5,
-            "scrap": 100.0
+            "rifle.l96": 1.5
         },
         "Amounts": {
             "roadsign.jacket": {
@@ -8350,12 +8237,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -8371,8 +8252,7 @@
             "waterjug": 10.0,
             "black.raspberries": 1.0,
             "blueberries": 1.0,
-            "antiradpills": 10.0,
-            "scrap": 100.0
+            "antiradpills": 10.0
         },
         "Amounts": {
             "apple": {
@@ -8438,12 +8318,6 @@
             "antiradpills": {
                 "Min": 1.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -8656,8 +8530,7 @@
             "metalblade": 28.0,
             "propanetank": 14.5,
             "tarp": 14.5,
-            "sewingkit": 14.5,
-            "scrap": 100.0
+            "sewingkit": 14.5
         },
         "Amounts": {
             "rope": {
@@ -8689,20 +8562,13 @@
                 "Max": 5.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
     "loot_trash": {
         "Probabilities": {
             "metal.fragments": 25.0,
-            "wood": 75.0,
-            "scrap": 100.0
+            "wood": 75.0
         },
         "Amounts": {
             "metal.fragments": {
@@ -8714,12 +8580,6 @@
             "wood": {
                 "Min": 200.0,
                 "Max": 300.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -8739,8 +8599,7 @@
             "stonehatchet": 7.5,
             "stone.pickaxe": 7.5,
             "flare": 7.5,
-            "flashlight.held": 7.5,
-            "scrap": 100.0
+            "flashlight.held": 7.5
         },
         "Amounts": {
             "lowgradefuel": {
@@ -8820,20 +8679,13 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
     "oil_barrel": {
         "Probabilities": {
             "crude.oil": 100.0,
-            "lowgradefuel": 100.0,
-            "scrap": 100.0
+            "lowgradefuel": 100.0
         },
         "Amounts": {
             "crude.oil": {
@@ -8845,12 +8697,6 @@
             "lowgradefuel": {
                 "Min": 10.0,
                 "Max": 20.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -8867,8 +8713,7 @@
             "ammo.rifle.explosive": 2.0,
             "ammo.shotgun": 18.0,
             "ammo.shotgun.slug": 11.0,
-            "ammo.shotgun.fire": 11.0,
-            "scrap": 100.0
+            "ammo.shotgun.fire": 11.0
         },
         "Amounts": {
             "ammo.pistol": {
@@ -8930,12 +8775,6 @@
                 "Max": 16.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -8951,8 +8790,7 @@
             "waterjug": 10.0,
             "black.raspberries": 1.0,
             "blueberries": 1.0,
-            "antiradpills": 10.0,
-            "scrap": 100.0
+            "antiradpills": 10.0
         },
         "Amounts": {
             "apple": {
@@ -9018,12 +8856,6 @@
             "antiradpills": {
                 "Min": 1.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9041,8 +8873,7 @@
             "waterjug": 10.0,
             "black.raspberries": 1.0,
             "blueberries": 1.0,
-            "antiradpills": 10.0,
-            "scrap": 100.0
+            "antiradpills": 10.0
         },
         "Amounts": {
             "apple": {
@@ -9110,20 +8941,13 @@
                 "Max": 2.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
     "crate_fuel": {
         "Probabilities": {
             "crude.oil": 100.0,
-            "lowgradefuel": 100.0,
-            "scrap": 100.0
+            "lowgradefuel": 100.0
         },
         "Amounts": {
             "crude.oil": {
@@ -9137,12 +8961,6 @@
                 "Max": 90.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -9150,8 +8968,7 @@
         "Probabilities": {
             "bandage": 50.0,
             "largemedkit": 25.0,
-            "syringe.medical": 25.0,
-            "scrap": 100.0
+            "syringe.medical": 25.0
         },
         "Amounts": {
             "bandage": {
@@ -9169,12 +8986,6 @@
             "syringe.medical": {
                 "Min": 1.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9425,8 +9236,7 @@
     "roadsign1": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9438,12 +9248,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9452,8 +9256,7 @@
     "roadsign2": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9465,12 +9268,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9479,8 +9276,7 @@
     "roadsign3": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9492,12 +9288,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9506,8 +9296,7 @@
     "roadsign4": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9519,12 +9308,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9533,8 +9316,7 @@
     "roadsign5": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9546,12 +9328,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9560,8 +9336,7 @@
     "roadsign6": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9573,12 +9348,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9587,8 +9356,7 @@
     "roadsign7": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9600,12 +9368,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9614,8 +9376,7 @@
     "roadsign8": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9627,12 +9388,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -9641,8 +9396,7 @@
     "roadsign9": {
         "Probabilities": {
             "metalpipe": 100.0,
-            "roadsigns": 100.0,
-            "scrap": 100.0
+            "roadsigns": 100.0
         },
         "Amounts": {
             "metalpipe": {
@@ -9654,12 +9408,6 @@
             "roadsigns": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -10374,8 +10122,7 @@
             "granolabar": 7.5,
             "pumpkin": 7.5,
             "smallwaterbottle": 31.0,
-            "waterjug": 7.5,
-            "scrap": 100.0
+            "waterjug": 7.5
         },
         "Amounts": {
             "apple": {
@@ -10437,12 +10184,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -10450,8 +10191,7 @@
         "Probabilities": {
             "bandage": 40.0,
             "largemedkit": 50.0,
-            "syringe.medical": 10.0,
-            "scrap": 100.0
+            "syringe.medical": 10.0
         },
         "Amounts": {
             "bandage": {
@@ -10469,12 +10209,6 @@
             "syringe.medical": {
                 "Min": 2.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -10520,7 +10254,6 @@
             "pistol.python": 1.5,
             "rocket.launcher": 1.5,
             "rifle.semiauto": 1.5,
-            "advancedblueprintfragment": 100.0,
             "workbench.upgrade.accelerated": 6.0,
             "workbench.upgrade.salvage": 6.0,
             "ammo.rifle": 47.0,
@@ -10543,7 +10276,7 @@
             "ballistic.legarmor": 16.5,
             "ballistic.vest": 16.5,
             "m16a2": 12.0,
-            "scrap": 100.0
+            "smg.uzi": 14.5
         },
         "Amounts": {
             "ammo.rifle.explosive": {
@@ -10774,12 +10507,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "advancedblueprintfragment": {
-                "Min": 1,
-                "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "workbench.upgrade.accelerated": {
                 "Min": 1.0,
                 "Max": 1.0,
@@ -10912,9 +10639,9 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -10960,7 +10687,6 @@
             "pistol.python": 1.5,
             "rocket.launcher": 1.5,
             "rifle.semiauto": 1.5,
-            "advancedblueprintfragment": 100.0,
             "ammo.rifle": 47.0,
             "smg.thompson": 10.5,
             "ammo.pistol": 52.5,
@@ -10983,7 +10709,7 @@
             "ballistic.legarmor": 16.5,
             "ballistic.vest": 16.5,
             "m16a2": 12.0,
-            "scrap": 100.0
+            "smg.uzi": 14.5
         },
         "Amounts": {
             "ammo.rifle.explosive": {
@@ -11214,12 +10940,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "advancedblueprintfragment": {
-                "Min": 2.0,
-                "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "ammo.rifle": {
                 "Min": 24.0,
                 "Max": 150.0,
@@ -11352,9 +11072,9 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -11366,7 +11086,7 @@
             "metalpipe": 8.5,
             "sheetmetal": 8.5,
             "techparts": 8.5,
-            "scrap": 100.0,
+            "scrap": 33.5,
             "metal.refined": 33.5,
             "coffeecan.helmet": 50.0,
             "roadsign.jacket": 16.5,
@@ -11395,9 +11115,9 @@
             "explosive.satchel": 43.5,
             "explosive.timed": 13.0,
             "ballistic.helmet": 8.5,
-            "basicblueprintfragment": 5.0,
             "ballistic.legarmor": 8.5,
-            "ballistic.vest": 8.5
+            "ballistic.vest": 8.5,
+            "blueprintpage": 100.0
         },
         "Amounts": {
             "gears": {
@@ -11425,8 +11145,8 @@
                 "MaxCondition": null
             },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 280.0,
+                "Max": 300.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -11598,12 +11318,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "basicblueprintfragment": {
-                "Min": 2.0,
-                "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "ballistic.legarmor": {
                 "Min": 1.0,
                 "Max": 1.0,
@@ -11615,14 +11329,19 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
+            },
+            "blueprintpage": {
+                "Min": 2.0,
+                "Max": 2.0,
+                "MinCondition": null,
+                "MaxCondition": null
             }
         }
     },
     "giftbox_loot": {
         "Probabilities": {
             "xmas.present.small": 90.0,
-            "xmas.present.medium": 10.0,
-            "scrap": 100.0
+            "xmas.present.medium": 10.0
         },
         "Amounts": {
             "xmas.present.small": {
@@ -11636,12 +11355,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -11651,7 +11364,7 @@
             "metalpipe": 8.5,
             "sheetmetal": 8.5,
             "techparts": 8.5,
-            "scrap": 100.0,
+            "scrap": 33.5,
             "metal.refined": 33.5,
             "coffeecan.helmet": 22.0,
             "hoodie": 22.0,
@@ -11685,7 +11398,8 @@
             "explosive.satchel": 29.5,
             "explosive.timed": 12.0,
             "xmas.present.small": 100.0,
-            "xmas.present.medium": 100.0
+            "xmas.present.medium": 100.0,
+            "blueprintpage": 100.0
         },
         "Amounts": {
             "gears": {
@@ -11713,8 +11427,8 @@
                 "MaxCondition": null
             },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 200.0,
+                "Max": 300.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -11921,6 +11635,12 @@
                 "Max": 12.0,
                 "MinCondition": null,
                 "MaxCondition": null
+            },
+            "blueprintpage": {
+                "Min": 2.0,
+                "Max": 2.0,
+                "MinCondition": null,
+                "MaxCondition": null
             }
         }
     },
@@ -11941,7 +11661,7 @@
             "xmas.decoration.candycanes": 1.5,
             "xmas.decoration.tinsel": 1.5,
             "xmas.decoration.gingerbreadmen": 1.5,
-            "scrap": 100.0,
+            "scrap": 5.0,
             "lowgradefuel": 5.5,
             "coal": 10.0,
             "pookie.bear": 1.0,
@@ -12048,8 +11768,8 @@
                 "MaxCondition": null
             },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 18.0,
+                "Max": 24.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -12150,7 +11870,7 @@
             "xmas.decoration.candycanes": 1.5,
             "xmas.decoration.tinsel": 1.5,
             "xmas.decoration.gingerbreadmen": 1.5,
-            "scrap": 100.0,
+            "scrap": 6.0,
             "lowgradefuel": 6.0,
             "coal": 11.0
         },
@@ -12246,8 +11966,8 @@
                 "MaxCondition": null
             },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 8.0,
+                "Max": 12.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -12267,19 +11987,12 @@
     },
     "logstash": {
         "Probabilities": {
-            "captainslog": 100.0,
-            "scrap": 100.0
+            "captainslog": 100.0
         },
         "Amounts": {
             "captainslog": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -12379,6 +12092,7 @@
             "smg.thompson": 2.0,
             "horse.armor.roadsign": 2.0,
             "horse.shoes.advanced": 2.0,
+            "blueprintpage": 50.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -12934,6 +12648,12 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "blueprintpage": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
             "scrap": {
                 "Min": 4,
                 "Max": 4,
@@ -12944,19 +12664,12 @@
     },
     "missionstash": {
         "Probabilities": {
-            "bottle.vodka": 100.0,
-            "scrap": 100.0
+            "bottle.vodka": 100.0
         },
         "Amounts": {
             "bottle.vodka": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -12965,8 +12678,7 @@
     "tacklebox": {
         "Probabilities": {
             "fishing.tackle": 100.0,
-            "rope": 100.0,
-            "scrap": 100.0
+            "rope": 100.0
         },
         "Amounts": {
             "fishing.tackle": {
@@ -12978,12 +12690,6 @@
             "rope": {
                 "Min": 1.0,
                 "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -13446,8 +13152,7 @@
     "crate_elite_tutorial": {
         "Probabilities": {
             "pistol.revolver": 100.0,
-            "ammo.pistol": 100.0,
-            "scrap": 100.0
+            "ammo.pistol": 100.0
         },
         "Amounts": {
             "pistol.revolver": {
@@ -13459,12 +13164,6 @@
             "ammo.pistol": {
                 "Min": 18.0,
                 "Max": 18.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -13493,8 +13192,7 @@
     "diesel_barrel_world": {
         "Probabilities": {
             "crude.oil": 100.0,
-            "lowgradefuel": 100.0,
-            "scrap": 100.0
+            "lowgradefuel": 100.0
         },
         "Amounts": {
             "crude.oil": {
@@ -13506,12 +13204,6 @@
             "lowgradefuel": {
                 "Min": 5.0,
                 "Max": 10.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -13558,8 +13250,7 @@
             "explosives": 1.0,
             "hmlmg": 1.0,
             "bdu.pants": 0.5,
-            "bdu.shirt": 0.5,
-            "scrap": 100.0
+            "bdu.shirt": 0.5
         },
         "Amounts": {
             "ammo.rifle": {
@@ -13801,12 +13492,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -13820,8 +13505,7 @@
             "chocolate": 12.5,
             "easterbasket": 25.0,
             "attire.bunnyears": 12.5,
-            "bow.compound": 6.0,
-            "scrap": 100.0
+            "bow.compound": 6.0
         },
         "Amounts": {
             "bow.hunting": {
@@ -13877,12 +13561,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -13898,8 +13576,7 @@
             "ammo.rocket.mlrs": 17.0,
             "rifle.lr300": 17.0,
             "lmg.m249": 14.0,
-            "weapon.mod.holosight": 14.0,
-            "scrap": 100.0
+            "weapon.mod.holosight": 14.0
         },
         "Amounts": {
             "multiplegrenadelauncher": {
@@ -13967,12 +13644,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -13987,8 +13658,7 @@
             "ammo.shotgun": 27.5,
             "shotgun.pump": 10.5,
             "pistol.revolver": 17.0,
-            "ammo.pistol": 17.0,
-            "scrap": 100.0
+            "ammo.pistol": 17.0
         },
         "Amounts": {
             "stones": {
@@ -14050,12 +13720,6 @@
                 "Max": 40.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -14071,8 +13735,7 @@
             "ammo.rocket.mlrs": 17.0,
             "rifle.lr300": 17.0,
             "lmg.m249": 14.0,
-            "weapon.mod.holosight": 14.0,
-            "scrap": 100.0
+            "weapon.mod.holosight": 14.0
         },
         "Amounts": {
             "multiplegrenadelauncher": {
@@ -14140,12 +13803,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -14163,8 +13820,7 @@
             "ammo.pistol": 14.5,
             "wall.graveyard.fence": 5.0,
             "spiderweb": 5.0,
-            "coffin.storage": 5.0,
-            "scrap": 100.0
+            "coffin.storage": 5.0
         },
         "Amounts": {
             "stones": {
@@ -14244,12 +13900,6 @@
                 "Max": 2.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -14264,8 +13914,7 @@
             "pumpkinbasket": 22.0,
             "scarecrowhead": 11.0,
             "bow.compound": 5.5,
-            "vampire.stake": 11.0,
-            "scrap": 100.0
+            "vampire.stake": 11.0
         },
         "Amounts": {
             "bow.hunting": {
@@ -14327,12 +13976,6 @@
                 "Max": 6.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -14351,8 +13994,7 @@
             "weapon.mod.lasersight": 7.0,
             "weapon.mod.silencer": 7.0,
             "flashlight.held": 7.0,
-            "supply.signal": 7.0,
-            "scrap": 100.0
+            "supply.signal": 7.0
         },
         "Amounts": {
             "metal.refined": {
@@ -14438,12 +14080,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -14463,8 +14099,7 @@
             "wall.ice.wall": 6.5,
             "snowballgun": 6.5,
             "snowball": 13.0,
-            "sled.xmas": 6.5,
-            "scrap": 100.0
+            "sled.xmas": 6.5
         },
         "Amounts": {
             "stones": {
@@ -14556,12 +14191,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -14582,7 +14211,7 @@
             "xmas.decoration.candycanes": 1.5,
             "xmas.decoration.tinsel": 1.5,
             "xmas.decoration.gingerbreadmen": 1.5,
-            "scrap": 100.0,
+            "scrap": 6.5,
             "lowgradefuel": 6.5
         },
         "Amounts": {
@@ -14677,8 +14306,8 @@
                 "MaxCondition": null
             },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 18.0,
+                "Max": 24.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -14715,8 +14344,7 @@
             "yellow.berry": 3.0,
             "corn": 3.0,
             "potato": 3.0,
-            "pumpkin": 3.0,
-            "scrap": 100.0
+            "pumpkin": 3.0
         },
         "Amounts": {
             "healingtea": {
@@ -14860,12 +14488,6 @@
             "pumpkin": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -14896,8 +14518,7 @@
             "yellow.berry": 3.0,
             "corn": 3.0,
             "potato": 3.0,
-            "pumpkin": 3.0,
-            "scrap": 100.0
+            "pumpkin": 3.0
         },
         "Amounts": {
             "healingtea": {
@@ -15041,12 +14662,6 @@
             "pumpkin": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -15077,8 +14692,7 @@
             "yellow.berry": 3.0,
             "corn": 3.0,
             "potato": 3.0,
-            "pumpkin": 3.0,
-            "scrap": 100.0
+            "pumpkin": 3.0
         },
         "Amounts": {
             "healingtea": {
@@ -15222,12 +14836,6 @@
             "pumpkin": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -15258,8 +14866,7 @@
             "yellow.berry": 3.0,
             "corn": 3.0,
             "potato": 3.0,
-            "pumpkin": 3.0,
-            "scrap": 100.0
+            "pumpkin": 3.0
         },
         "Amounts": {
             "healingtea": {
@@ -15403,12 +15010,6 @@
             "pumpkin": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -15439,8 +15040,7 @@
             "yellow.berry": 3.0,
             "corn": 3.0,
             "potato": 3.0,
-            "pumpkin": 3.0,
-            "scrap": 100.0
+            "pumpkin": 3.0
         },
         "Amounts": {
             "healingtea": {
@@ -15586,12 +15186,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -15608,8 +15202,7 @@
             "ammo.shotgun.slug": 9.5,
             "ammo.shotgun.fire": 9.5,
             "ammo.rocket.basic": 6.5,
-            "explosive.timed": 6.5,
-            "scrap": 100.0
+            "explosive.timed": 6.5
         },
         "Amounts": {
             "ammo.pistol": {
@@ -15681,12 +15274,6 @@
             "explosive.timed": {
                 "Min": 1.0,
                 "Max": 5.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -15809,7 +15396,7 @@
             "smg.mp5": 2.0,
             "rifle.sks": 1.5,
             "ammo.rifle": 2.5,
-            "ammo.pistol": 2.5,
+            "ammo.pistol": 7.5,
             "rifle.lr300": 0.5,
             "pistol.m92": 0.5,
             "shotgun.spas12": 0.5,
@@ -15835,7 +15422,6 @@
             "pistol.revolver": 2.0,
             "lowgradefuel": 1.5,
             "shotgun.double": 9.5,
-            "advancedblueprintfragment": 10.0,
             "workbench.upgrade.accelerated": 4.0,
             "workbench.upgrade.salvage": 4.0,
             "ballistic.helmet": 3.5,
@@ -15843,6 +15429,7 @@
             "ballistic.vest": 3.5,
             "bdu.pants": 1.0,
             "bdu.shirt": 1.0,
+            "smg.uzi": 5.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -16692,12 +16279,6 @@
                 "MinCondition": 0.1,
                 "MaxCondition": 0.1
             },
-            "advancedblueprintfragment": {
-                "Min": 1.0,
-                "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "workbench.upgrade.accelerated": {
                 "Min": 1.0,
                 "Max": 1.0,
@@ -16740,6 +16321,12 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.1,
+                "MaxCondition": 0.2
+            },
             "scrap": {
                 "Min": 25,
                 "Max": 25,
@@ -16755,8 +16342,7 @@
             "can.tuna": 16.5,
             "chocolate": 16.5,
             "granolabar": 16.5,
-            "smallwaterbottle": 16.5,
-            "scrap": 100.0
+            "smallwaterbottle": 16.5
         },
         "Amounts": {
             "apple": {
@@ -16794,12 +16380,6 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -16813,8 +16393,7 @@
             "granolabar": 11.0,
             "smallwaterbottle": 11.0,
             "waterjug": 13.5,
-            "jar.pickle": 6.5,
-            "scrap": 100.0
+            "jar.pickle": 6.5
         },
         "Amounts": {
             "antiradpills": {
@@ -16870,20 +16449,13 @@
                 "Max": 3.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
     "underwater_labs/crate_fuel": {
         "Probabilities": {
             "crude.oil": 100.0,
-            "lowgradefuel": 100.0,
-            "scrap": 100.0
+            "lowgradefuel": 100.0
         },
         "Amounts": {
             "crude.oil": {
@@ -16897,12 +16469,6 @@
                 "Max": 10.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -16911,7 +16477,7 @@
             "bandage": 50.0,
             "largemedkit": 25.0,
             "syringe.medical": 25.0,
-            "scrap": 100.0
+            "medical.honey.bandage": 18.0
         },
         "Amounts": {
             "bandage": {
@@ -16932,9 +16498,9 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
+            "medical.honey.bandage": {
+                "Min": 1.0,
+                "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -17043,6 +16609,10 @@
             "workbench.upgrade.efficiency": 1.5,
             "workbench.upgrade.prototype": 1.5,
             "workbench.upgrade.reinforced": 1.5,
+            "fuse.highgrade": 6.0,
+            "blueprintpage": 10.0,
+            "smg.uzi": 2.0,
+            "ammo.pistol": 2.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -17652,6 +17222,30 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "fuse.highgrade": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "blueprintpage": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.1,
+                "MaxCondition": 0.2
+            },
+            "ammo.pistol": {
+                "Min": 15.0,
+                "Max": 15.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
             "scrap": {
                 "Min": 8,
                 "Max": 8,
@@ -17778,6 +17372,7 @@
             "workbench.upgrade.defensive": 0.5,
             "workbench.upgrade.range": 0.5,
             "workbench.upgrade.recyclebin": 0.5,
+            "fuse.highgrade": 3.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -18477,6 +18072,12 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "fuse.highgrade": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
             "scrap": {
                 "Min": 5,
                 "Max": 5,
@@ -18938,19 +18539,12 @@
     },
     "beehive.natural": {
         "Probabilities": {
-            "honeycomb": 100.0,
-            "scrap": 100.0
+            "honeycomb": 100.0
         },
         "Amounts": {
             "honeycomb": {
                 "Min": 4.0,
                 "Max": 7.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -19040,17 +18634,8 @@
         }
     },
     "dynamicmissionstash": {
-        "Probabilities": {
-            "scrap": 100.0
-        },
-        "Amounts": {
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
-            }
-        }
+        "Probabilities": {},
+        "Amounts": {}
     },
     "codelockedhackablecrate_no_build_radius": {
         "Probabilities": {
@@ -19092,7 +18677,6 @@
             "pistol.python": 1.5,
             "rocket.launcher": 1.5,
             "rifle.semiauto": 1.5,
-            "advancedblueprintfragment": 100.0,
             "ammo.rifle": 47.0,
             "smg.thompson": 10.5,
             "ammo.pistol": 52.5,
@@ -19115,7 +18699,7 @@
             "ballistic.legarmor": 16.5,
             "ballistic.vest": 16.5,
             "m16a2": 12.0,
-            "scrap": 100.0
+            "smg.uzi": 14.5
         },
         "Amounts": {
             "ammo.rifle.explosive": {
@@ -19346,12 +18930,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "advancedblueprintfragment": {
-                "Min": 2.0,
-                "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "ammo.rifle": {
                 "Min": 24.0,
                 "Max": 150.0,
@@ -19484,9 +19062,9 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -19506,8 +19084,7 @@
             "corn": 6.5,
             "honeycomb": 6.5,
             "waterjug": 13.5,
-            "jar.pickle": 6.5,
-            "scrap": 100.0
+            "jar.pickle": 6.5
         },
         "Amounts": {
             "antiradpills": {
@@ -19587,12 +19164,6 @@
                 "Max": 3.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -19636,7 +19207,6 @@
             "pistol.python": 1.5,
             "rocket.launcher": 1.5,
             "rifle.semiauto": 1.5,
-            "advancedblueprintfragment": 100.0,
             "ammo.rifle": 47.0,
             "smg.thompson": 10.5,
             "ammo.pistol": 52.5,
@@ -19659,7 +19229,7 @@
             "ballistic.legarmor": 16.5,
             "ballistic.vest": 16.5,
             "m16a2": 12.0,
-            "scrap": 100.0
+            "smg.uzi": 14.5
         },
         "Amounts": {
             "ammo.rifle.explosive": {
@@ -19890,12 +19460,6 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "advancedblueprintfragment": {
-                "Min": 2.0,
-                "Max": 2.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
             "ammo.rifle": {
                 "Min": 24.0,
                 "Max": 150.0,
@@ -20028,9 +19592,9 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
@@ -20050,6 +19614,7 @@
             "hatchet": 11.0,
             "pickaxe": 11.0,
             "metal.detector": 11.0,
+            "medical.honey.bandage": 12.0,
             "scrap": 100.0
         },
         "Amounts": {
@@ -20125,6 +19690,12 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "medical.honey.bandage": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
             "scrap": {
                 "Min": 5,
                 "Max": 5,
@@ -20185,12 +19756,11 @@
             "metalpipe": 45.0,
             "sheetmetal": 33.5,
             "techparts": 45.0,
-            "scrap": 100.0,
+            "scrap": 33.5,
             "rocket.launcher": 8.0,
             "rifle.lr300": 27.5,
             "rifle.l96": 7.0,
             "shotgun.m4": 10.5,
-            "advancedblueprintfragment": 100.0,
             "weapon.mod.burstmodule": 25.0,
             "weapon.mod.extendedmags": 26.5,
             "targeting.computer": 58.5,
@@ -20288,7 +19858,8 @@
             "ballistic.helmet": 16.5,
             "ballistic.legarmor": 16.5,
             "ballistic.vest": 16.5,
-            "m16a2": 12.0
+            "m16a2": 12.0,
+            "smg.uzi": 14.5
         },
         "Amounts": {
             "ammo.rifle.explosive": {
@@ -20592,8 +20163,8 @@
                 "MaxCondition": null
             },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 140.0,
+                "Max": 160.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -20618,12 +20189,6 @@
             "shotgun.m4": {
                 "Min": 1.0,
                 "Max": 1.0,
-                "MinCondition": null,
-                "MaxCondition": null
-            },
-            "advancedblueprintfragment": {
-                "Min": 2.0,
-                "Max": 2.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -21214,14 +20779,19 @@
                 "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
+            },
+            "smg.uzi": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
             }
         }
     },
     "deepseatreasuremission_box": {
         "Probabilities": {
             "note": 100.0,
-            "clothing.mod.armorinsert_metal": 100.0,
-            "scrap": 100.0
+            "clothing.mod.armorinsert_metal": 100.0
         },
         "Amounts": {
             "note": {
@@ -21235,12 +20805,6 @@
                 "Max": 4.0,
                 "MinCondition": null,
                 "MaxCondition": null
-            },
-            "scrap": {
-                "Min": 0,
-                "Max": 0,
-                "MinCondition": null,
-                "MaxCondition": null
             }
         }
     },
@@ -21249,7 +20813,7 @@
             "flare": 16.5,
             "pickaxe": 16.5,
             "syringe.medical": 29.0,
-            "scrap": 100.0,
+            "scrap": 16.5,
             "semibody": 16.5,
             "keycard_green": 16.5,
             "smgbody": 14.5,
@@ -21268,7 +20832,9 @@
             "weapon.mod.holosight": 12.5,
             "explosives": 12.5,
             "bandage": 25.0,
-            "largemedkit": 12.5
+            "largemedkit": 12.5,
+            "medical.honey.bandage": 9.0,
+            "blueprintpage": 20.0
         },
         "Amounts": {
             "flare": {
@@ -21290,8 +20856,8 @@
                 "MaxCondition": null
             },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 8.0,
+                "Max": 12.0,
                 "MinCondition": null,
                 "MaxCondition": null
             },
@@ -21404,6 +20970,18 @@
                 "MaxCondition": null
             },
             "largemedkit": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "medical.honey.bandage": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "blueprintpage": {
                 "Min": 1.0,
                 "Max": 1.0,
                 "MinCondition": null,
@@ -21539,7 +21117,8 @@
             "bandage": 25.0,
             "bdu.pants": 1.0,
             "bdu.shirt": 1.0,
-            "scrap": 100.0
+            "medical.honey.bandage": 9.0,
+            "blueprintpage": 20.0
         },
         "Amounts": {
             "smgbody": {
@@ -22298,9 +21877,212 @@
                 "MinCondition": null,
                 "MaxCondition": null
             },
+            "medical.honey.bandage": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "blueprintpage": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            }
+        }
+    },
+    "satellite_crate_1.entity": {
+        "Probabilities": {
+            "cctv.camera": 26.5,
+            "targeting.computer": 26.5,
+            "techparts": 116.0,
+            "metal.refined": 26.5,
+            "aiming.module.mlrs": 5.5
+        },
+        "Amounts": {
+            "cctv.camera": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "targeting.computer": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "techparts": {
+                "Min": 1.0,
+                "Max": 5.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "metal.refined": {
+                "Min": 50.0,
+                "Max": 50.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "aiming.module.mlrs": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            }
+        }
+    },
+    "vehicle_parts_advanced": {
+        "Probabilities": {
+            "carburetor2": 15.5,
+            "crankshaft2": 15.5,
+            "piston2": 23.0,
+            "sparkplug2": 23.0,
+            "valve2": 23.0,
+            "scrap": 100.0
+        },
+        "Amounts": {
+            "carburetor2": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.25,
+                "MaxCondition": 0.75
+            },
+            "crankshaft2": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.25,
+                "MaxCondition": 0.75
+            },
+            "piston2": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.25,
+                "MaxCondition": 0.75
+            },
+            "sparkplug2": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.25,
+                "MaxCondition": 0.75
+            },
+            "valve2": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": 0.25,
+                "MaxCondition": 0.75
+            },
             "scrap": {
-                "Min": 0,
-                "Max": 0,
+                "Min": 8,
+                "Max": 8,
+                "MinCondition": null,
+                "MaxCondition": null
+            }
+        }
+    },
+    "satellite_crate_3.entity": {
+        "Probabilities": {
+            "cctv.camera": 26.5,
+            "targeting.computer": 26.5,
+            "techparts": 116.0,
+            "metal.refined": 26.5,
+            "aiming.module.mlrs": 5.5
+        },
+        "Amounts": {
+            "cctv.camera": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "targeting.computer": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "techparts": {
+                "Min": 1.0,
+                "Max": 5.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "metal.refined": {
+                "Min": 50.0,
+                "Max": 50.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "aiming.module.mlrs": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            }
+        }
+    },
+    "satellite_crate_2.entity": {
+        "Probabilities": {
+            "cctv.camera": 26.5,
+            "targeting.computer": 26.5,
+            "techparts": 116.0,
+            "metal.refined": 26.5,
+            "aiming.module.mlrs": 5.5
+        },
+        "Amounts": {
+            "cctv.camera": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "targeting.computer": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "techparts": {
+                "Min": 1.0,
+                "Max": 5.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "metal.refined": {
+                "Min": 50.0,
+                "Max": 50.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            },
+            "aiming.module.mlrs": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            }
+        }
+    },
+    "coconut.tree": {
+        "Probabilities": {
+            "coconut": 100.0
+        },
+        "Amounts": {
+            "coconut": {
+                "Min": 1.0,
+                "Max": 1.0,
+                "MinCondition": null,
+                "MaxCondition": null
+            }
+        }
+    },
+    "apple.tree": {
+        "Probabilities": {
+            "apple": 100.0
+        },
+        "Amounts": {
+            "apple": {
+                "Min": 1.0,
+                "Max": 1.0,
                 "MinCondition": null,
                 "MaxCondition": null
             }
