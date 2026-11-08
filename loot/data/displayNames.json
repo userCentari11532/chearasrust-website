@@ -70,5 +70,8 @@
   "small.oil.refinery": "Small Oil Refinery",
   "revolver.hc": "High Caliber Revolver",
   "blunderbuss": "Blunderbuss",
-  "basicblueprintfragment": "Basic Blueprint Fragment"
+  "basicblueprintfragment": "Basic Blueprint Fragment",
+  "blueprintfragment": "Blueprint Fragment",
+  "blueprintpage": "Blueprint Page",
+  "blueprintbook": "Blueprint Book"
 }
